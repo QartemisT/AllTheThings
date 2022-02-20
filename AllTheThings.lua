@@ -15954,8 +15954,22 @@ function app:GetDataCache()
 			db.expanded = false;
 			db.text = TRACKER_HEADER_ACHIEVEMENTS;
 			db.icon = app.asset("Category_Achievements")
+			db.rawAchievements = true;
 			tinsert(g, db);
 		end
+		-- Dynamic Achievements???
+		-- db = {};
+		-- db.text = TRACKER_HEADER_ACHIEVEMENTS.."_Dynamic";
+		-- db.name = db.text;
+		-- db.icon = app.asset("Category_Achievements")
+		-- tinsert(g, DynamicCategory(db, "achievementID"));
+		-- Smart Dynamic Achievements???
+		local achievementsCategory = {};
+		db = achievementsCategory;
+		db.text = TRACKER_HEADER_ACHIEVEMENTS.." (Smart Dynamic)";
+		db.name = db.text;
+		db.icon = app.asset("Category_Achievements")
+		tinsert(g, db);
 
 		-- Expansion Features
 		if app.Categories.ExpansionFeatures then
@@ -16599,99 +16613,92 @@ function app:GetDataCache()
 		end
 
 		-- Update Achievement data.
-		--[[
-		local function cacheAchievementData(self, categories, g)
-			if g then
-				for i,o in ipairs(g) do
-					if o.achievementCategoryID then
-						categories[o.achievementCategoryID] = o;
-						if not o.g then
-							o.g = {};
-						else
-							cacheAchievementData(self, categories, o.g);
-						end
-					elseif o.achievementID then
-						self.achievements[o.achievementID] = o;
-					end
-				end
-			end
-		end
-		local function getAchievementCategory(categories, achievementCategoryID)
-			local c = categories[achievementCategoryID];
-			if not c then
-				c = app.CreateAchievementCategory(achievementCategoryID);
-				categories[achievementCategoryID] = c;
-				c.g = {};
-
-				local p = getAchievementCategory(categories, c.parentCategoryID);
-				if not p.g then p.g = {}; end
-				table.insert(p.g, c);
-				c.parent = p;
-			end
-			return c;
-		end
-		local function achievementSort(a, b)
-			if a.achievementCategoryID then
-				if b.achievementCategoryID then
-					return a.achievementCategoryID < b.achievementCategoryID;
-				end
-				return true;
-			elseif b.achievementCategoryID then
-				return false;
-			end
-			return sortByNameSafely(a, b);
-		end;
 		achievementsCategory.OnUpdate = function(self)
-			local categories = {};
-			categories[-1] = self;
-			cacheAchievementData(self, categories, self.g);
-			for i,_ in pairs(fieldCache["achievementID"]) do
-				if not self.achievements[i] then
-					local achievement = app.CreateAchievement(tonumber(i));
-					for j,o in ipairs(_) do
-						for key,value in pairs(o) do rawset(achievement, key, value); end
-						if o.parent and not o.sourceQuests then
-							local questID = GetRelativeValue(o, "questID");
-							if questID then
-								if not achievement.sourceQuests then
-									achievement.sourceQuests = {};
-								end
-								if not contains(achievement.sourceQuests, questID) then
-									tinsert(achievement.sourceQuests, questID);
-								end
-							else
-								local sourceQuests = GetRelativeValue(o, "sourceQuests");
-								if sourceQuests then
-									if not achievement.sourceQuests then
-										achievement.sourceQuests = {};
-										for k,questID in ipairs(sourceQuests) do
-											tinsert(achievement.sourceQuests, questID);
-										end
-									else
-										for k,questID in ipairs(sourceQuests) do
-											if not contains(achievement.sourceQuests, questID) then
-												tinsert(achievement.sourceQuests, questID);
-											end
-										end
-									end
-								end
-							end
-						end
+			achievementsCategory.OnUpdate = nil;
+			local GetCategoryList, GetCategoryInfo, GetCategoryNumAchievements = GetCategoryList, GetCategoryInfo, GetCategoryNumAchievements;
+
+			local categoryList = GetCategoryList();
+			local categoryHierarchy = {};
+			local topLevelCategories = {};
+			local categoryInfo, parentCategoryID, title, achTotal;
+			-- fills the category and parent categories with info
+			local function FillCategoryInfo(categoryID, childCategoryID)
+				title, parentCategoryID = GetCategoryInfo(categoryID);
+				-- this only captures 'visible' achievements per category... capturing ALL achievements (i.e. those in series)
+				-- will cause failures later on when trying to pull the actual achievements, since that function only utilizes visible achievements...
+				achTotal = GetCategoryNumAchievements(categoryID);
+				categoryInfo = { ["id"] = categoryID, ["title"] = title, ["children"] = {}, ["totalAchievements"] = achTotal, };
+				categoryHierarchy[categoryID] = categoryInfo;
+				-- verify parent category exists
+				if parentCategoryID and parentCategoryID > -1 then
+					if not categoryHierarchy[parentCategoryID] then
+						-- missing parent category
+						FillCategoryInfo(parentCategoryID, categoryID);
+					else
+						-- add itself as child of the parent category
+						local children = categoryHierarchy[parentCategoryID].children;
+						children[categoryID] = true;
 					end
-					self.achievements[i] = achievement;
-					achievement.progress = nil;
-					achievement.total = nil;
-					achievement.g = nil;
-					achievement.parent = getAchievementCategory(categories, achievement.parentCategoryID);
-					if not achievement.u or achievement.u ~= 1 then
-						tinsert(achievement.parent.g, achievement);
-					end
+				else
+					-- top-level achievement category
+					topLevelCategories[categoryID] = categoryInfo;
+				end
+				-- add the child to the new parent category
+				if childCategoryID then
+					local children = categoryInfo.children;
+					children[childCategoryID] = true;
 				end
 			end
-			app.Sort(self.g, achievementSort, true);
+			local function FillCategoryGroup(group, categoryInfo)
+				group.name = categoryInfo.title;
+				group.text = group.name;
+				-- Make sure the category is always visible, even if nothing inside of it will count towards progress
+				group.OnUpdate = app.AlwaysShowUpdateWithoutReturn;
+
+				-- Nest sub-categories
+				if categoryInfo.children then
+					local groups = {};
+					local sub;
+					for categoryID,_ in pairs(categoryInfo.children) do
+						sub = app.CreateAchievementCategory(categoryID);
+						FillCategoryGroup(sub, categoryHierarchy[categoryID]);
+						tinsert(groups, sub);
+					end
+					group.g = groups;
+				end
+
+				local total = categoryInfo.totalAchievements;
+				if total and total > 0 then
+					local groups = {};
+					local categoryID = categoryInfo.id;
+					local achID, sourcedAchievement;
+					for i=1,total,1 do
+						achID = GetAchievementInfo(categoryID, i);
+						sourcedAchievement = app.SearchForMergedObject("achievementID", achID);
+						-- achievement should be ignored for the total if it is listed outside of the main Achievements header
+						tinsert(groups, app.CreateAchievement(achID, { ["sourceIgnored"] = not GetRelativeValue(sourcedAchievement, "rawAchievements") }));
+					end
+					NestObjects(group, groups);
+				end
+			end
+			-- create heirarchy of all achieve categories
+			for _,categoryID in ipairs(categoryList) do
+				if not categoryHierarchy[categoryID] then
+					FillCategoryInfo(categoryID);
+				end
+			end
+			-- create groups for all achieve categories in heirarchy order
+			local group;
+			local groups = {};
+			for categoryID,categoryInfo in pairs(topLevelCategories) do
+				group = app.CreateAchievementCategory(categoryID);
+				FillCategoryGroup(group, categoryInfo);
+				tinsert(groups, group);
+			end
+			achievementsCategory.g = groups;
+			achievementsCategory.visible = true;
+			BuildGroups(achievementsCategory, achievementsCategory.g);
 		end
-		achievementsCategory:OnUpdate();
-		]]--
 
 		-- Update Faction data.
 		--[[
