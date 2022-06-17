@@ -279,12 +279,26 @@ settings.Initialize = function(self)
 	self.MiniListScaleSlider:SetValue(self:GetTooltipSetting("MiniListScale"));
 	self.PrecisionSlider:SetValue(self:GetTooltipSetting("Precision"));
 	self.MinimapButtonSizeSlider:SetValue(self:GetTooltipSetting("MinimapSize"));
+	
 	if self:GetTooltipSetting("MinimapButton") then
 		if not app.Minimap then app.Minimap = app.CreateMinimapButton(); end
-		app.Minimap:Show();
-	elseif app.Minimap then
-		app.Minimap:Hide();
+		if self:GetTooltipSetting("MinimapStyle") then
+			AllTheThingsSettings.Minimap["hide"] = false
+			local LDBicon = LibStub("LibDBIcon-1.0", true)
+			LDBicon:Show("AllTheThingsSettings.Minimap")
+			app.Minimap:Hide()
+		else
+			AllTheThingsSettings.Minimap["hide"] = true
+			local LDBicon = LibStub("LibDBIcon-1.0", true)
+			LDBicon:Hide("AllTheThingsSettings.Minimap")
+			app.Minimap:Show()
+		end
+	else
+		AllTheThingsSettings.Minimap["hide"] = true
+		local LDBicon = LibStub("LibDBIcon-1.0", true)
+		LDBicon:Hide("AllTheThingsSettings.Minimap")
 	end
+	
 	OnClickForTab(self.Tabs[1]);
 	self:UpdateMode();
 
@@ -4028,9 +4042,23 @@ function(self)
 	settings:SetTooltipSetting("MinimapButton", self:GetChecked());
 	if self:GetChecked() then
 		if not app.Minimap then app.Minimap = app.CreateMinimapButton(); end
-		app.Minimap:Show();
-	elseif app.Minimap then
-		app.Minimap:Hide();
+		if app.Settings:GetTooltipSetting("MinimapStyle") then
+			AllTheThingsSettings.Minimap["hide"] = false
+			local LDBicon = LibStub("LibDBIcon-1.0", true)
+			LDBicon:Show("AllTheThingsSettings.Minimap")
+			app.Minimap:Hide()
+		else
+			AllTheThingsSettings.Minimap["hide"] = true
+			local LDBicon = LibStub("LibDBIcon-1.0", true)
+			LDBicon:Hide("AllTheThingsSettings.Minimap")
+			app.Minimap:Show()
+		end
+		if not app.Settings:GetTooltipSetting("MinimapButton") then
+			AllTheThingsSettings.Minimap["hide"] = true
+			local LDBicon = LibStub("LibDBIcon-1.0", true)
+			LDBicon:Hide("AllTheThingsSettings.Minimap")
+			app.Minimap:Hide()
+		end
 	end
 end);
 ShowMinimapButtonCheckBox:SetATTTooltip(L["MINIMAP_BUTTON_CHECKBOX_TOOLTIP"]);
@@ -4048,8 +4076,18 @@ function(self)
 	end
 end,
 function(self)
-	settings:SetTooltipSetting("MinimapStyle", self:GetChecked());
-	if app.Minimap then app.Minimap:UpdateStyle(); end
+	settings:SetTooltipSetting("MinimapStyle", self:GetChecked());	
+	if app.Settings:GetTooltipSetting("MinimapStyle") then
+		AllTheThingsSettings.Minimap["hide"] = false
+		local LDBicon = LibStub("LibDBIcon-1.0", true)
+		LDBicon:Show("AllTheThingsSettings.Minimap")
+		app.Minimap:Hide()
+	else
+		AllTheThingsSettings.Minimap["hide"] = true
+		local LDBicon = LibStub("LibDBIcon-1.0", true)
+		LDBicon:Hide("AllTheThingsSettings.Minimap")
+		app.Minimap:Show()
+	end
 end);
 MinimapButtonStyleCheckBox:SetATTTooltip(L["MINIMAP_BUTTON_STYLE_CHECKBOX_TOOLTIP"]);
 MinimapButtonStyleCheckBox:SetPoint("TOPLEFT", ShowMinimapButtonCheckBox, "BOTTOMLEFT", 8, 4);

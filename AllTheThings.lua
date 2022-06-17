@@ -14461,7 +14461,7 @@ local function CreateMinimapButton()
 	button:RegisterForClicks("LeftButtonUp", "RightButtonUp");
 	button:SetSize(size, size);
 
-	-- Create the Button Texture
+	-- Create the New Button Texture
 	local texture = button:CreateTexture(nil, "BACKGROUND");
 	texture:SetATTSprite("base_36x36", 429, 217, 36, 36, 512, 256);
 	--texture:SetATTSprite("in_game_logo", 430, 75, 53, 59, 512, 256);
@@ -14471,12 +14471,12 @@ local function CreateMinimapButton()
 	button.texture = texture;
 
 	-- Create the Button Texture
-	local oldtexture = button:CreateTexture(nil, "BACKGROUND");
-	oldtexture:SetPoint("CENTER", 0, 0);
-	oldtexture:SetTexture(L["LOGO_SMALL"]);
-	oldtexture:SetSize(21, 21);
-	oldtexture:SetTexCoord(0,1,0,1);
-	button.oldtexture = oldtexture;
+	-- local oldtexture = button:CreateTexture(nil, "BACKGROUND");
+	-- oldtexture:SetPoint("CENTER", 0, 0);
+	-- oldtexture:SetTexture(L["LOGO_SMALL"]);
+	-- oldtexture:SetSize(21, 21);
+	-- oldtexture:SetTexCoord(0,1,0,1);
+	-- button.oldtexture = oldtexture;
 
 	-- Create the Button Tracking Border
 	local border = button:CreateTexture(nil, "BORDER");
@@ -14484,22 +14484,11 @@ local function CreateMinimapButton()
 	border:SetPoint("CENTER", 12, -12);
 	border:SetSize(56, 56);
 	button.border = border;
-	button.UpdateStyle = function(self)
-		if app.Settings:GetTooltipSetting("MinimapStyle") then
-			self:SetHighlightTexture("Interface\\Minimap\\UI-Minimap-ZoomButton-Highlight", "ADD");
-			self:GetHighlightTexture():SetTexCoord(0,1,0,1);
-			self:GetHighlightTexture():SetAlpha(1);
-			self.texture:Hide();
-			self.oldtexture:Show();
-			self.border:Show();
-		else
-			self:SetATTHighlightSprite("epic_36x36", 297, 215, 36, 36, 512, 256):SetAlpha(0.2);
-			self.texture:Show();
-			self.oldtexture:Hide();
-			self.border:Hide();
-		end
-	end
-	button:UpdateStyle();
+
+	button:SetATTHighlightSprite("epic_36x36", 297, 215, 36, 36, 512, 256):SetAlpha(0.2);
+	button.texture:Show();
+	--self.oldtexture:Hide();
+	border:Hide();
 
 	-- Button Configuration
 	local radius = 78;
@@ -22166,13 +22155,21 @@ app.Startup = function()
 	app.Me = "|c" .. RAID_CLASS_COLORS[class].colorStr .. name .. "-" .. (realm or GetRealmName()) .. "|r";
 	app.ClassName = "|c" .. RAID_CLASS_COLORS[class].colorStr .. className .. "|r";
 
-	LibStub:GetLibrary("LibDataBroker-1.1"):NewDataObject(L["TITLE"], {
+	--Minimap icon through LibDBIcon
+	if not AllTheThingsSettings then AllTheThingsSettings = {}; end
+	if not AllTheThingsSettings.Minimap then AllTheThingsSettings.Minimap = {}; end
+
+	local ATTDataBroker = LibStub("LibDataBroker-1.1"):NewDataObject(L["TITLE"], {
 		type = "launcher",
-		icon = app.asset("logo_32x32"),
+		icon = app.asset("LOGO_SMALL"),
 		OnClick = MinimapButtonOnClick,
 		OnEnter = MinimapButtonOnEnter,
 		OnLeave = MinimapButtonOnLeave,
 	});
+	local LDBicon = LibStub("LibDBIcon-1.0")
+	LDBicon:Register(L["TITLE"], ATTDataBroker, AllTheThingsSettings.Minimap)
+	AllTheThingsSettings.Minimap["hide"] = false
+	LDBicon:Show("AllTheThingsSettings.Minimap")
 
 	-- Character Data Storage
 	local characterData = LocalizeGlobal("ATTCharacterData", true);
