@@ -419,7 +419,6 @@ local L = app.L;
 		--TODO: L.INCLUDE_ORIGINAL_CHECKBOX_TOOLTIP = "Enable this option if you actually liked seeing the original source info within the Shared Appearances list in the tooltip.";
 		--TODO: L.ONLY_RELEVANT_CHECKBOX = "Only Relevant";
 		--TODO: L.ONLY_RELEVANT_CHECKBOX_TOOLTIP = "Enable this option if you only want to see shared appearances that your character can unlock.\n\nNOTE: We recommend you keep this off as knowing the unlock requirements for an item can be helpful in identifying why an item is Not Collected.";
-		--TODO: L.PROFESSION_CHECKBOX = "Professions";
 		--TODO: L.PROFESSION_CHECKBOX_TOOLTIP = "Enable this option if you want to see the profession requirements in the tooltip.";
 		--TODO: L.LEVELREQ_CHECKBOX = "Levels";
 		--TODO: L.LEVELREQ_CHECKBOX_TOOLTIP = "Enable this option if you want to see the level requirements in the tooltip.";
@@ -522,7 +521,6 @@ local L = app.L;
 		--TODO: L.ADD_LINKED_CHARACTER_ACCOUNT = "Add Linked Character / Account";
 		--TODO: L.ADD_LINKED_CHARACTER_ACCOUNT_TOOLTIP = "Click here to link a character or account to your account.";
 		--TODO: L.ADD_LINKED_POPUP = "Please type the name of the character or BNET account to link to.";
-		--TODO: L.CHARACTERS = "Characters";
 		--TODO: L.SYNC_CHARACTERS_TOOLTIP = "This shows all of the characters on your account.";
 		--TODO: L.NO_CHARACTERS_FOUND = "No characters found.";
 		--TODO: L.LINKED_ACCOUNTS = "Linked Accounts";
@@ -545,7 +543,6 @@ local L = app.L;
 		--TODO: L.TOGGLE_COMPLETIONIST_MODE = "Toggle Completionist Mode";
 		--TODO: L.TOGGLE_DEBUG_MODE = "Toggle Debug Mode";
 		--TODO: L.TOGGLE_FACTION_MODE = "Toggle Faction Mode";
-		--TODO: L.PREFERENCES = "Preferences";
 		--TODO: L.TOGGLE_COMPLETEDTHINGS = "Toggle Completed Things (Both)";
 		--TODO: L.TOGGLE_COMPLETEDGROUPS = "Toggle Completed Groups";
 		--TODO: L.TOGGLE_COLLECTEDTHINGS = "Toggle Collected Things";
@@ -676,10 +673,10 @@ for key,value in pairs({
 		--TODO: [-28] = "Upper",									-- Upper (Blackrock Spire)
 		--TODO: [-41] = "Cache of Madness",
 	-- World Events
-		--TODO: [-53] = "Midsummer Fire Festival",					-- Midsummer Fire Festival
-		--TODO: [-55] = "Pirates' Day",
-		--TODO: [-59] = "Day of the Dead",
-		--TODO: [-62] = "Stranglethorn Fishing Extravaganza",		-- Stranglethorn Fishing Extravaganza
+		[-53] = "Festival do Fogo do Solstício",					-- Midsummer Fire Festival
+		[-55] = "Dia dos Piratas",									-- Pirates' Day
+		[-59] = "Dia dos Mortos",									-- Day of the Dead
+		[-62] = "Festerê de Pesca da Selva do Espinhaço",			-- Stranglethorn Fishing Extravaganza
 	-- Zul'Aman
 		--TODO: [-78] = "Timed Event",
 		--TODO: [-79] = "First Chest",
@@ -725,7 +722,7 @@ for key,value in pairs({
 	-- Legendaries
 		--TODO: [-364] = LOOT_JOURNAL_LEGENDARIES,					-- Legendaries
 	-- Operation: Mechagon
-		--TODO: [-379] = "Junkyard",								-- Junkyard
+		[-379] = "Ferro-velho",										-- Junkyard
 	-- Icecrown Citadel
 		--TODO: [-393] = "Storming the Citadel",					-- Storming the Citadel
 		--TODO: [-394] = "The Plagueworks",							-- The Plagueworks
@@ -746,8 +743,8 @@ for key,value in pairs({
 	-- Blizzard Events and Anniversaries
 		--TODO: [-519] = "World Events",							-- World Events
 		--TODO: [-520] = "Expansion Pre-Launch",					-- Expansion Pre-Launch
-		--TODO: [-522] = EXPANSION_NAME2..": Zombie Infestation",	-- Wrath of the Lich King: Zombie Infestation
-		--TODO: [-523] = EXPANSION_NAME3..": Elemental Unrest",		-- Cataclysm: Elemental Unrest
+		--TODO: [-522] = "Zalazane's Fall",												-- Zalazane's Fall
+		--TODO: [-523] = "Elemental Unrest",						-- Elemental Unrest
 		--TODO: [-525] = EXPANSION_NAME5..": Iron Horde Incursion",	-- Warlords of Draenor: Iron Horde Incursion
 		--TODO: [-526] = EXPANSION_NAME6..": Legion Invasion",		-- Legion: Legion Invasion
 		--TODO: [-527] = EXPANSION_NAME7..": War of the Thorns",	-- Battle for Azeroth: War of the Thorns
@@ -854,7 +851,7 @@ for key,value in pairs({
 		--TODO: [-1098] = "Side Quests",							-- Side Quests
 	-- Dragonflight
 		--TODO: [-1100] = "Dragon Customization",					-- Dragon Customization
-		--TODO: [-1101] = "Primal Storms",							-- Primal Storms
+		[-1101] = "Tempestades Primevas",							-- Primal Storms
 		[-1110] = "Expedição Escama de Dragão",						-- Dragonscale Expedition
 		--TODO: [-1111] = "Climbing",								-- Climbing
 		[-1120] = "Centauro Maruuk",								-- Maruuk Centaur
@@ -1005,6 +1002,7 @@ for key,value in pairs({
 	[19023] = "|cFFFFFFFFStep 7:|r Página 2351",	-- |cFFFFFFFFStep 7:|r Page 2351
 	[19024] = "Santuário Escondido",	-- Hidden Shrine
 	[19030] = "Monturo de Terra",	-- Mound of Dirt
+	[19877] = "Armário de Velinde",	-- Velinde's Locker
 	[20805] = "Projeto Desprotegido do Rebu",	-- Rizzle's Unguarded Plans	--TODO: This was taken from classic Wowhead
 	[20985] = "Terra Solta",	-- Loose Dirt
 	[20992] = "Escudo Negro",	-- Black Shield
@@ -1101,6 +1099,7 @@ for key,value in pairs({
 	[179499] = "Cesta de Tanino Ôgrico",	-- Ogre Tannin Basket
 	[179501] = "Tesouro do Fiapo Agulhacerta",	-- Knot Thimblejack's Cache	--TODO: This was taken from classic Wowhead
 	[179564] = "Homenagem a Gordok",	-- Gordok Tribute Chest
+	[179565] = "Relicário Empoeirado",	-- Dusty Reliquary
 	[179697] = "Baú do Tesouro da Arena",	-- Arena Treasure Chest
 	[179827] = "Procurados/Desaparecidos/Achados e Perdidos",	-- Wanted/Missing/Lost & Found	--TODO: This was taken from classic Wowhead
 	[179832] = "Travesseiro Ornado da Alma Fada",	-- Pillaclencher's Ornate Pillow
@@ -2440,7 +2439,7 @@ for key,value in pairs({
 	[280576] = "Pergaminho Embrulhado",	-- Encased Scroll
 	[280619] = "Baú Férreo Antigo",	-- Old Ironbound Chest
 	[280727] = "Bilhete Chamuscado",	-- Charred Note
-	--TODO: [280755] = "Quintin's Satchel",	-- Quintin's Satchel
+	[280755] = "Algibeira de Quintino",	-- Quintin's Satchel
 	[280815] = "|cFFFFFFFFStep 1:|r Carta da Srta. Graham I",	-- |cFFFFFFFFStep 1:|r Letter from Ms. Graham I
 	[280836] = "|cFFFFFFFFStep 2:|r Letter from Ms. Graham II",	-- |cFFFFFFFFStep 2:|r Letter from Ms. Graham II
 	[280837] = "|cFFFFFFFFStep 3:|r Carta da Srta. Graham III",	-- |cFFFFFFFFStep 3:|r Letter from Ms. Graham III
@@ -2646,9 +2645,9 @@ for key,value in pairs({
 	[307325] = "Cartaz de Procura-se",	-- Wanted Poster
 	--TODO: [307330] = "Captain's Footlocker",	-- Captain's Footlocker
 	[307748] = "Carta da Empreendimentos S.A.",	-- Venture Co. Letter
-	--TODO: [309498] = "Armor Stand",	-- Armor Stand
+	[309498] = "Estande de Armaduras",	-- Armor Stand
 	[310709] = "Baú Encharcado",	-- Waterlogged Chest
-	--TODO: [311155] = "Ancient Tablet",	-- Ancient Tablet
+	[311155] = "Tabuleta Ancestral",	-- Ancient Tablet
 	[311218] = "Xal'atath, a Lâmina do Império Negro",	-- Xal'atath, Blade of the Black Empire
 	[311902] = "Peças Soltas",	-- Loose Parts
 	[311903] = "Peças Soltas",	-- Loose Parts
@@ -3202,6 +3201,36 @@ for key,value in pairs({
 	[375987] = "Firim no Exílio, Parte 7",	-- Firim in Exile, Part 7
 	[375988] = "Firim no Exílio, Epílogo",	-- Firim in Exile, Epilogue
 	[376041] = "Baú de Cifra Amortalhado",	-- Shrouded Cypher Cache
+	--TODO: [376124] = "Bag of Enchanted Wind",	-- Bag of Enchanted Wind
+	--TODO: [376175] = "Fullsails Supply Chest",	-- Fullsails Supply Chest
+	--TODO: [376213] = "Mysterious Wand",	-- Mysterious Wand
+	--TODO: [376386] = "Disturbed Dirt",	-- Disturbed Dirt
+	--TODO: [376451] = "Bronze Stopwatch",	-- Bronze Stopwatch
+	--TODO: [376587] = "Expedition Scout's Pack",	-- Expedition Scout's Pack
+	--TODO: [376757] = "WANTED: Frigellus",	-- WANTED: Frigellus
+	--TODO: [377114] = "Coil of Heavy Rope",	-- Coil of Heavy Rope
+	--TODO: [377317] = "Treasure Hoard",	-- Treasure Hoard
+	--TODO: [377499] = "On the Origin of Draconic Species",	-- On the Origin of Draconic Species
+	--TODO: [379290] = "Ornamented Statue",	-- Ornamented Statue
+	--TODO: [379321] = "Mysterious Paw Print",	-- Mysterious Paw Print
+	--TODO: [380547] = "Decay-Infused Tanning Oil",	-- Decay-Infused Tanning Oil
+	--TODO: [380902] = "Fields of Ferocity",	-- Fields of Ferocity
+	--TODO: [381045] = "Replica Dragon Goblet",	-- Replica Dragon Goblet
+	--TODO: [381296] = "Horrible Mess",	-- Horrible Mess
+	--TODO: [381297] = "Misplaced Luggage",	-- Misplaced Luggage
+	--TODO: [381650] = "Archivist's Request",	-- Archivist's Request
+	--TODO: [381653] = "Fang Flap Fire Signups",	-- Fang Flap Fire Signups
+	--TODO: [381667] = "Archivist's Request",	-- Archivist's Request
+	--TODO: [381668] = "Archivist's Request",	-- Archivist's Request
+	--TODO: [381669] = "Archivist's Request",	-- Archivist's Request
+	--TODO: [381670] = "Archivist's Request",	-- Archivist's Request
+	--TODO: [381671] = "Archivists' Request",	-- Archivists' Request
+	--TODO: [381672] = "Archivist's Request",	-- Archivist's Request
+	--TODO: [381687] = "Discarded Note",	-- Discarded Note
+	--TODO: [381701] = "WANTED: Mara'nar the Thunderous",	-- WANTED: Mara'nar the Thunderous
+	--TODO: [382029] = "Disturbed Dirt",	-- Disturbed Dirt
+	--TODO: [382166] = "The Ruby Fest!",	-- The Ruby Fest!
+	--TODO: [500000] = "Inspiration Catalyst Console",	-- Inspiration Catalyst Console
 	[9962198] = "Poça de Lodo Improvisada do Proscrito",	-- Outcast's Makeshift Muckpool
 	--TODO: [9999890] = "Corrupted Loot",	-- Corrupted Loot
 	--TODO: [9999891] = "Main Objective Only",	-- Main Objective Only

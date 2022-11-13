@@ -423,7 +423,6 @@ L.TAB_SPACING = -20;	-- This is to control spacing between tab names in Settings
 		L.INCLUDE_ORIGINAL_CHECKBOX_TOOLTIP = "Включите данную опцию, если Вам нравится видеть в подсказке оригинальный источник среди списка Общих Обликов.";
 		L.ONLY_RELEVANT_CHECKBOX = "Только Уместные";
 		L.ONLY_RELEVANT_CHECKBOX_TOOLTIP = "Включите данную опцию, если Вы хотите видеть только те общие облики, которые Ваш персонаж может открыть.\n\nПримечание: Мы рекомендуем оставить эту опцию выключенной, поскольку знание требований для разблокирования может быть полезным для понимания, почему предмет считается Не Собранным.";
-		L.PROFESSION_CHECKBOX = "Профессии";
 		L.PROFESSION_CHECKBOX_TOOLTIP = "Включите данную опцию, если Вы хотите видеть в подсказке требуемые профессии.";
 		L.LEVELREQ_CHECKBOX = "Уровни";
 		L.LEVELREQ_CHECKBOX_TOOLTIP = "Включите данную опцию, если Вы хотите видеть в подсказке требования к уровню.";
@@ -526,7 +525,6 @@ L.TAB_SPACING = -20;	-- This is to control spacing between tab names in Settings
 		L.ADD_LINKED_CHARACTER_ACCOUNT = "Прикрепить Персонажа / Аккаунт";
 		L.ADD_LINKED_CHARACTER_ACCOUNT_TOOLTIP = "Нажмите, чтобы прикрепить персонажа или учётную запись к Вашей учётной записи.";
 		L.ADD_LINKED_POPUP = "Пожалуйста, введите имя персонажа или учётную запись BNET для прикрепления.";
-		L.CHARACTERS = "Персонажи";
 		L.SYNC_CHARACTERS_TOOLTIP = "Здесь отображаются все персонажи на Вашей учётной записи.";
 		L.NO_CHARACTERS_FOUND = "Персонажей не найдено.";
 		L.LINKED_ACCOUNTS = "Прикреплённые Аккаунты";
@@ -664,8 +662,8 @@ for key,value in pairs({
 		[-41] = "Тайник Безумия",
 	-- World Events
 		[-53] = "Огненный Солнцеворот",							-- Midsummer Fire Festival
-		[-55] = "День пирата",
-		[-59] = "День мертвых",
+		[-55] = "День пирата",									-- Pirates' Day
+		[-59] = "День мертвых",									-- Day of the Dead
 		[-62] = "Рыбомания Тернистой долины",					-- Stranglethorn Fishing Extravaganza
 	-- Zul'Aman
 		[-78] = "Временное Событие",
@@ -735,8 +733,8 @@ for key,value in pairs({
 	-- Blizzard Events and Anniversaries
 		[-519] = "Игровые события",									-- World Events
 		[-520] = "Препатч",											-- Expansion Pre-Launch
-		[-522] = "Wrath of the Lich King: Нашествие зомби",			-- Wrath of the Lich King: Zombie Infestation
-		[-523] = "Cataclysm: Бейство элементалей",					-- Cataclysm: Elemental Unrest
+		[-522] = "Падение Залазана",								-- Zalazane's Fall
+		[-523] = "Бейство элементалей",								-- Elemental Unrest
 		[-525] = "Warlords of Draenor: Вторжение Железной Орды",	-- Warlords of Draenor: Iron Horde Incursion
 		[-526] = "Legion: Вторжение Легиона",						-- Legion: Legion Invasion
 		[-527] = "Battle for Azeroth: Война Шипов",					-- Battle for Azeroth: War of the Thorns
@@ -841,7 +839,7 @@ for key,value in pairs({
 		[-1098] = "Побочные Задания",								-- Side Quests
 	-- Dragonflight
 		[-1100] = "Кастомизации Драконов",							-- Dragon Customization
-		--TODO: [-1101] = "Primal Storms",							-- Primal Storms
+		[-1101] = "Изначальные Бури",								-- Primal Storms
 		[-1110] = "Драконья экспедиция",							-- Dragonscale Expedition
 		--TODO: [-1111] = "Climbing",								-- Climbing
 		[-1120] = "Кентавры Маруук",								-- Maruuk Centaur
@@ -995,6 +993,7 @@ for key,value in pairs({
 	[19023] = "|cFFFFFFFFШаг 7:|r Страница 2351",	-- |cFFFFFFFFStep 7:|r Page 2351
 	[19024] = "Потаенное святилище",	-- Hidden Shrine
 	[19030] = "Куча грязи",	-- Mound of Dirt
+	[19877] = "Сундучок Велинды",	-- Velinde's Locker
 	[20805] = "Неохраняемые чертежи Риззла",	-- Rizzle's Unguarded Plans
 	[20985] = "Рыхлая земля",	-- Loose Dirt
 	[20992] = "Черный щит",	-- Black Shield
@@ -1091,6 +1090,7 @@ for key,value in pairs({
 	[179499] = "Огрский дубильный чан",	-- Ogre Tannin Basket
 	[179501] = "Тайник Уззла Наперстяка",	-- Knot Thimblejack's Cache
 	[179564] = "Приношения Гордока",	-- Gordok Tribute Chest
+	[179565] = "Пыльный реликварий",	-- Dusty Reliquary
 	[179697] = "Сундук с сокровищами арены",	-- Arena Treasure Chest
 	[179827] = "Розыск/Пропал без вести/Найден",	-- Wanted/Missing/Lost & Found
 	[179832] = "Вышитая подушка Крепких Тисков",	-- Pillaclencher's Ornate Pillow
@@ -3192,6 +3192,36 @@ for key,value in pairs({
 	[375987] = "Фирим в изгнании, часть 7",	-- Firim in Exile, Part 7
 	[375988] = "Фирим в изгнании, эпилог",	-- Firim in Exile, Epilogue
 	[376041] = "Замаскированный тайник шифров",	-- Shrouded Cypher Cache
+	--TODO: [376124] = "Bag of Enchanted Wind",	-- Bag of Enchanted Wind
+	--TODO: [376175] = "Fullsails Supply Chest",	-- Fullsails Supply Chest
+	--TODO: [376213] = "Mysterious Wand",	-- Mysterious Wand
+	--TODO: [376386] = "Disturbed Dirt",	-- Disturbed Dirt
+	--TODO: [376451] = "Bronze Stopwatch",	-- Bronze Stopwatch
+	--TODO: [376587] = "Expedition Scout's Pack",	-- Expedition Scout's Pack
+	--TODO: [376757] = "WANTED: Frigellus",	-- WANTED: Frigellus
+	--TODO: [377114] = "Coil of Heavy Rope",	-- Coil of Heavy Rope
+	--TODO: [377317] = "Treasure Hoard",	-- Treasure Hoard
+	--TODO: [377499] = "On the Origin of Draconic Species",	-- On the Origin of Draconic Species
+	--TODO: [379290] = "Ornamented Statue",	-- Ornamented Statue
+	--TODO: [379321] = "Mysterious Paw Print",	-- Mysterious Paw Print
+	--TODO: [380547] = "Decay-Infused Tanning Oil",	-- Decay-Infused Tanning Oil
+	--TODO: [380902] = "Fields of Ferocity",	-- Fields of Ferocity
+	--TODO: [381045] = "Replica Dragon Goblet",	-- Replica Dragon Goblet
+	--TODO: [381296] = "Horrible Mess",	-- Horrible Mess
+	--TODO: [381297] = "Misplaced Luggage",	-- Misplaced Luggage
+	--TODO: [381650] = "Archivist's Request",	-- Archivist's Request
+	--TODO: [381653] = "Fang Flap Fire Signups",	-- Fang Flap Fire Signups
+	--TODO: [381667] = "Archivist's Request",	-- Archivist's Request
+	--TODO: [381668] = "Archivist's Request",	-- Archivist's Request
+	--TODO: [381669] = "Archivist's Request",	-- Archivist's Request
+	--TODO: [381670] = "Archivist's Request",	-- Archivist's Request
+	--TODO: [381671] = "Archivists' Request",	-- Archivists' Request
+	--TODO: [381672] = "Archivist's Request",	-- Archivist's Request
+	--TODO: [381687] = "Discarded Note",	-- Discarded Note
+	--TODO: [381701] = "WANTED: Mara'nar the Thunderous",	-- WANTED: Mara'nar the Thunderous
+	--TODO: [382029] = "Disturbed Dirt",	-- Disturbed Dirt
+	--TODO: [382166] = "The Ruby Fest!",	-- The Ruby Fest!
+	--TODO: [500000] = "Inspiration Catalyst Console",	-- Inspiration Catalyst Console
 	[9962198] = "Самодельная лужа жижи изгоя",	-- Outcast's Makeshift Muckpool
 	[9999890] = "Оскверненная добыча",	-- Corrupted Loot
 	[9999891] = "Только Основная Задача",	-- Main Objective Only
@@ -3267,6 +3297,7 @@ do a[key] = value; end
 -- didn't use the same localization for the instance. Sorry.
 local a = L.SAVED_TO_DJ_INSTANCES;
 for key,value in pairs({
+	["Огненные Недра"] = "Огненные недра";	-- Molten Core
 })
 do a[key] = value; end
 

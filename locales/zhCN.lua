@@ -421,7 +421,6 @@ local L = app.L;
 		L.INCLUDE_ORIGINAL_CHECKBOX_TOOLTIP = "如果你真的喜欢在鼠标提示中的共享外观列表中看到原始来源信息，请启用此选项。";
 		L.ONLY_RELEVANT_CHECKBOX = "仅相关";
 		L.ONLY_RELEVANT_CHECKBOX_TOOLTIP = "如果你只想看到你的角色可以解锁的共享外观，请启用此选项。\n\n注意：我们建议你保持这个关闭，因为了解一个物品的解锁要求可以帮助识别为什么一个物品没有被收藏。";
-		L.PROFESSION_CHECKBOX = "专业";
 		L.PROFESSION_CHECKBOX_TOOLTIP = "如果您想在鼠标提示中查看专业要求，请启用此选项。";
 		L.LEVELREQ_CHECKBOX = "等级";
 		L.LEVELREQ_CHECKBOX_TOOLTIP = "如果您想在鼠标提示中查看等级要求，请启用此选项。";
@@ -524,7 +523,6 @@ local L = app.L;
 		L.ADD_LINKED_CHARACTER_ACCOUNT = "添加关联角色/帐号";
 		L.ADD_LINKED_CHARACTER_ACCOUNT_TOOLTIP = "单击此处将角色或帐号链接到您的帐号。";
 		L.ADD_LINKED_POPUP = "请输入要链接的角色或暴雪战网帐号的名称。";
-		L.CHARACTERS = "角色";
 		L.SYNC_CHARACTERS_TOOLTIP = "这会显示您帐号中的所有角色。";
 		L.NO_CHARACTERS_FOUND = "未找到角色。";
 		L.LINKED_ACCOUNTS = "链接帐号";
@@ -689,8 +687,8 @@ for key,value in pairs({
 	-- World Events
 		[-53] = "仲夏火焰节",											-- Midsummer Fire Festival
 		[-55] = "海盗日",												-- Pirates' Day
-		[-59] = "亡灵节",												-- Day of the Dead
-		[-62] = "荆棘谷钓鱼大赛",									-- Stranglethorn Fishing Extravaganza
+		[-59] = "悼念日",												-- Day of the Dead
+		[-62] = "荆棘谷钓鱼大赛",											-- Stranglethorn Fishing Extravaganza
 	-- Zul'Aman
 		[-78] = "限时事件",												-- Timed Event
 		[-79] = "一箱",												-- First Chest
@@ -747,8 +745,8 @@ for key,value in pairs({
 	-- Blizzard Events and Anniversaries
 		[-519] = "世界事件",											-- World Events
 		[-520] = "资料片前夕",											-- Expansion Pre-Launch
-		[-522] = EXPANSION_NAME2.."：僵尸感染",							-- Wrath of the Lich King: Zombie Infestation
-		[-523] = EXPANSION_NAME3.."：元素动荡",							-- Cataclysm: Elemental Unrest
+		[-522] = "扎拉赞恩的灭亡",										-- Zalazane's Fall
+		[-523] = "元素动荡",												-- Elemental Unrest
 		[-525] = EXPANSION_NAME5.."：钢铁部落入侵",						-- Warlords of Draenor: Iron Horde Incursion
 		[-526] = EXPANSION_NAME6.."：军团入侵",							-- Legion: Legion Invasion
 		[-527] = EXPANSION_NAME7.."：荆棘战争",							-- Battle for Azeroth: War of the Thorns
@@ -861,7 +859,7 @@ for key,value in pairs({
 		--TODO: [-1098] = "Side Quests",							-- Side Quests
 	-- Dragonflight
 		--TODO: [-1100] = "Dragon Customization",					-- Dragon Customization
-		--TODO: [-1101] = "Primal Storms",							-- Primal Storms
+		[-1101] = "原始风暴",											-- Primal Storms
 		[-1110] = "龙鳞探险队",											-- Dragonscale Expedition
 		--TODO: [-1111] = "Climbing",								-- Climbing
 		[-1120] = "马鲁克半人马",											-- Maruuk Centaur
@@ -923,6 +921,7 @@ for key,value in pairs({
 })
 do a[key] = value; end
 if GetLocale() == "zhTW" then
+	a[-1101] = "洪荒風暴";												-- Primal Storms
 	a[-1110] = "龍鱗遠征隊";												-- Dragonscale Expedition
 	a[-1120] = "莫魯克半人馬";											-- Maruuk Centaur
 	a[-1130] = "伊斯凱拉巨牙海民";										-- Iskaara Tuskarr
@@ -1016,6 +1015,7 @@ for key, value in pairs({
 	[19023] = "|cFFFFFFFF第7步:|r 第2351页",	-- |cFFFFFFFFStep 7:|r Page 2351
 	[19024] = "隐蔽的神龛",	-- Hidden Shrine
 	[19030] = "一堆泥土",	-- Mound of Dirt
+	[19877] = "维琳德的柜子",	-- Velinde's Locker
 	[20805] = "瑞兹尔的计划",	-- Rizzle's Unguarded Plans	--TODO: This was taken from classic Wowhead
 	[20985] = "松软的泥土",	-- Loose Dirt
 	[20992] = "黑色盾牌",	-- Black Shield
@@ -1112,6 +1112,7 @@ for key, value in pairs({
 	[179499] = "食人魔鞣酸篮",	-- Ogre Tannin Basket
 	[179501] = "诺特·希姆加克的储物箱",	-- Knot Thimblejack's Cache	--TODO: This was taken from classic Wowhead
 	[179564] = "戈多克贡品",	-- Gordok Tribute Chest
+	[179565] = "覆满灰尘的箱子",	-- Dusty Reliquary
 	[179697] = "竞技场财宝箱",	-- Arena Treasure Chest
 	[179827] = "通缉/寻物/招领",	-- Wanted/Missing/Lost & Found	--TODO: This was taken from classic Wowhead
 	--TODO: [179832] = "Pillaclencher's Ornate Pillow",	-- Pillaclencher's Ornate Pillow
@@ -3213,6 +3214,36 @@ for key, value in pairs({
 	[375987] = "流亡者菲历姆，第七章",	-- Firim in Exile, Part 7
 	--TODO: [375988] = "Firim in Exile, Epilogue",	-- Firim in Exile, Epilogue
 	[376041] = "氤氲密文宝箱",	-- Shrouded Cypher Cache
+	--TODO: [376124] = "Bag of Enchanted Wind",	-- Bag of Enchanted Wind
+	--TODO: [376175] = "Fullsails Supply Chest",	-- Fullsails Supply Chest
+	--TODO: [376213] = "Mysterious Wand",	-- Mysterious Wand
+	--TODO: [376386] = "Disturbed Dirt",	-- Disturbed Dirt
+	--TODO: [376451] = "Bronze Stopwatch",	-- Bronze Stopwatch
+	--TODO: [376587] = "Expedition Scout's Pack",	-- Expedition Scout's Pack
+	--TODO: [376757] = "WANTED: Frigellus",	-- WANTED: Frigellus
+	--TODO: [377114] = "Coil of Heavy Rope",	-- Coil of Heavy Rope
+	--TODO: [377317] = "Treasure Hoard",	-- Treasure Hoard
+	--TODO: [377499] = "On the Origin of Draconic Species",	-- On the Origin of Draconic Species
+	--TODO: [379290] = "Ornamented Statue",	-- Ornamented Statue
+	--TODO: [379321] = "Mysterious Paw Print",	-- Mysterious Paw Print
+	--TODO: [380547] = "Decay-Infused Tanning Oil",	-- Decay-Infused Tanning Oil
+	--TODO: [380902] = "Fields of Ferocity",	-- Fields of Ferocity
+	--TODO: [381045] = "Replica Dragon Goblet",	-- Replica Dragon Goblet
+	--TODO: [381296] = "Horrible Mess",	-- Horrible Mess
+	--TODO: [381297] = "Misplaced Luggage",	-- Misplaced Luggage
+	--TODO: [381650] = "Archivist's Request",	-- Archivist's Request
+	--TODO: [381653] = "Fang Flap Fire Signups",	-- Fang Flap Fire Signups
+	--TODO: [381667] = "Archivist's Request",	-- Archivist's Request
+	--TODO: [381668] = "Archivist's Request",	-- Archivist's Request
+	--TODO: [381669] = "Archivist's Request",	-- Archivist's Request
+	--TODO: [381670] = "Archivist's Request",	-- Archivist's Request
+	--TODO: [381671] = "Archivists' Request",	-- Archivists' Request
+	--TODO: [381672] = "Archivist's Request",	-- Archivist's Request
+	--TODO: [381687] = "Discarded Note",	-- Discarded Note
+	--TODO: [381701] = "WANTED: Mara'nar the Thunderous",	-- WANTED: Mara'nar the Thunderous
+	--TODO: [382029] = "Disturbed Dirt",	-- Disturbed Dirt
+	--TODO: [382166] = "The Ruby Fest!",	-- The Ruby Fest!
+	--TODO: [500000] = "Inspiration Catalyst Console",	-- Inspiration Catalyst Console
 	[9962198] = "流亡者的简易泥池",	-- Outcast's Makeshift Muckpool
 	--TODO: [9999890] = "Corrupted Loot",	-- Corrupted Loot
 	--TODO: [9999891] = "Main Objective Only",	-- Main Objective Only

@@ -2,7 +2,7 @@
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
 
-root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
+root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = ADDED_DFREL }, {
 	n(PROFESSIONS, {
 		-- GENERAL PROFESSION
 		q(67564, {	-- Artisan's Courier
@@ -45,8 +45,14 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_DF }
 				i(194714),	-- Miguel's Gift
 				-- Recipes
 				r(377978,{["u"]=15}),	-- Heart in a Bottle (ALCHEMY)
+				r(377981,{["u"]=15}),	-- Heart in a Bottle (BLACKSMITHING)
+				r(377982,{["u"]=15}),	-- Heart in a Bottle (ENCHANTING)
 				r(377983,{["u"]=15}),	-- Heart in a Bottle (ENGINEERING)
+				r(377984,{["u"]=15}),	-- Heart in a Bottle (HERBALISM)
+				r(377915,{["u"]=15}),	-- Heart in a Bottle (JEWELCRAFTING)
+				r(377989,{["u"]=15}),	-- Heart in a Bottle (LEATHERWORKING)
 				r(377987,{["u"]=15}),	-- Heart in a Bottle (MINING)
+				r(377988,{["u"]=15}),	-- Heart in a Bottle (SKINNING)
 				r(377986,{["u"]=15}),	-- Heart in a Bottle (TAILORING)
 			},
 		}),
@@ -60,7 +66,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_DF }
 			["g"] = {
 				i(193487),	-- Alchemist's Hat
 				i(193615),	-- Jeweler's Tool Apron
-				i(193486),	-- Leatherworker's Smock
+				i(193486),	-- Resilient Smock
 				i(193482),	-- Skinner's Cap
 				i(193534),	-- Wildercloth Chef's Hat
 				i(193529),	-- Wildercloth Fishing Cap
@@ -197,10 +203,42 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_DF }
 			}),
 		}),
 		prof(BLACKSMITHING, {
+			filter(RECIPES, {
+				["description"] = "These are learned by specialization.",
+				["g"] = {
+					r(376700),	-- Illustrious Insight
+					r(371412),	-- Khaz'gorite Blacksmith's Hammer
+					r(371374),	-- Khaz'gorite Blacksmith's Toolbox
+					r(371366),	-- Khaz'gorite Pickaxe
+					r(393853),	-- Master's Hammer
+					r(367608),	-- Primal Molten Breastplate
+					r(367622),	-- Primal Molten Defender
+					r(367606),	-- Primal Molten Gauntlets
+					r(365734),	-- Primal Molten Greataxe
+					r(367602),	-- Primal Molten Greatbelt
+					r(367605),	-- Primal Molten Helm
+					r(367604),	-- Primal Molten Legplates
+					r(367585),	-- Primal Molten Longsword
+					r(367586),	-- Primal Molten Mace
+					r(367603),	-- Primal Molten Pauldrons
+					r(367607),	-- Primal Molten Sabatons
+					r(365730),	-- Primal Molten Shortblade
+					r(365731),	-- Primal Molten Spellblade
+					r(367601),	-- Primal Molten Vambraces
+					r(365729),	-- Primal Molten Warglaive
+				},
+			}),
 			q(70358, {	-- Dragon Isles Blacksmithing
 				--["sourceQuests"] = {  },	--
 				["provider"] = { "n", 192563 },	-- Kholmar Sunrunner
 				["coord"] = { 76.4, 34.4, THE_WAKING_SHORES },
+			}),
+			q(67221, {	-- A Head For Metal
+			-- Dont know more info about this quest
+				["maps"] = {THE_WAKING_SHORES},
+				["g"] = {
+					i(194963),	-- Plans: Black Dragon Seared Alloy
+				},
 			}),
 		}),
 		prof(COOKING, {
@@ -208,6 +246,34 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_DF }
 				--["sourceQuests"] = {  },	--
 				["provider"] = { "n", 198094 },	-- Head Chef Stacks
 				["coord"] = { 76.4, 35.7, THE_WAKING_SHORES },
+			}),
+		}),
+		prof(ENCHANTING, {
+			filter(RECIPES, {
+				["description"] = "These are learned by specialization.",
+				["g"] = {
+					r(389547),	-- Burning Devotion
+					r(391302),	-- Crystalline Shatter
+					r(389301),	-- Devotion of Avoidance
+					r(389303),	-- Devotion of Leech
+					r(389304),	-- Devotion of Speed
+					r(389519),	-- Draconic Inspiration
+					r(389530),	-- Draconic Resourcefulness
+					r(389549),	-- Earthen Devotion
+					r(391304),	-- Elemental Shatter
+					r(389551),	-- Frozen Devotion
+					r(391812),	-- Illusory Adornment: Order
+					r(391202),	-- Illustrious Insight
+					r(390855),	-- Khadgar's Disenchanting Rod
+					r(389417),	-- Reserve of Intellect
+					r(390825),	-- Runed Khaz'gorite Rod
+					r(391808),	-- Scepter of Spectacle: Order
+					r(390831),	-- Sophic Amalgamation
+					r(389550),	-- Sophic Devotion
+					r(391179),	-- Torch of Primal Awakening
+					r(389558),	-- Wafting Devotion
+					r(389410),	-- Waking Stats
+				},
 			}),
 		}),
 		prof(ENGINEERING, {
@@ -251,7 +317,50 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_DF }
 				["races"] = HORDE_ONLY,
 			}),
 		}),
+		prof(HERBALISM, {
+			filter(RECIPES, {
+				["description"] = "These are learned by specialization.",
+				["g"] = {
+					r(391088),	-- Refine Herbs++
+					r(391089),	-- Refine Herbs+++
+				},
+			}),
+		}),
 		prof(JEWELCRAFTING, {
+			filter(RECIPES, {
+				["description"] = "These are learned by specialization.",
+				["g"] = {
+					r(374483),	-- Blotting Sand
+					r(374442),	-- Crafty Alexstraszite
+					r(374450),	-- Crafty Ysemerald
+					r(374445),	-- Deadly Alexstraszite
+					r(374547),	-- Dreamer's Vision
+					r(374549),	-- Earthwarden's Prize
+					r(392697),	-- Empty Soul Cage
+					r(374467),	-- Fierce Illimited Diamond
+					r(374459),	-- Fractured Neltharite
+					r(391782),	-- Illustrious Insight
+					r(374465),	-- Inscribed Illimited Diamond
+					r(374551),	-- Jeweled Dragon's Heart
+					r(374522),	-- Jeweled Offering
+					r(374548),	-- Keeper's Glory
+					r(374502),	-- Narcissist's Sculpture
+					r(374484),	-- Pounce
+					r(374518),	-- Projection Prism
+					r(374546),	-- Queen's Gift
+					r(374455),	-- Quick Ysemerald
+					r(374470),	-- Resplendent Illimited Diamond
+					r(374497),	-- Signet of Titanic Insight
+					r(374468),	-- Skillful Illimited Diamond
+					r(377960),	-- Split-Lens Specs
+					r(374508),	-- Statue of Tyr's Herald
+					r(374449),	-- Stormy Malygite
+					r(374472),	-- Tiered Medallion Setting
+					r(394621),	-- Torc of Passed Time
+					r(374448),	-- Zen Malygite
+					r(374458),	-- Zen Neltharite
+				},
+			}),
 			q(70365, {	-- To the Dragon Isles: Jewelcrafting
 				["sourceQuests"] = { 66057 },	-- Restoring the Faith
 				["provider"] = { "n", 192121 },	-- Falron Greygold
@@ -269,6 +378,33 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_DF }
 			}),
 		}),
 		prof(LEATHERWORKING, {
+			filter(RECIPES, {
+				["description"] = "These are learned by specialization.",
+				["g"] = {
+					r(375125),	-- Bow of the Dragon Hunters
+					r(375159),	-- Fang Adornments
+					r(375123),	-- Flame-Touched Chain
+					r(375117),	-- Flame-Touched Chainmail
+					r(375124),	-- Flame-Touched Cuffs
+					r(375119),	-- Flame-Touched Handguards
+					r(375120),	-- Flame-Touched Helmet
+					r(375121),	-- Flame-Touched Legguards
+					r(375122),	-- Flame-Touched Spaulders
+					r(375118),	-- Flame-Touched Treads
+					r(375197),	-- Flaring Cowl
+					r(375166),	-- Illustrious Insight
+					r(375115),	-- Life-Bound Belt
+					r(375116),	-- Life-Bound Bindings
+					r(375110),	-- Life-Bound Boots
+					r(375112),	-- Life-Bound Cap
+					r(375109),	-- Life-Bound Chestpiece
+					r(375111),	-- Life-Bound Gloves
+					r(375114),	-- Life-Bound Shoulderpads
+					r(375113),	-- Life-Bound Trousers
+					r(375160),	-- Toxified Armor Patch
+					r(375199),	-- Witherrot Tome
+				},
+			}),
 			q(70363, {    -- To the Dragon Isles: Leatherworking
 				--["sourceQuests"] = {  },	-- Unknown
 				["provider"] = { "n", 192048 },    -- Deirdre Flemmin
@@ -319,6 +455,29 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_DF }
 			}),
 		}),
 		prof(SKINNING, {
+			filter(RECIPES, {
+				["description"] = "These are learned by specialization.",
+				["g"] = {
+					r(383090),	-- Aileron Seamoth Lure
+					r(383128),	-- Bottled Pheromones
+					r(375787),	-- Cerulean Spinefish Lure
+					r(383132),	-- Elusive Creature Bait
+					r(385984),	-- Infusion: Decay
+					r(385982),	-- Infusion: Earth
+					r(385972),	-- Infusion: Frost
+					r(385985),	-- Infusion: Titan
+					r(383094),	-- Islefin Dorado Lure
+					r(375731),	-- Refine Hides++
+					r(375763),	-- Refine Hides+++
+					r(376611),	-- Refine Leather++
+					r(376612),	-- Refine Leather+++
+					r(376613),	-- Refine Scales++
+					r(376614),	-- Refine Scales+++
+					r(375773),	-- Scalebelly Mackerel Lure
+					r(375786),	-- Temporal Dragonhead Lure
+					r(375782),	-- Thousandbite Piranha Lure
+				},
+			}),
 			q(70363, {	-- To the Dragon Isles: Skinning
 				--["sourceQuests"] = {  },	-- Unknown
 				["provider"] = { "n", 192558 },    -- Toninaar
@@ -361,6 +520,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_DF }
 })));
 
 
+--TODO: should we organize this section differently with the HQTs? There's going to be a million of them...
 root("HiddenQuestTriggers", m(DRAGON_ISLES, {
 	m(VALDRAKKEN, {
 		q(71705),	-- When I craft item 193388 first time, leatherworking. But may due to / First time/ getting artisans mettle?

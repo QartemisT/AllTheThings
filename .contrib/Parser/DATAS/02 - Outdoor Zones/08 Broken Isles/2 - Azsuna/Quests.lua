@@ -782,6 +782,7 @@ root("Zones", m(BROKEN_ISLES, {
 			}),
 			n(BONUS_OBJECTIVES, sharedData({
 				["lockCriteria"] = { 1, "lvl", 45 },
+				["description"] = "This can be completed in party-sync with a character who is in Chromie Time for Legion.",
 			},{
 				-- TODO: Check SQ, also probably can't do after a certain level
 				q(37965),	-- A Tainted Vintage

@@ -454,7 +454,10 @@ pet(74610, 341);	-- Lunar Lantern
 pet(139791, 1922);	-- Lurking Owl Kitten
 pet(30360, 111);	-- Lurky's Egg (Lurky)
 pet(169353, 2687);	-- Lustrous Glimmershell
+-- #if AFTER 5.4.0
+-- Due to special circumstances, this pet is not actually permanently collectible until patch 5.4.0.
 pet(46831, 1351);	-- Macabre Marionette
+-- #endif
 pet(67275, 292);	-- Magic Lamp
 pet(27445, 132);	-- Magical Crawdad Box (Magical Crawdad)
 pet(142084, 1953);	-- Magnataur Hunting Horn (Snobold Runt)
@@ -1098,8 +1101,17 @@ pet(0, 3249, {			-- Lil' Ursoc
 -- PATCH 10.0.0 --
 ------------------
 -- SOURCED
+pet(191886, 3274);	-- Alvin the Anvil
+pet(198726, 3380);	-- Black Skitterbug
 pet(199688, 3279);	-- Bronze Racing Enthusiast
+pet(199326, 3376);	-- Chip
 pet(191941, 3264);	-- Crystalline Mini-Monster
+pet(198725, 3381);	-- Gray Marmoni
+pet(193885, 3345);	-- Jeweled Amber Whelpling
+pet(193888, 3347);	-- Jeweled Emerald Whelpling
+pet(193889, 3256);	-- Jeweled Onyx Whelpling
+pet(193887, 3346);	-- Jeweled Ruby Whelpling
+pet(193886, 3344);	-- Jeweled Sapphire Whelpling
 
 pet(199175, 3316);	-- Lubbins
 
@@ -1109,6 +1121,7 @@ pet(193484, 3302);	-- Pilot
 pet(193572, 3306);	-- Quack-E
 pet(191936, 3263);	-- Secretive Frogduck
 pet(198353, 3368);	-- Shiverweb Broodling
+pet(200479, 3390);	-- Sophic Amalgamation
 pet(191932, 3262);	-- Violet Violence
 pet(193619, 3319);	-- Yipper
 
@@ -1123,7 +1136,7 @@ pet(0, 3282);	-- Swoglet
 pet(0, 3276);	-- Treeflitter
 
 -- NOT SOURCED YET
-pet(193889, 3256);	-- Jeweled Onyx Whelpling
+
 pet(191126, 3256);	-- Jeweled Onyx Whelpling / Obsidian Whelpling
 pet(0, 3257);	-- Test Beetle
 pet(191915, 3259);	-- Time-Lost Feral Rabbit
@@ -1134,7 +1147,6 @@ pet(193620, 3267);	-- Time-Lost Slyvern
 pet(0, 3268);	-- Swog
 pet(193852, 3269);	-- Azure Frillfish
 pet(192459, 3270);	-- Jean's Lucky Fish
-pet(191886, 3274);	-- Alvin the Anvil
 pet(193066, 3275);	-- Chestnut
 pet(193068, 3277);	-- Time-Lost Treeflitter
 pet(193071, 3278);	-- Pistachio
@@ -1190,10 +1202,7 @@ pet(0, 3340);	-- Blue Dragon Whelp
 pet(0, 3341);	-- Red Dragon Whelp
 pet(0, 3342);	-- Spyragos
 pet(0, 3343);	-- Bronze Dragon Whelp
-pet(193886, 3344);	-- Jeweled Sapphire Whelpling
-pet(193885, 3345);	-- Jeweled Amber Whelpling
-pet(193887, 3346);	-- Jeweled Ruby Whelpling
-pet(193888, 3347);	-- Jeweled Emerald Whelpling
+
 pet(0, 3348);	-- Primal Stormling
 pet(0, 3351);	-- Grizzlefur Cub
 pet(0, 3352);	-- Razortooth Bear Cub
@@ -1224,12 +1233,12 @@ pet(191929);	-- zzOld - [PH] White Flying Squirrel (REUSE)
 
 
 
-pet(0, 3376);	-- Chip
+
 pet(0, 3377);	-- Gwosh
 pet(0, 3378);	-- Magic Nibbler
 pet(0, 3379);	-- Crimson Proto-Whelp
-pet(0, 3380);	-- Black Skitterbug
-pet(0, 3381);	-- Gray Marmoni
+
+
 pet(0, 3382);	-- Stormie
 pet(0, 3384);	-- Storm-Touched Bluefeather
 pet(0, 3385);	-- Storm-Touched Stomper
@@ -1237,7 +1246,6 @@ pet(0, 3386);	-- Faceripper
 pet(0, 3387);	-- Bloodbiter
 pet(0, 3388);	-- Tina
 pet(0, 3389);	-- The Quackcestor
-pet(0, 3390);	-- Titan-Touched Elemental
 pet(0, 3391);	-- Phantus
 pet(0, 3392);	-- Skritches
 pet(0, 3393);	-- Anubisath Idol

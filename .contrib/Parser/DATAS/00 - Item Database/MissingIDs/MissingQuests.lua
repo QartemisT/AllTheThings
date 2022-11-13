@@ -1,10 +1,5 @@
 --[[
 5.0.3.15890
-q(26),	-- A Lesson to Learn,		TBC: A Lesson to Learn,		CLASSIC: A Lesson to Learn
-q(27),	-- A Lesson to Learn,		TBC: A Lesson to Learn,		CLASSIC: A Lesson to Learn
-q(28),	-- Trial of the Lake,		TBC: Trial of the Lake,		CLASSIC: Trial of the Lake
-q(29),	-- Trial of the Lake,		TBC: Trial of the Lake,		CLASSIC: Trial of the Lake
-q(30),	-- Trial of the Sea Lion,		TBC: Trial of the Sea Lion,		CLASSIC: Trial of the Sea Lion
 q(63),	-- Call of Water,		TBC: Call of Water,		CLASSIC: Call of Water
 q(73),	-- <TXT> No Reward,		TBC: <TXT> No Reward,		CLASSIC: <TXT> No Reward
 q(96),	-- Call of Water,		TBC: Call of Water,		CLASSIC: Call of Water
@@ -15,13 +10,8 @@ q(242),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
 q(259),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
 q(260),	-- <UNUSED>,		CLASSIC: <UNUSED>
 q(261),	-- Down the Scarlet Path,		TBC: Down the Scarlet Path,		CLASSIC: Down the Scarlet Path
-q(272),	-- Trial of the Sea Lion,		TBC: Trial of the Sea Lion,		CLASSIC: Trial of the Sea Lion
 q(352),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
 q(406),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
-q(456),	-- The Balance of Nature,		TBC: The Balance of Nature,		CLASSIC: The Balance of Nature
-q(457),	-- Nature's Dues,		TBC: The Balance of Nature,		CLASSIC: The Balance of Nature
-q(458),	-- The Woodland Protector,		TBC: The Woodland Protector,		CLASSIC: The Woodland Protector
-q(459),	-- Demonic Thieves,		TBC: The Woodland Protector,		CLASSIC: The Woodland Protector
 q(462),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
 q(490),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
 q(497),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
@@ -30,7 +20,6 @@ q(548),	-- [DEPRECATED] <NYI> <TXT> Bloodstone Pendant,		TBC: <NYI> <TXT> Bloods
 q(612),	-- <UNUSED>,		CLASSIC: <UNUSED>
 q(636),	-- Legends of the Earth <NYI>,		TBC: Legends of the Earth <NYI>,		CLASSIC: Legends of the Earth <NYI>
 q(729),	-- The Absent Minded Prospector,		TBC: The Absent Minded Prospector,		CLASSIC: The Absent Minded Prospector
-q(730),	-- Trouble In Darkshore?,		TBC: Trouble In Darkshore?,		CLASSIC: Trouble In Darkshore?
 q(731),	-- The Absent Minded Prospector,		TBC: The Absent Minded Prospector,		CLASSIC: The Absent Minded Prospector
 q(759),	-- Wildmane Totem,		TBC: Wildmane Totem,		CLASSIC: Wildmane Totem
 q(760),	-- Wildmane Cleansing,		TBC: Wildmane Cleansing,		CLASSIC: Wildmane Cleansing
@@ -44,25 +33,14 @@ q(820),	-- <UNUSED>,		CLASSIC: <UNUSED>
 q(839),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
 q(854),	-- Journey to the Crossroads,		TBC: Journey to the Crossroads,		CLASSIC: Journey to the Crossroads
 q(856),	-- <UNUSED>,		CLASSIC: <UNUSED>
-q(860),	-- Sergra Darkthorn,		TBC: Sergra Darkthorn,		CLASSIC: Sergra Darkthorn
 q(886),	-- The Barrens Oases,		TBC: The Barrens Oases,		CLASSIC: The Barrens Oases
 q(897),	-- The Harvester,		TBC: The Harvester,		CLASSIC: The Harvester
-q(916),	-- Webwood Corruption,		TBC: Webwood Venom,		CLASSIC: Webwood Venom
-q(917),	-- Webwood Egg,		TBC: Webwood Egg,		CLASSIC: Webwood Egg
-q(920),	-- Tenaron's Summons,		TBC: Tenaron's Summons,		CLASSIC: Tenaron's Summons
-q(921),	-- Teldrassil: Crown of Azeroth,		TBC: Crown of the Earth,		CLASSIC: Crown of the Earth
-q(928),	-- Teldrassil: Passing Awareness,		TBC: Crown of the Earth,		CLASSIC: Crown of the Earth
-q(934),	-- Crown of the Earth,		TBC: Crown of the Earth,		CLASSIC: Crown of the Earth
-q(939),	-- [DEPRECATED]Flute of Xavaric,		TBC: Flute of Xavaric,		CLASSIC: Flute of Xavaric
-q(940),	-- Teldrassil,		TBC: Teldrassil,		CLASSIC: Teldrassil
-q(942),	-- The Absent Minded Prospector,		TBC: The Absent Minded Prospector,		CLASSIC: The Absent Minded Prospector
 q(944),	-- The Master's Glaive,		TBC: The Master's Glaive,		CLASSIC: The Master's Glaive
 q(945),	-- Therylune's Escape,		TBC: Therylune's Escape,		CLASSIC: Therylune's Escape
 q(946),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
 q(948),	-- Onu,		TBC: Onu,		CLASSIC: Onu
 q(949),	-- The Twilight Camp,		TBC: The Twilight Camp,		CLASSIC: The Twilight Camp
 q(950),	-- Return to Onu,		TBC: Return to Onu,		CLASSIC: Return to Onu
-q(952),	-- Grove of the Ancients,		TBC: Grove of the Ancients,		CLASSIC: Grove of the Ancients
 q(953),	-- The Fall of Ameth'Aran,		TBC: The Fall of Ameth'Aran,		CLASSIC: The Fall of Ameth'Aran
 q(954),	-- Bashal'Aran,		TBC: Bashal'Aran,		CLASSIC: Bashal'Aran
 q(955),	-- Bashal'Aran,		TBC: Bashal'Aran,		CLASSIC: Bashal'Aran
@@ -72,8 +50,6 @@ q(965),	-- The Tower of Althalaxx,		TBC: The Tower of Althalaxx,		CLASSIC: The T
 q(966),	-- The Tower of Althalaxx,		TBC: The Tower of Althalaxx,		CLASSIC: The Tower of Althalaxx
 q(967),	-- The Tower of Althalaxx,		TBC: The Tower of Althalaxx,		CLASSIC: The Tower of Althalaxx
 q(968),	-- The Powers Below,		TBC: The Powers Below,		CLASSIC: The Powers Below
-q(978),	-- Moontouched Wildkin,		TBC: Moontouched Wildkin,		CLASSIC: Moontouched Wildkin
-q(979),	-- Find Ranshalla,		TBC: Find Ranshalla,		CLASSIC: Find Ranshalla
 q(982),	-- Deep Ocean, Vast Sea,		TBC: Deep Ocean, Vast Sea,		CLASSIC: Deep Ocean, Vast Sea
 q(983),	-- Buzzbox 827,		TBC: Buzzbox 827,		CLASSIC: Buzzbox 827
 q(984),	-- How Big a Threat?,		TBC: How Big a Threat?,		CLASSIC: How Big a Threat?
@@ -85,17 +61,7 @@ q(990),	-- Trek to Ashenvale,		TBC: Trek to Ashenvale,		CLASSIC: Trek to Ashenva
 q(1001),	-- Buzzbox 411,		TBC: Buzzbox 411,		CLASSIC: Buzzbox 411
 q(1002),	-- Buzzbox 323,		TBC: Buzzbox 323,		CLASSIC: Buzzbox 323
 q(1003),	-- Buzzbox 525,		TBC: Buzzbox 525,		CLASSIC: Buzzbox 525
-q(1015),	-- The New Frontier,		TBC: The New Frontier,		CLASSIC: The New Frontier
-q(1019),	-- The New Frontier,		TBC: The New Frontier,		CLASSIC: The New Frontier
-q(1047),	-- The New Frontier,		TBC: The New Frontier,		CLASSIC: The New Frontier
 q(1052),	-- Down the Scarlet Path,		TBC: Down the Scarlet Path,		CLASSIC: Down the Scarlet Path
-q(1057),	-- Reclaiming the Charred Vale,		TBC: Reclaiming the Charred Vale,		CLASSIC: Reclaiming the Charred Vale
-q(1061),	-- The Spirits of Stonetalon,		TBC: The Spirits of Stonetalon,		CLASSIC: The Spirits of Stonetalon
-q(1077),	-- Special Delivery for Gaxim,		TBC: Special Delivery for Gaxim,		CLASSIC: Special Delivery for Gaxim
-q(1082),	-- Update for Sentinel Thenysil,		TBC: Update for Sentinel Thenysil,		CLASSIC: Update for Sentinel Thenysil
-q(1084),	-- Wounded Ancients,		TBC: Wounded Ancients,		CLASSIC: Wounded Ancients
-q(1091),	-- Kaela's Update,		TBC: Kaela's Update,		CLASSIC: Kaela's Update
-q(1100),	-- Lonebrow's Journal,		TBC: Lonebrow's Journal,		CLASSIC: Lonebrow's Journal
 q(1132),	-- Fiora Longears,		TBC: Fiora Longears,		CLASSIC: Fiora Longears
 q(1141),	-- The Family and the Fishing Pole,		TBC: The Family and the Fishing Pole,		CLASSIC: The Family and the Fishing Pole
 q(1143),	-- The Tower of Althalaxx,		TBC: The Tower of Althalaxx,		CLASSIC: The Tower of Althalaxx
@@ -106,22 +72,10 @@ q(1158),	-- <NYI> <TXT> speak to rabine saturna,		TBC: <NYI> <TXT> speak to rabi
 q(1161),	-- <NYI> <TXT> gossip shade of ambermoon,		TBC: <NYI> <TXT> gossip shade of ambermoon,		CLASSIC: <NYI> <TXT> gossip shade of ambermoon
 q(1162),	-- <NYI> <TXT> speak to hamuul runetotem,		TBC: <NYI> <TXT> speak to hamuul runetotem,		CLASSIC: <NYI> <TXT> speak to hamuul runetotem
 q(1163),	-- <NYI> <TXT> speak to tyrande whisperwind,		TBC: <NYI> <TXT> speak to tyrande whisperwind,		CLASSIC: <NYI> <TXT> speak to tyrande whisperwind
-q(1179),	-- The Brassbolts Brothers,		TBC: The Brassbolts Brothers,		CLASSIC: The Brassbolts Brothers
-q(1219),	-- [DEPRECATED]The Orc Report,		TBC: The Orc Report,		CLASSIC: The Orc Report
-q(1220),	-- [DEPRECATED]Captain Vimes,		TBC: Captain Vimes,		CLASSIC: Captain Vimes
-q(1252),	-- [DEPRECATED]Lieutenant Paval Reethe,		TBC: Lieutenant Paval Reethe,		CLASSIC: Lieutenant Paval Reethe
-q(1253),	-- [DEPRECATED]The Black Shield,		TBC: The Black Shield,		CLASSIC: The Black Shield
-q(1259),	-- [DEPRECATED]Lieutenant Paval Reethe,		TBC: Lieutenant Paval Reethe,		CLASSIC: Lieutenant Paval Reethe
-q(1260),	-- [DEPRECATED]Morgan Stern,		TBC: Morgan Stern,		CLASSIC: Morgan Stern
 q(1277),	-- <nyi> <TXT> The Centaur Hoofprints,		TBC: <nyi> <TXT> The Centaur Hoofprints,		CLASSIC: <nyi> <TXT> The Centaur Hoofprints
 q(1278),	-- <nyi> <TXT> The Grim Totem Clan,		TBC: <nyi> <TXT> The Grim Totem Clan,		CLASSIC: <nyi> <TXT> The Grim Totem Clan
 q(1279),	-- <nyi> <TXT>The Centaur Hoofprints,		TBC: <nyi> <TXT>The Centaur Hoofprints,		CLASSIC: <nyi> <TXT>The Centaur Hoofprints
 q(1280),	-- <nyi> <TXT>The Centaur Hoofprints,		TBC: <nyi> <TXT>The Centaur Hoofprints,		CLASSIC: <nyi> <TXT>The Centaur Hoofprints
-q(1282),	-- [DEPRECATED]They Call Him Smiling Jim,		TBC: They Call Him Smiling Jim,		CLASSIC: They Call Him Smiling Jim
-q(1284),	-- [DEPRECATED]Suspicious Hoofprints,		TBC: Suspicious Hoofprints,		CLASSIC: Suspicious Hoofprints
-q(1285),	-- [DEPRECATED]Daelin's Men,		TBC: Daelin's Men,		CLASSIC: Daelin's Men
-q(1286),	-- [DEPRECATED]The Deserters,		TBC: The Deserters,		CLASSIC: The Deserters
-q(1287),	-- [DEPRECATED]The Deserters,		TBC: The Deserters,		CLASSIC: The Deserters
 q(1288),	-- Vimes's Report,		TBC: Vimes's Report,		CLASSIC: Vimes's Report
 q(1289),	-- <nyi> Vimes's Report,		CLASSIC: <nyi> Vimes's Report
 q(1290),	-- <nyi> Investigating Mosarn,		CLASSIC: <nyi> Investigating Mosarn
@@ -135,10 +89,6 @@ q(1297),	-- <nyi> <TXT> Course of Action,		TBC: <nyi> <TXT> Course of Action,		C
 q(1298),	-- <nyi> <TXT> Thrall's Dirty Work,		CLASSIC: <nyi> <TXT> Thrall's Dirty Work
 q(1299),	-- <nyi> <TXT> Thrall's Dirty Work,		TBC: <nyi> <TXT> Thrall's Dirty Work,		CLASSIC: <nyi> <TXT> Thrall's Dirty Work
 q(1300),	-- <nyi> <TXT> Lorn Grim Totem,		TBC: <nyi> <TXT> Lorn Grim Totem,		CLASSIC: <nyi> <TXT> Lorn Grim Totem
-q(1301),	-- [DEPRECATED]James Hyal,		TBC: James Hyal,		CLASSIC: James Hyal
-q(1302),	-- [DEPRECATED]James Hyal,		TBC: James Hyal,		CLASSIC: James Hyal
-q(1319),	-- [DEPRECATED]The Black Shield,		TBC: The Black Shield,		CLASSIC: The Black Shield
-q(1320),	-- [DEPRECATED]The Black Shield,		TBC: The Black Shield,		CLASSIC: The Black Shield
 q(1367),	-- Magram Alliance,		TBC: Magram Alliance,		CLASSIC: Magram Alliance
 q(1369),	-- Broken Tears,		TBC: Broken Tears,		CLASSIC: Broken Tears
 q(1371),	-- Gizmo for Warug,		TBC: Gizmo for Warug,		CLASSIC: Gizmo for Warug
@@ -165,7 +115,6 @@ q(1507),	-- Devourer of Souls,		TBC: Devourer of Souls,		CLASSIC: Devourer of So
 q(1508),	-- Blind Cazul,		TBC: Blind Cazul,		CLASSIC: Blind Cazul
 q(1509),	-- News of Dogran,		TBC: News of Dogran,		CLASSIC: News of Dogran
 q(1510),	-- News of Dogran,		TBC: News of Dogran,		CLASSIC: News of Dogran
-q(1511),	-- Ken'zigla's Draught,		TBC: Ken'zigla's Draught,		CLASSIC: Ken'zigla's Draught
 q(1512),	-- Love's Gift,		TBC: Love's Gift,		CLASSIC: Love's Gift
 q(1515),	-- Dogran's Captivity,		TBC: Dogran's Captivity,		CLASSIC: Dogran's Captivity
 q(1519),	-- Call of Earth,		TBC: Call of Earth,		CLASSIC: Call of Earth
@@ -224,9 +173,6 @@ q(2078),	-- Gyromast's Revenge,		TBC: Gyromast's Revenge,		CLASSIC: Gyromast's R
 q(2098),	-- Gyromast's Retrieval,		TBC: Gyromast's Retrieval,		CLASSIC: Gyromast's Retrieval
 q(2118),	-- Plagued Lands,		TBC: Plagued Lands,		CLASSIC: Plagued Lands
 q(2138),	-- Cleansing of the Infected,		TBC: Cleansing of the Infected,		CLASSIC: Cleansing of the Infected
-q(2242),	-- Destiny Calls,		TBC: Destiny Calls,		CLASSIC: Destiny Calls
-q(2259),	-- Erion Shadewhisper,		TBC: Erion Shadewhisper,		CLASSIC: Erion Shadewhisper
-q(2260),	-- Erion's Behest,		TBC: Erion's Behest,		CLASSIC: Erion's Behest
 q(2358),	-- Horns of Nez'ra,		CLASSIC: Horns of Nez'ra
 q(2378),	-- Find the Shattered Hand,		TBC: Find the Shattered Hand,		CLASSIC: Find the Shattered Hand
 q(2379),	-- Zando'zan,		TBC: Zando'zan,		CLASSIC: Zando'zan
@@ -236,10 +182,6 @@ q(2458),	-- Deep Cover,		TBC: Deep Cover,		CLASSIC: Deep Cover
 q(2460),	-- The Shattered Salute,		TBC: The Shattered Salute,		CLASSIC: The Shattered Salute
 q(2478),	-- Mission: Possible But Not Probable,		TBC: Mission: Possible But Not Probable,		CLASSIC: Mission: Possible But Not Probable
 q(2479),	-- Hinott's Assistance,		TBC: Hinott's Assistance,		CLASSIC: Hinott's Assistance
-q(2498),	-- Return to Denalan,		TBC: Return to Denalan,		CLASSIC: Return to Denalan
-q(2519),	-- The Temple of the Moon,		TBC: The Temple of the Moon,		CLASSIC: The Temple of the Moon
-q(2520),	-- Sathrah's Sacrifice,		TBC: Sathrah's Sacrifice,		CLASSIC: Sathrah's Sacrifice
-q(2769),	-- The Brassbolts Brothers,		TBC: The Brassbolts Brothers,		CLASSIC: The Brassbolts Brothers
 q(2821),	-- The Mark of Quality,		TBC: The Mark of Quality,		CLASSIC: The Mark of Quality
 q(2844),	-- The Giant Guardian,		TBC: The Giant Guardian,		CLASSIC: The Giant Guardian
 q(2866),	-- The Ruins of Solarsal,		TBC: The Ruins of Solarsal,		CLASSIC: The Ruins of Solarsal
@@ -249,9 +191,6 @@ q(2869),	-- Against the Hatecrest,		TBC: Against the Hatecrest,		CLASSIC: Agains
 q(2870),	-- Against Lord Shalzaru,		TBC: Against Lord Shalzaru,		CLASSIC: Against Lord Shalzaru
 q(2879),	-- The Stave of Equinex,		TBC: The Stave of Equinex,		CLASSIC: The Stave of Equinex
 q(2939),	-- In Search of Knowledge,		TBC: In Search of Knowledge,		CLASSIC: In Search of Knowledge
-q(2940),	-- Feralas: A History,		TBC: Feralas: A History,		CLASSIC: Feralas: A History
-q(2941),	-- The Borrower,		TBC: The Borrower,		CLASSIC: The Borrower
-q(2943),	-- Return to Troyas,		TBC: Return to Troyas,		CLASSIC: Return to Troyas
 q(2944),	-- The Super Snapper FX,		TBC: The Super Snapper FX,		CLASSIC: The Super Snapper FX
 q(2969),	-- Freedom for All Creatures,		TBC: Freedom for All Creatures,		CLASSIC: Freedom for All Creatures
 q(2970),	-- Doling Justice,		TBC: Doling Justice,		CLASSIC: Doling Justice
@@ -274,8 +213,6 @@ q(3092),	-- Etched Note,		TBC: Etched Note,		CLASSIC: Etched Note
 q(3093),	-- Rune-Inscribed Note,		TBC: Rune-Inscribed Note,		CLASSIC: Rune-Inscribed Note
 q(3094),	-- Verdant Note,		TBC: Verdant Note,		CLASSIC: Verdant Note
 q(3111),	-- <UNUSED> [DEPRECATED],		CLASSIC: <UNUSED> [DEPRECATED]
-q(3117),	-- Etched Sigil,		TBC: Etched Sigil,		CLASSIC: Etched Sigil
-q(3120),	-- Verdant Sigil,		TBC: Verdant Sigil,		CLASSIC: Verdant Sigil
 q(3124),	-- Hippogryph Muisek,		TBC: Hippogryph Muisek,		CLASSIC: Hippogryph Muisek
 q(3130),	-- Against the Hatecrest,		TBC: Against the Hatecrest,		CLASSIC: Against the Hatecrest
 q(3241),	-- <NYI> <TXT><redux> Dreadmist Peak,		TBC: <NYI> <TXT><redux> Dreadmist Peak,		CLASSIC: <NYI> <TXT><redux> Dreadmist Peak
@@ -292,9 +229,6 @@ q(3425),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
 q(3482),	-- <NYI> <TXT> The Pocked Black Box,		TBC: <NYI> <TXT> The Pocked Black Box,		CLASSIC: <NYI> <TXT> The Pocked Black Box
 q(3515),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
 q(3516),	-- <UNUSED>,		CLASSIC: <UNUSED>
-q(3519),	-- A Friend in Need,		TBC: A Friend in Need,		CLASSIC: A Friend in Need
-q(3521),	-- Iverron's Antidote,		TBC: Iverron's Antidote,		CLASSIC: Iverron's Antidote
-q(3522),	-- Iverron's Antidote,		TBC: Iverron's Antidote,		CLASSIC: Iverron's Antidote
 q(3524),	-- Washed Ashore,		TBC: Washed Ashore,		CLASSIC: Washed Ashore
 q(3529),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
 q(3530),	-- <UNUSED>,		CLASSIC: <UNUSED>
@@ -303,19 +237,11 @@ q(3622),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
 q(3623),	-- <UNUSED>,		CLASSIC: <UNUSED>
 q(3624),	-- <UNUSED>,		CLASSIC: <UNUSED>
 q(3631),	-- Summon Felsteed,		TBC: Summon Felsteed,		CLASSIC: Summon Felsteed
-q(3661),	-- Favored of Elune?,		TBC: Favored of Elune?,		CLASSIC: Favored of Elune?
 q(3681),	-- Tome of Divinity,		TBC: Tome of Divinity,		CLASSIC: Tome of Divinity
-q(3763),	-- Assisting Arch Druid Staghelm,		TBC: Assisting Arch Druid Staghelm,		CLASSIC: Assisting Arch Druid Staghelm
-q(3764),	-- Un'Goro Soil,		TBC: Un'Goro Soil,		CLASSIC: Un'Goro Soil
-q(3781),	-- Morrowgrain Research,		TBC: Morrowgrain Research,		CLASSIC: Morrowgrain Research
-q(3785),	-- Morrowgrain Research,		TBC: Morrowgrain Research,		CLASSIC: Morrowgrain Research
 q(3787),	-- Jonespyre's Request,		TBC: Jonespyre's Request,		CLASSIC: Jonespyre's Request
 q(3788),	-- Jonespyre's Request,		TBC: Jonespyre's Request,		CLASSIC: Jonespyre's Request
-q(3789),	-- Assisting Arch Druid Staghelm,		TBC: Assisting Arch Druid Staghelm,		CLASSIC: Assisting Arch Druid Staghelm
-q(3790),	-- Assisting Arch Druid Staghelm,		TBC: Assisting Arch Druid Staghelm,		CLASSIC: Assisting Arch Druid Staghelm
 q(3885),	-- <NYI> <TXT> The Gadgetzan Run,		TBC: <NYI> <TXT> The Gadgetzan Run,		CLASSIC: <NYI> <TXT> The Gadgetzan Run
 q(3910),	-- <NYI> <TXT> The Un'Goro Run,		CLASSIC: <NYI> <TXT> The Un'Goro Run
-q(4101),	-- [DEPRECATED]Cleansing Felwood,		TBC: Cleansing Felwood,		CLASSIC: Cleansing Felwood
 q(4124),	-- The Missing Courier,		TBC: The Missing Courier,		CLASSIC: The Missing Courier
 q(4125),	-- The Missing Courier,		TBC: The Missing Courier,		CLASSIC: The Missing Courier
 q(4127),	-- Boat Wreckage,		TBC: Boat Wreckage,		CLASSIC: Boat Wreckage
@@ -323,21 +249,14 @@ q(4129),	-- The Knife Revealed,		TBC: The Knife Revealed,		CLASSIC: The Knife Re
 q(4130),	-- Psychometric Reading,		TBC: Psychometric Reading,		CLASSIC: Psychometric Reading
 q(4131),	-- The Woodpaw Gnolls,		TBC: The Woodpaw Gnolls,		CLASSIC: The Woodpaw Gnolls
 q(4135),	-- The Writhing Deep,		TBC: The Writhing Deep,		CLASSIC: The Writhing Deep
-q(4141),	-- Muigin and Larion,		TBC: Muigin and Larion,		CLASSIC: Muigin and Larion
-q(4142),	-- A Visit to Gregan,		TBC: A Visit to Gregan,		CLASSIC: A Visit to Gregan
-q(4144),	-- Bloodpetal Sprouts,		TBC: Bloodpetal Sprouts,		CLASSIC: Bloodpetal Sprouts
 q(4265),	-- Freed from the Hive,		TBC: Freed from the Hive,		CLASSIC: Freed from the Hive
 q(4281),	-- Thalanaar Delivery,		TBC: Thalanaar Delivery,		CLASSIC: Thalanaar Delivery
 q(4299),	-- <NYI> <TXT>The Tomb of the Seven,		TBC: <NYI> <TXT>The Tomb of the Seven,		CLASSIC: <NYI> <TXT>The Tomb of the Seven
 q(4323),	-- <NYI> <TXT> Get those Hyenas!!!,		TBC: <NYI> <TXT> Get those Hyenas!!!,		CLASSIC: <NYI> <TXT> Get those Hyenas!!!
-q(4421),	-- [DEPRECATED]The Corruption of the Jadefire,		TBC: The Corruption of the Jadefire,		CLASSIC: The Corruption of the Jadefire
-q(4441),	-- [DEPRECATED]Felbound Ancients,		TBC: Felbound Ancients,		CLASSIC: Felbound Ancients
-q(4442),	-- [DEPRECATED]Purified!,		TBC: Purified!,		CLASSIC: Purified!
 q(4487),	-- Summon Felsteed,		TBC: Summon Felsteed,		CLASSIC: Summon Felsteed
 q(4488),	-- Summon Felsteed,		TBC: Summon Felsteed,		CLASSIC: Summon Felsteed
 q(4489),	-- Summon Felsteed,		TBC: Summon Felsteed,		CLASSIC: Summon Felsteed
 q(4490),	-- Summon Felsteed,		TBC: Summon Felsteed,		CLASSIC: Summon Felsteed
-q(4495),	-- A Good Friend,		TBC: A Good Friend,		CLASSIC: A Good Friend
 q(4541),	-- <NYI> <TXT>,		CLASSIC: <NYI> <TXT>
 q(4722),	-- Beached Sea Turtle,		TBC: Beached Sea Turtle,		CLASSIC: Beached Sea Turtle
 q(4723),	-- Beached Sea Creature,		TBC: Beached Sea Creature,		CLASSIC: Beached Sea Creature
@@ -360,9 +279,6 @@ q(4783),	-- Components for the Enchanted Gold Bloodrobe,		TBC: Components for th
 q(4784),	-- Components for the Enchanted Gold Bloodrobe,		TBC: Components for the Enchanted Gold Bloodrobe,		CLASSIC: Components for the Enchanted Gold Bloodrobe
 q(4811),	-- The Red Crystal,		TBC: The Red Crystal,		CLASSIC: The Red Crystal
 q(4812),	-- As Water Cascades,		TBC: As Water Cascades,		CLASSIC: As Water Cascades
-q(4861),	-- Enraged Wildkin,		TBC: Enraged Wildkin,		CLASSIC: Enraged Wildkin
-q(4863),	-- Enraged Wildkin,		TBC: Enraged Wildkin,		CLASSIC: Enraged Wildkin
-q(4864),	-- Enraged Wildkin,		TBC: Enraged Wildkin,		CLASSIC: Enraged Wildkin
 q(4905),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
 q(4961),	-- Cleansing of the Orb of Orahil,		TBC: Cleansing of the Orb of Orahil,		CLASSIC: Cleansing of the Orb of Orahil
 q(4962),	-- Shard of a Felhound,		TBC: Shard of a Felhound,		CLASSIC: Shard of a Felhound
@@ -373,15 +289,10 @@ q(4968),	-- Knowledge of the Orb of Orahil,		TBC: Knowledge of the Orb of Orahil
 q(4969),	-- Knowledge of the Orb of Orahil,		TBC: Knowledge of the Orb of Orahil,		CLASSIC: Knowledge of the Orb of Orahil
 q(4976),	-- Returning the Cleansed Orb,		TBC: Returning the Cleansed Orb,		CLASSIC: Returning the Cleansed Orb
 q(5101),	-- Lee's Ultimate Test Quest... of Doom!,		TBC: Lee's Ultimate Test Quest... of Doom!,		CLASSIC: Lee's Ultimate Test Quest... of Doom!
-q(5157),	-- [DEPRECATED]Collection of the Corrupt Water,		TBC: Collection of the Corrupt Water,		CLASSIC: Collection of the Corrupt Water
 q(5205),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
 q(5207),	-- <NYI> <TXT> The True Summoner,		TBC: <NYI> <TXT> The True Summoner,		CLASSIC: <NYI> <TXT> The True Summoner
 q(5208),	-- <NYI> <TXT> The Blessing of Evil,		TBC: <NYI> <TXT> The Blessing of Evil,		CLASSIC: <NYI> <TXT> The Blessing of Evil
 q(5209),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
-q(5244),	-- [DEPRECATED]The Ruins of Kel'Theril,		TBC: The Ruins of Kel'Theril,		CLASSIC: The Ruins of Kel'Theril
-q(5245),	-- [DEPRECATED]Troubled Spirits of Kel'Theril,		TBC: Troubled Spirits of Kel'Theril,		CLASSIC: Troubled Spirits of Kel'Theril
-q(5249),	-- [DEPRECATED]To Winterspring!,		TBC: To Winterspring!,		CLASSIC: To Winterspring!
-q(5250),	-- Starfall,		TBC: Starfall,		CLASSIC: Starfall
 q(5303),	-- <UNUSED>,		CLASSIC: <UNUSED>
 q(5304),	-- <UNUSED>,		CLASSIC: <UNUSED>
 q(5506),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
@@ -391,14 +302,6 @@ q(5520),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
 q(5523),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
 q(5530),	-- <NYI> <TXT> Necklace of the Dawn,		CLASSIC: <NYI> <TXT> Necklace of the Dawn
 q(5532),	-- <NYI> <TXT> Ring of the Dawn,		TBC: <NYI> <TXT> Ring of the Dawn,		CLASSIC: <NYI> <TXT> Ring of the Dawn
-q(5622),	-- In Favor of Elune,		TBC: In Favor of Elune,		CLASSIC: In Favor of Elune
-q(5627),	-- Stars of Elune,		TBC: Stars of Elune,		CLASSIC: Stars of Elune
-q(5628),	-- Returning Home,		TBC: Returning Home,		CLASSIC: Returning Home
-q(5629),	-- Returning Home,		TBC: Returning Home,		CLASSIC: Returning Home
-q(5630),	-- Returning Home,		TBC: Returning Home,		CLASSIC: Returning Home
-q(5631),	-- Returning Home,		TBC: Returning Home,		CLASSIC: Returning Home
-q(5632),	-- Returning Home,		TBC: Returning Home,		CLASSIC: Returning Home
-q(5633),	-- Returning Home,		TBC: Returning Home,		CLASSIC: Returning Home
 q(5641),	-- A Lack of Fear,		TBC: A Lack of Fear,		CLASSIC: A Lack of Fear
 q(5642),	-- Shadowguard,		TBC: Shadowguard,		CLASSIC: Shadowguard
 q(5643),	-- Shadowguard,		TBC: Shadowguard,		CLASSIC: Shadowguard
@@ -419,10 +322,6 @@ q(5668),	-- <NYI> A Blessing of Light,		CLASSIC: <NYI> A Blessing of Light
 q(5669),	-- <NYI> A Blessing of Light,		CLASSIC: <NYI> A Blessing of Light
 q(5670),	-- <NYI> A Blessing of Light,		CLASSIC: <NYI> A Blessing of Light
 q(5671),	-- <NYI> A Blessing of Light,		CLASSIC: <NYI> A Blessing of Light
-q(5672),	-- Elune's Grace,		TBC: Elune's Grace,		CLASSIC: Elune's Grace
-q(5673),	-- Elune's Grace,		TBC: Elune's Grace,		CLASSIC: Elune's Grace
-q(5674),	-- Elune's Grace,		TBC: Elune's Grace,		CLASSIC: Elune's Grace
-q(5675),	-- Elune's Grace,		TBC: Elune's Grace,		CLASSIC: Elune's Grace
 q(5680),	-- Shadowguard,		TBC: Shadowguard,		CLASSIC: Shadowguard
 q(5681),	-- <UNUSED>,		CLASSIC: <UNUSED>
 q(5682),	-- <UNUSED>,		CLASSIC: <UNUSED>
@@ -456,63 +355,26 @@ q(5709),	-- <NYI> Flirting With Darkness,		CLASSIC: <NYI> Flirting With Darkness
 q(5710),	-- <NYI> <TXT> Troll Priest Robe,		CLASSIC: <NYI> <TXT> Troll Priest Robe
 q(5711),	-- <NYI> The Lost Ways,		CLASSIC: <NYI> The Lost Ways
 q(5712),	-- <NYI> The Lost Ways,		CLASSIC: <NYI> The Lost Ways
-q(5921),	-- Moonglade,		TBC: Moonglade,		CLASSIC: Moonglade
-q(5922),	-- Moonglade,		TBC: Moonglade,		CLASSIC: Moonglade
-q(5923),	-- Heeding the Call,		TBC: Heeding the Call,		CLASSIC: Heeding the Call
-q(5924),	-- Heeding the Call,		TBC: Heeding the Call,		CLASSIC: Heeding the Call
-q(5925),	-- Heeding the Call,		TBC: Heeding the Call,		CLASSIC: Heeding the Call
-q(5926),	-- Heeding the Call,		TBC: Heeding the Call,		CLASSIC: Heeding the Call
-q(5927),	-- Heeding the Call,		TBC: Heeding the Call,		CLASSIC: Heeding the Call
-q(5928),	-- Heeding the Call,		TBC: Heeding the Call,		CLASSIC: Heeding the Call
-q(5929),	-- Great Bear Spirit,		TBC: Great Bear Spirit,		CLASSIC: Great Bear Spirit
-q(5930),	-- Great Bear Spirit,		TBC: Great Bear Spirit,		CLASSIC: Great Bear Spirit
-q(5931),	-- Back to Darnassus,		TBC: Back to Darnassus,		CLASSIC: Back to Darnassus
-q(5932),	-- Back to Thunder Bluff,		TBC: Back to Thunder Bluff,		CLASSIC: Back to Thunder Bluff
-q(6001),	-- Body and Heart,		TBC: Body and Heart,		CLASSIC: Body and Heart
-q(6002),	-- Body and Heart,		TBC: Body and Heart,		CLASSIC: Body and Heart
 q(6003),	-- <nyi> <txt> Green With Envy,		CLASSIC: <nyi> <txt> Green With Envy
-q(6026),	-- That's Asking A Lot,		TBC: That's Asking A Lot,		CLASSIC: That's Asking A Lot
-q(6028),	-- The Everlook Report,		TBC: The Everlook Report,		CLASSIC: The Everlook Report
 q(6061),	-- Taming the Beast,		TBC: Taming the Beast,		CLASSIC: Taming the Beast
-q(6063),	-- Taming the Beast,		TBC: Taming the Beast,		CLASSIC: Taming the Beast
 q(6065),	-- The Hunter's Path,		TBC: The Hunter's Path,		CLASSIC: The Hunter's Path
 q(6066),	-- The Hunter's Path,		TBC: The Hunter's Path,		CLASSIC: The Hunter's Path
 q(6067),	-- The Hunter's Path,		TBC: The Hunter's Path,		CLASSIC: The Hunter's Path
-q(6071),	-- The Hunter's Path,		TBC: The Hunter's Path,		CLASSIC: The Hunter's Path
-q(6072),	-- The Hunter's Path,		TBC: The Hunter's Path,		CLASSIC: The Hunter's Path
-q(6073),	-- The Hunter's Path,		TBC: The Hunter's Path,		CLASSIC: The Hunter's Path
 q(6087),	-- Taming the Beast,		TBC: Taming the Beast,		CLASSIC: Taming the Beast
 q(6088),	-- Taming the Beast,		TBC: Taming the Beast,		CLASSIC: Taming the Beast
 q(6089),	-- Training the Beast,		TBC: Training the Beast,		CLASSIC: Training the Beast
-q(6101),	-- Taming the Beast,		TBC: Taming the Beast,		CLASSIC: Taming the Beast
-q(6102),	-- Taming the Beast,		TBC: Taming the Beast,		CLASSIC: Taming the Beast
-q(6103),	-- Training the Beast,		TBC: Training the Beast,		CLASSIC: Training the Beast
-q(6121),	-- Lessons Anew,		TBC: Lessons Anew,		CLASSIC: Lessons Anew
-q(6122),	-- The Principal Source,		TBC: The Principal Source,		CLASSIC: The Principal Source
 q(6123),	-- Gathering the Cure,		TBC: Gathering the Cure,		CLASSIC: Gathering the Cure
-q(6125),	-- Power over Poison,		TBC: Power over Poison,		CLASSIC: Power over Poison
-q(6126),	-- Lessons Anew,		TBC: Lessons Anew,		CLASSIC: Lessons Anew
-q(6127),	-- The Principal Source,		TBC: The Principal Source,		CLASSIC: The Principal Source
 q(6128),	-- Gathering the Cure,		TBC: Gathering the Cure,		CLASSIC: Gathering the Cure
-q(6130),	-- Power over Poison,		TBC: Power over Poison,		CLASSIC: Power over Poison
 q(6141),	-- Brother Anton,		TBC: Brother Anton,		CLASSIC: Brother Anton
 q(6165),	-- <NYI> <TXT> Archmage Timolain's Remains,		TBC: <NYI> <TXT> Archmage Timolain's Remains,		CLASSIC: <NYI> <TXT> Archmage Timolain's Remains
 q(6201),	-- <UNUSED> The Legacy of the Ashbringer,		TBC: <UNUSED> The Legacy of the Ashbringer,		CLASSIC: <UNUSED> The Legacy of the Ashbringer
 q(6202),	-- <UNUSED> Good and Evil,		CLASSIC: <UNUSED> Good and Evil
-q(6542),	-- Report to Kadrak,		TBC: Report to Kadrak,		CLASSIC: Report to Kadrak
-q(6603),	-- Trouble in Winterspring!,		TBC: Trouble in Winterspring!,		CLASSIC: Trouble in Winterspring!
-q(6604),	-- Enraged Wildkin,		TBC: Enraged Wildkin,		CLASSIC: Enraged Wildkin
-q(6605),	-- A Strange One,		TBC: A Strange One,		CLASSIC: A Strange One
 q(6606),	-- A Little Luck,		TBC: A Little Luck,		CLASSIC: A Little Luck
 q(6702),	-- [DEPRECATED] <TXT> SF, RFK, GNOMER, BF,		CLASSIC: [DEPRECATED] <TXT> SF, RFK, GNOMER, BF
 q(6704),	-- [DEPRECATED] <TXT> SM, RFD, ULD,		CLASSIC: [DEPRECATED] <TXT> SM, RFD, ULD
 q(6706),	-- [DEPRECATED] <TXT> ZUL, ST, MAR,		CLASSIC: [DEPRECATED] <TXT> ZUL, ST, MAR
 q(6708),	-- [DEPRECATED] <TXT> BRD, DM, BRS,		CLASSIC: [DEPRECATED] <TXT> BRD, DM, BRS
 q(6710),	-- [DEPRECATED] <TXT> UBRS, STRATH, SCHOL,		CLASSIC: [DEPRECATED] <TXT> UBRS, STRATH, SCHOL
-q(6721),	-- The Hunter's Path,		TBC: The Hunter's Path,		CLASSIC: The Hunter's Path
-q(6722),	-- The Hunter's Path,		TBC: The Hunter's Path,		CLASSIC: The Hunter's Path
-q(6761),	-- The New Frontier,		TBC: The New Frontier,		CLASSIC: The New Frontier
-q(6762),	-- Rabine Saturna,		TBC: Rabine Saturna,		CLASSIC: Rabine Saturna
 q(6841),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
 q(6843),	-- Da Foo,		CLASSIC: Da Foo
 q(7384),	-- <nyi> <txt> The Scale Crafters,		CLASSIC: <nyi> <txt> The Scale Crafters
@@ -520,11 +382,7 @@ q(7487),	-- Attunement to the Core,		TBC: Attunement to the Core,		CLASSIC: Attu
 q(7521),	-- Thunderaan the Windseeker,		CLASSIC: Thunderaan the Windseeker
 q(7522),	-- Examine the Vessel,		CLASSIC: Examine the Vessel
 q(7561),	-- Rise, Thunderfury!,		CLASSIC: Rise, Thunderfury!
-q(7601),	-- What Niby Commands,		TBC: What Niby Commands,		CLASSIC: What Niby Commands
-q(7602),	-- Flawless Fel Essence,		TBC: Flawless Fel Essence,		CLASSIC: Flawless Fel Essence
 q(7621),	-- A Warning,		TBC: A Warning,		CLASSIC: A Warning
-q(7624),	-- Ulathek the Traitor,		TBC: Ulathek the Traitor,		CLASSIC: Ulathek the Traitor
-q(7625),	-- Xorothian Stardust,		TBC: Xorothian Stardust,		CLASSIC: Xorothian Stardust
 q(7637),	-- Emphasis on Sacrifice,		TBC: Emphasis on Sacrifice,		CLASSIC: Emphasis on Sacrifice
 q(7638),	-- Lord Grayson Shadowbreaker,		TBC: Lord Grayson Shadowbreaker,		CLASSIC: Lord Grayson Shadowbreaker
 q(7639),	-- To Show Due Judgment,		TBC: To Show Due Judgment,		CLASSIC: To Show Due Judgment
@@ -543,8 +401,6 @@ q(7741),	-- Praise from the Emerald Circle <NYI> <TXT>,		CLASSIC: Praise from th
 q(7788),	-- Vanquish the Invaders!,		TBC: Vanquish the Invaders!,		CLASSIC: Vanquish the Invaders!
 q(7789),	-- Quell the Silverwing Usurpers,		TBC: Quell the Silverwing Usurpers,		CLASSIC: Quell the Silverwing Usurpers
 q(7790),	-- The Written Word,		TBC: REUSE,		CLASSIC: REUSE
-q(7799),	-- A Donation of Mageweave,		TBC: A Donation of Mageweave,		CLASSIC: A Donation of Mageweave
-q(7800),	-- A Donation of Runecloth,		TBC: A Donation of Runecloth,		CLASSIC: A Donation of Runecloth
 q(7869),	-- test quest - do not use,		CLASSIC: test quest - do not use
 q(7870),	-- test quest2 - do not use,		CLASSIC: test quest2 - do not use
 q(7871),	-- Vanquish the Invaders!,		TBC: Vanquish the Invaders!,		CLASSIC: Vanquish the Invaders!
@@ -582,21 +438,14 @@ q(8344),	-- Windows to the Source,		TBC: Windows to the Source,		CLASSIC: Window
 q(8371),	-- Concerted Efforts,		TBC: Concerted Efforts,		CLASSIC: Concerted Efforts
 q(8410),	-- Elemental Mastery,		TBC: Elemental Mastery,		CLASSIC: Elemental Mastery
 q(8411),	-- [DEPRECATED] Mastering the Elements,		TBC: Mastering the Elements,		CLASSIC: Mastering the Elements
-q(8419),	-- An Imp's Request,		TBC: An Imp's Request,		CLASSIC: An Imp's Request
-q(8420),	-- Hot and Itchy,		TBC: Hot and Itchy,		CLASSIC: Hot and Itchy
-q(8421),	-- The Wrong Stuff,		TBC: The Wrong Stuff,		CLASSIC: The Wrong Stuff
 q(8444),	-- <NYI> <TXT> gossip shade of ambermoon,		TBC: <NYI> <TXT> gossip shade of ambermoon,		CLASSIC: <NYI> <TXT> gossip shade of ambermoon
 q(8445),	-- <NYI> <TXT> gossip shade of ambermoon,		TBC: <NYI> <TXT> gossip shade of ambermoon,		CLASSIC: <NYI> <TXT> gossip shade of ambermoon
 q(8459),	-- <UNUSED>,		TBC: <UNUSED>,		CLASSIC: <UNUSED>
-q(8484),	-- The Brokering of Peace,		TBC: The Brokering of Peace,		CLASSIC: The Brokering of Peace
 q(8530),	-- The Alliance Needs Singed Corestones!,		TBC: The Alliance Needs Singed Corestones!,		CLASSIC: The Alliance Needs Singed Corestones!
 q(8617),	-- The Horde Needs Singed Corestones!,		TBC: The Horde Needs Singed Corestones!,		CLASSIC: The Horde Needs Singed Corestones!
 q(8869),	-- Sweet Serenity,		TBC: Sweet Serenity,		CLASSIC: Sweet Serenity
 q(8973),	-- REUSE,		TBC: REUSE,		CLASSIC: REUSE
 q(9031),	-- <TXT>Anthion's Parting Words,		CLASSIC: <TXT>Anthion's Parting Words
-q(9051),	-- Toxic Test,		TBC: Toxic Test,		CLASSIC: Toxic Test
-q(9052),	-- Bloodpetal Poison,		TBC: Bloodpetal Poison,		CLASSIC: Bloodpetal Poison
-q(9063),	-- Torwa Pathfinder,		TBC: Torwa Pathfinder,		CLASSIC: Torwa Pathfinder
 q(9168),	-- Heart of Deatholme,		TBC: Heart of Deatholme
 q(9306),	-- <DEPRECATED>Speak with Vindicator Aldar
 q(9307),	-- <DEPRECATED>Compassion
@@ -683,8 +532,6 @@ q(10219),	-- Walk the Dog
 q(10244),	-- R.T.F.R.C.M.,		TBC: R.T.F.R.C.M.
 q(10260),	-- Netherologist Coppernickels,		TBC: Netherologist Coppernickels
 q(10292),	-- More Power!,		TBC: More Power!
-q(10352),	-- A Donation of Wool,		TBC: A Donation of Wool
-q(10354),	-- A Donation of Silk,		TBC: A Donation of Silk
 q(10364),	-- Caedmos,		TBC: Caedmos
 q(10376),	-- Symbol of Hope
 q(10377),	-- Nothing to Fear,		TBC: Nothing to Fear
@@ -696,7 +543,6 @@ q(10404),	-- Against the Legion,		TBC: Against the Legion
 q(10452),	-- DON'T USE [PH] Fel Orc 1,		TBC: DON'T USE [PH] Fel Orc 1
 q(10453),	-- DON'T USE [PH] Fel Orc bread,		TBC: DON'T USE [PH] Fel Orc bread
 q(10491),	-- Call of Air,		TBC: Call of Air
-q(10520),	-- Assisting Arch Druid Staghelm,		TBC: Assisting Arch Druid Staghelm
 q(10529),	-- The Hunter's Path,		TBC: The Hunter's Path
 q(10530),	-- The Hunter's Path,		TBC: The Hunter's Path
 q(10532),	-- Cut Arathor Supply Lines,		TBC: Cut Arathor Supply Lines
@@ -723,40 +569,12 @@ q(10931),	-- Return to the Exodar,		TBC: Return to the Exodar
 q(10932),	-- Return to the Exodar,		TBC: Return to the Exodar
 q(10933),	-- Return to Silvermoon,		TBC: Return to Silvermoon
 q(10934),	-- Return to Silvermoon,		TBC: Return to Silvermoon
-q(10955),	-- Morthis Whisperwing,		TBC: Morthis Whisperwing
-q(10965),	-- No Mere Dream,		TBC: No Mere Dream
-q(10978),	-- Return to Morthis Whisperwing,		TBC: Return to Morthis Whisperwing
 q(10999),	-- One Shot, One Kill,		TBC: One Shot, One Kill
 q(11121),	-- DAILY TEST QUEST (RAID),		TBC: DAILY TEST QUEST (RAID)
 q(11125),	-- [PH] New Hinterlands Quest,		TBC: [PH] New Hinterlands Quest
-q(11126),	-- Traitors Among Us,		TBC: Traitors Among Us
 q(11127),	-- <NYI>Thunderbrew Secrets,		TBC: <NYI>Thunderbrew Secrets
-q(11128),	-- Propaganda War,		TBC: Propaganda War
-q(11133),	-- Discrediting the Deserters,		TBC: Discrediting the Deserters
-q(11136),	-- A Disturbing Development,		TBC: A Disturbing Development
-q(11137),	-- [DEPRECATED]Defias in Dustwallow?,		TBC: Defias in Dustwallow?
-q(11138),	-- [DEPRECATED]Renn McGill,		TBC: Renn McGill
-q(11139),	-- [DEPRECATED]Secondhand Diving Gear,		TBC: Secondhand Diving Gear
-q(11140),	-- [DEPRECATED]Recover the Cargo!,		TBC: Recover the Cargo!
-q(11141),	-- [DEPRECATED]Jaina Must Know,		TBC: Jaina Must Know
-q(11142),	-- [DEPRECATED]Survey Alcaz Island,		TBC: Survey Alcaz Island
-q(11143),	-- [DEPRECATED]A Grim Connection,		TBC: A Grim Connection
-q(11145),	-- [DEPRECATED]Prisoners of the Grimtotems,		TBC: Prisoners of the Grimtotems
-q(11146),	-- [DEPRECATED]Raptor Captor,		TBC: Raptor Captor
-q(11149),	-- [DEPRECATED]Tabetha's Assistance,		TBC: Tabetha's Assistance
-q(11151),	-- [DEPRECATED]Justice for the Hyals,		TBC: Justice for the Hyals
-q(11177),	-- [DEPRECATED]The Hermit of Swamplight Manor,		TBC: The Hermit of Swamplight Manor
-q(11185),	-- [DEPRECATED]The Apothecary's Letter,		TBC: The Apothecary's Letter
-q(11186),	-- [DEPRECATED]Signs of Treachery?,		TBC: Signs of Treachery?
 q(11189),	-- One Last Time
-q(11191),	-- [DEPRECATED]This Old Lighthouse,		TBC: This Old Lighthouse
-q(11192),	-- [DEPRECATED]Thresher Oil,		TBC: Thresher Oil
-q(11193),	-- [DEPRECATED]Dastardly Denizens of the Deep,		TBC: Dastardly Denizens of the Deep
-q(11194),	-- [DEPRECATED]Is it Real?,		TBC: Is it Real?
 q(11197),	-- ZZOLD Upper Deck Promo - Ghost Wolf Mount OLD
-q(11209),	-- [DEPRECATED]Nat's Bargain,		TBC: Nat's Bargain
-q(11210),	-- [DEPRECATED]Oh, It's Real,		TBC: Oh, It's Real
-q(11222),	-- [DEPRECATED]Proof of Treachery,		TBC: Warn Bolvar!
 q(11226),	-- Upper Deck Promo - Spectral Tiger Mount
 q(11335),	-- Call to Arms: Arathi Basin,		TBC: Call to Arms: Arathi Basin
 q(11336),	-- Call to Arms: Alterac Valley,		TBC: Call to Arms: Alterac Valley
@@ -845,7 +663,6 @@ q(13649),	-- Justin's Fun Test
 q(13802),	-- The Goblin with Two Brains
 q(13804),	-- To Catch a Fish-Thing
 q(13894),	-- Marking the Kills (DEPRECATED)
-q(13908),	-- Gearing Up To Ride
 q(13939),	-- Fel Moss Corruption
 q(13941),	-- Vile Touch
 q(13972),	-- Among Humans Again
@@ -922,6 +739,7 @@ q(24227),	-- DEPRECATED
 q(24426),	-- Call to Arms: Alterac Valley
 q(24427),	-- Call to Arms: Alterac Valley
 q(24460),	-- Out of Order
+q(24462),	-- Operation Item Get
 q(24494),	-- Empowered Rune
 q(24508),	-- Temp Quest Record
 q(24509),	-- Temp Quest Record
@@ -1082,8 +900,6 @@ q(27137),	-- Earth Girls Aren't So Easy
 q(27138),	-- Earth Girls Aren't So Easy
 q(27149),	-- School of the Damned
 q(27250),	-- REUSE - BAD COPY
-q(27307),	-- The Elements Cry Out
-q(27308),	-- The Elements Cry Out
 q(27543),	-- [TEMP PH] What We Have Done
 q(27678),	-- The Platinum Discs
 q(27723),	-- Kyle's Test Quest
@@ -1096,12 +912,7 @@ q(28095),	-- Breadcrumb Out
 q(28110),	-- Breadcrumb Out
 q(28371),	-- [DND] ORKUS QUEST FLAG [DO NOT LOCALIZE]
 q(28412),	-- Blessing of the Family
-q(28462),	-- Winterfall Firewater
-q(28481),	-- Troubled Spirits of Kel'Theril
-q(28541),	-- Cache of Mau'ari
-q(28546),	-- Winterfall E'ko
 q(28585),	-- Polished
-q(28642),	-- Shy-Rotam
 q(28648),	-- Frak's Wild Ride
 q(28739),	-- Night Elf Class Skill Tracker Quest
 q(28754),	-- Battle of Life and Death
@@ -1743,7 +1554,6 @@ q(42755),	-- Eye of Azshara: Azsunian Pearls
 q(42759),	--
 q(42760),	--
 q(42761),	--
-q(42778),	-- Scarlet Crusader
 q(42793),	--
 q(42794),	--
 q(42804),	-- Invasion: Azshara

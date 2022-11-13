@@ -2,16 +2,10 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
+root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = ADDED_DFREL }, {
 	m(VALDRAKKEN, {
 		n(VENDORS, {
 			-- TODO: COSTS
-			n(185569, {	-- Gohfyrr
-				["coord"] = { 36.0, 67.9, VALDRAKKEN },
-				["g"] = {
-					i(188152),	-- Gateway Control Shard
-				},
-			}),
 			n(197553, {	-- Fieldmaster Emberath
 				["coord"] = { 43.1, 42.4, VALDRAKKEN },
 				["g"] = {
@@ -192,6 +186,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 					i(200974),	-- Dusty Alchemist's Illustrations
 					i(198615),	-- Pentagold Seal
 					i(198618),	-- Pattern: Artisan's Sign (RECIPE!)
+
 					i(198598),	-- Technique: Scroll of Sales (RECIPE!)
 					i(198802),	-- Artisan's Consortium Tabard
 					i(194293),	-- Pattern: Vibrant Polishing Cloth (RECIPE!)
@@ -208,6 +203,12 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 					i(199242),	-- Schematic: Portable Alchemist's Lab Bench (RECIPE!)
 					i(199243),	-- Schematic: Portable Tinker's Workbench (RECIPE!)
 					i(199290),	-- Schematic: Red Fireflight (RECIPE!)
+					i(194662),	-- Design: Alexstraszite Loupes (RECIPE!)
+					i(194493),	-- Plans: Armor Spikes (RECIPE!)
+					i(194506),	-- Plans: Primal Razorstone (RECIPE!)
+					i(199802),	-- Formula: Enchant Tool - Draconic Finesse (RECIPE!)
+					i(199803),	-- Formula: Enchant Tool - Draconic Perception (RECIPE!)
+					i(199804),	-- Formula: Enchant Tool - Draconic Deftness (RECIPE!)
 				},
 			}),
 			n(196598, {	-- Rethelshi

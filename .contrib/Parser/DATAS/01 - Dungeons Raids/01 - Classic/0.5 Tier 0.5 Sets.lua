@@ -1115,6 +1115,10 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 					["groups"] = {
 						objective(1, {	-- 0/1 Starbreeze Village Relic
 							["provider"] = { "i", 22227 },	-- Starbreeze Village Relic
+							["crs"] = {
+								7428,	-- Frostmaul Giant
+								7429,	-- Frostmaul Preserver
+							},
 						}),
 					},
 				}),
@@ -1250,6 +1254,14 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 					["groups"] = {
 						objective(1, {	-- 0/20 Bloodkelp
 							["provider"] = { "i", 22094 },	-- Bloodkelp
+							["crs"] = {
+								4368,	-- Strashaz Myrmidon
+								4366,	-- Strashaz Serpent Guard
+								4371,	-- Strashaz Siren
+								4370,	-- Strashaz Sorceress
+								4364,	-- Strashaz Warrior
+								16072,	-- Tidelord Rrurgaz
+							},
 						}),
 					},
 				}),
@@ -1311,6 +1323,10 @@ root("Instances", tier(CLASSIC_TIER, applyclassicphase(PHASE_FIVE, {
 					["groups"] = {
 						objective(1, {	-- 0/1 Starbreeze Village Relic
 							["provider"] = { "i", 22227 },	-- Starbreeze Village Relic
+							["crs"] = {
+								7428,	-- Frostmaul Giant
+								7429,	-- Frostmaul Preserver
+							},
 						}),
 						i(22192),	-- Bloodkelp Elixir of Dodging
 						i(22193),	-- Bloodkelp Elixir of Resistance

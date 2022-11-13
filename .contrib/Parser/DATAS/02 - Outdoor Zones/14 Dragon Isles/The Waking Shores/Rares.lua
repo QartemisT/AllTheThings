@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
+root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = ADDED_DFREL }, {
 	m(THE_WAKING_SHORES, {
 		n(RARES, {
 			n(193153, {	-- Forgotten Gryphon
@@ -26,6 +26,12 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 				["description"] = "Underground",
 				["coord"] = { 24.4, 54.5, THE_WAKING_SHORES },
 			}),
+			n(187598, {	-- Rohzor Forgesmash <Djaradin Smithmaster>
+				["coord"] = { 25.6, 60.4, THE_WAKING_SHORES },
+				["g"] = {
+					i(194503),	-- Plans: Black Dragon Touched Hammer (RECIPE!)
+				},
+			}),
 			n(190971, {	-- Shas'ith
 				["description"] = "Underground",
 				["coord"] = { 24.5, 57.8, THE_WAKING_SHORES },
@@ -35,6 +41,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 				["crs"] = { 193228 },	-- Snappy
 				["coord"] = { 78.6, 50.0, THE_WAKING_SHORES },
 			}),
+			--[[
 			v(5386, {	-- 	Qalashi War Party
 				["crs"] = {
 					192737,	-- Qalashi War Mammoth
@@ -45,6 +52,7 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 				},
 				["coord"] = { 53.3, 66.5, THE_WAKING_SHORES },
 			}),
+			--]]
 		}),
 	}),
 })));

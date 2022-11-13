@@ -168,6 +168,7 @@ MOONGLADE = 80;
 MULGORE = 7;
 NORTHERN_BARRENS = 10;
 ORGRIMMAR = 85;
+SHADOWGLEN = 460;
 SILITHUS = 81;
 SOUTHERN_BARRENS = 199;
 STONETALON_MOUNTAINS = 65;
@@ -906,12 +907,16 @@ LEGENDARY_QUESTLINE = -10066;
 	PRIMAL_STORMS = -1101;
 	DRAGONSCALE_EXPEDITION = -1110;
 		CLIMBING = -1111;
+		CATALOGING = -1112;
 	MARUUK_CENTAUR = -1120;
 		AYLAAG = -1121;
 		GRAND_HUNTS = -1122;
 	ISKAARA_TUSKARR = -1130;
 		ISKAARA_FISHING = -1131;
+		ISKAARA_COOKING = -1132;
 	VALDRAKKEN_ACCORD = -1140;
+		SIEGE_ON_DRAGONBANE_KEEP = -1141;
+		AERIAL_CHALLENGES = - 1142;
 CLASS_TRIAL = -5350;
 LEVEL_NINETY = -137;
 LEVEL_HUNDRED = -138;
@@ -1042,6 +1047,7 @@ POISONS = 40;
 PROTOFORM_SYNTHESIS = 2819;
 SKINNING = 393;
 TAILORING = 197;
+TUSKARR_FISHING_GEAR = 2847;
 
 -- D&R Tiers
 CLASSIC_TIER = 1;
@@ -1136,12 +1142,15 @@ DF_PHASE_ONE = 100;
 -- Done defining Phases for Classic
 -- #endif
 
--- TEMPORARY SHADOWLANDS TIMELINE (BLIZZARD DECIDE TO BREAK UP 9.2.5 and Season 4 Release)
+-- Timelines
 ADDED_SLS4 = "added 9.2.5.44908";
 REMOVED_SLS4 = "removed 9.2.5.44908";
-ADDED_DF = "added 9.2.5";
+ADDED_DFPRE = "added 10.0.0";
 REMOVED_DFPRE = "removed 10.0";
-REMOVED_DFREL = "removed 10.0.2";
+ADDED_DFPRE2 = "added 10.0.2";	-- Second phase of Dragonflight pre-patch on November 15th, 2022
+REMOVED_DFPRE2 = "removed 10.0.2";
+ADDED_DFREL = { "created 10.0.0", "added 10.0.2.99999" };
+REMOVED_DFREL = "removed 10.0.2.99999";
 
 -- Holiday Filters
 BREWFEST = 1000;
@@ -1152,6 +1161,7 @@ FEAST_OF_WINTER_VEIL = 1003;
 FIREWORKS_CELEBRATION = 1009;
 HALLOWS_END = 1004;
 HARVEST_FESTIVAL = 1005;
+KALUAK_FISHING_DERBY = 1018;
 LOVE_IS_IN_THE_AIR = 1006;
 LUNAR_FESTIVAL = 1007;
 MICRO_HOLIDAY = 1014;
@@ -1433,14 +1443,26 @@ addObject = function(o, t)
 	return t;
 end
 -- Appends a common groups set into the groups for this object
-appendGroups = function(common, groups)
-	if not groups then groups = {}; end
-	if common then
-		for i,o in ipairs(common) do
+appendGroups = function(...)
+	local data = { ... };
+	local count = #data;
+	if count < 2 then
+		-- Clone the group.
+		local groups = {};
+		for i,o in ipairs(data[1]) do
 			table.insert(groups, o);
 		end
+		return groups;
+	else
+		-- The last element is the one to append into.
+		local groups = data[count];
+		for i=1,count-1,1 do
+			for j,o in ipairs(data[i]) do
+				table.insert(groups, o);
+			end
+		end
+		return groups;
 	end
-	return groups;
 end
 -- Appends together multiple sets of groups. This way multiple portions of a single group can be created separately and joined together for one final 'groups' container
 appendAllGroups = function(...)
@@ -1716,6 +1738,12 @@ applycost = function(item, ...)
 		table.insert(cost, o);
 	end
 	return item;
+end
+emoc = function(cost, item)								-- Assign a Emblem of Conquest cost to an item with proper timeline & phase requirements.
+	-- #if BEFORE 4.0.1
+	applycost(item, { "c", 221, cost });	-- Emblem of Conquest
+	-- #endif
+	return applyclassicphase(WRATH_PHASE_TWO, item);
 end
 emof = function(cost, item)								-- Assign a Emblem of Frost cost to an item with proper timeline & phase requirements.
 	-- #if BEFORE 4.0.1
@@ -2122,7 +2150,7 @@ tier = function(id, patch, t)							-- Create a TIER Object
 	end
 	t = struct("tierID", id, t);
 	if not t.timeline then
-		t.timeline = { "added " .. math.floor(id) .. ".0.1" };
+		t.timeline = { "added " .. math.floor(id) .. ".0" };
 	end
 	return t;
 end

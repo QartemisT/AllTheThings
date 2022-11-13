@@ -4,7 +4,7 @@
 root("Zones", m(EASTERN_KINGDOMS, {
 	m(BLASTED_LANDS, {
 		-- #if AFTER 6.0.1
-		["description"] = "If you are above level 90 and need to go to the low-level Blasted Lands, then you need to speak with Zidormi, who is standing on a small hill near the entrance of the zone from Swamp of Sorrows.",
+		["description"] = "If you are phased into the Invasion Blasted Lands and need to go to the pre-Invasion Blasted Lands, then you need to speak with Zidormi, who is standing on a small hill near the entrance of the zone from Swamp of Sorrows.",
 		-- #endif
 		["lore"] = "The Blasted Lands bear that name for a reason: they were twisted by the magic that brought the Dark Portal into being, spewing the rampaging Horde into Azeroth.\n\nThis wasted desert of red clay is home to the original Dark Portal. The portal still stands, and leads to Outland — the remains of the orcs' sundered homeworld, Draenor. Nethergarde Keep, a Stormwind fortress of dour mages and paladins, keeps watch over the portal and the demons and ogres that would abuse its power.\n\nNow, the wretched land hosts few inhabitants and no significant settlements. Magic that leaked through the Dark Portal warped the Blasted Lands, leaving an infertile desert landscape. Hardy desert species like Basilisks, Scorpions and Hyenas have since colonized the area. The red rocks of the region do not come by their color naturally. The original tan color was transmuted into the unearthly crimson by searing heat and chaotic energies when the Dark Portal was destroyed.",
 		-- #if AFTER WRATH
@@ -253,6 +253,22 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["coord"] = { 62.4, 25.8, BLASTED_LANDS },
 					["timeline"] = { "added 4.0.3.13277" },
 					["races"] = ALLIANCE_ONLY,
+				}),
+				q(28857, {	-- Blasted Lands: The Other Side of the World
+					["qg"] = 11118,	-- Innkeeper Vizzie
+					["altQuests"] = { 28673 },	-- Hero's Call: Blasted Lands!
+					["coord"] = { 59.8, 51.1, WINTERSPRING },
+					["timeline"] = { "added 4.0.3.13329" },
+					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
+				}),
+				q(28858, {	-- Blasted Lands: The Other Side of the World
+					["qg"] = 11118,	-- Innkeeper Vizzie
+					["altQuests"] = { 28671 },	-- Warchief's Command: Blasted Lands!
+					["coord"] = { 59.8, 51.1, WINTERSPRING },
+					["timeline"] = { "added 4.0.3.13329" },
+					["races"] = HORDE_ONLY,
+					["isBreadcrumb"] = true,
 				}),
 				q(26160, {	-- Blood Ritual
 					["qg"] = 42298,	-- Kasim Sharim

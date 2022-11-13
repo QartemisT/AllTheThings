@@ -1489,16 +1489,31 @@ root("Zones", m(KUL_TIRAS, bubbleDown({ ["timeline"] = { "added 8.0.1" } }, {
 				["lockCriteria"] = { 1, "lvl", 50 },
 				["races"] = ALLIANCE_ONLY,
 			},{
-				-- TODO: Check SQ, also probably can't do after a certain level
-				q(48525),	-- Break Them to Splinters
-				q(48474),	-- Crypt Keepers
-				q(47969),	-- Fallhaven's Curse
+				q(48525, {	-- Break Them to Splinters
+					["sourceQuest"] = 48519,	-- Hope They Can't Swim
+				}),
+				q(48474, {	-- Crypt Keepers
+					["sourceQuest"] = 48475,	-- Seeing Spirits
+					["description"] = "You must accept the quest |cffffff00Seeing Spirits|r in order for this Bonus Objective to activate.",
+				}),
+				q(47969, {	-- Fallhaven's Curse
+					["sourceQuest"] = 47968,	-- Signs and Portents
+					["description"] = "You must accept the quest |cffffff00Signs and Portents|r in order for this Bonus Objective to activate.",
+				}),
 				q(48181),	-- Nooooope
-				q(48680),	-- Not the Bees!
+				q(48680, {	-- Not the Bees!
+					["sourceQuest"] = 48678,	-- Questionable Offerings
+				}),
 				q(50959),	-- Plundering Pirates
-				q(50448),	-- Reclaiming Corlain
-				q(45972),	-- The Accursed Thicket
-				q(50091),	-- Village Repair
+				q(50448, {	-- Reclaiming Corlain
+					["sourceQuest"] = 50253,	-- An Improved Arsenal
+				}),
+				q(45972, {	-- The Accursed Thicket
+					["sourceQuest"] = 47428,	-- Kitty?
+				}),
+				q(50091, {	-- Village Repair
+					["sourceQuest"] = 49939,	-- So Long, Sister
+				}),
 			})),
 --[[	raw quest list to check against
 			-- Unknown

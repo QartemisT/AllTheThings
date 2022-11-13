@@ -2,12 +2,13 @@
 --       W O R L D   D R O P S   M O D U L E       --
 -----------------------------------------------------
 
-root("WorldDrops", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_DF } }, {
+root("WorldDrops", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = ADDED_DFREL }, {
 	i(199018),	-- Bejeweled Stonewatcher's Pendant
 	i(199005),	-- Horn Strider's Bracers (Weird?)
 	i(201470),	-- Story of a Memorable Victory
 	n(ARMOR, {
 		i(199019),	-- Aerodynamic Cape
+		i(199017),	-- Claw-Marked Signet
 		i(198990),	-- Drakewatcher's Cord
 		i(198987),	-- Drakewatcher's Handwraps
 		i(198988),	-- Drakewatcher's Hood
@@ -40,7 +41,41 @@ root("WorldDrops", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_DF } },
 		i(199010),	-- Shorebreaker's Legguards
 		i(199011),	-- Shorebreaker's Pauldrons
 		i(199031),	-- Stonewatcher's Eye
+		i(199030),	-- Stonewatcher's Thumb
 		i(199029),	-- Stonewatcher's Toe
+	}),
+	filter(56, {	-- Reagents
+		i(201400),	-- Aquatic Maw
+		i(193053),	-- Contoured Fowlfeather
+		i(201406),	-- Glowing Titan Orb
+		i(201401),	-- Iridescent Plume
+		i(201402),	-- Large Sturdy Femur
+		i(201403),	-- Mastodon Tusk
+		i(201399),	-- Primal Bear Spine
+		i(201404),	-- Tallstrider Sinew
+		i(201405),	-- Tuft of Primal Wool
+		-- Awakened
+		i(190327),	-- Awakened Air
+		i(190331),	-- Awakened Decay
+		i(190316),	-- Awakened Earth
+		i(190321),	-- Awakened Fire
+		i(190329),	-- Awakened Frost
+		i(190450),	-- Awakened Ire
+		i(190324),	-- Awakened Order
+		-- Rousing
+		i(190326),	-- Rousing Air
+		i(190330),	-- Rousing Decay
+		i(190315),	-- Rousing Earth
+		i(190320),	-- Rousing Fire
+		i(190328),	-- Rousing Frost
+		i(190451),	-- Rousing Ire
+		i(190322),	-- Rousing Order
+		-- Cloth
+		i(193050),	-- Tattered Wildercloth
+		i(193922),	-- Wildercloth
+		i(193923),	-- Decayed Wildercloth
+		i(193924),	-- Frostbitten Wildercloth
+		i(193925),	-- Singed Wildercloth
 	}),
 	filter(RECIPES, {
 		i(194298, {	-- Pattern: Forlorn Funeral Pall (RECIPE!)
@@ -57,6 +92,7 @@ root("WorldDrops", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_DF } },
 	n(WEAPONS, {
 		i(199020),	-- Drake Racing Starter Pistol
 		i(199027),	-- Drake Slayer's Greatsword
+		i(199032),	-- Drakescale Shield
 		i(199039),	-- Drakewatcher's Beacon
 		i(199033),	-- Drakewatcher's Scriptures
 		i(199045),	-- Earth-Blessed Mace
@@ -73,6 +109,8 @@ root("WorldDrops", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_DF } },
 		i(199046),	-- Shorebreaker's Greataxe
 		i(199037),	-- Shorebreaker's Poleaxe
 		i(199021),	-- Shorebreaker's Sword
+		i(199043),	-- Skullsplitting Axe
+		i(199024),	-- Talon Sharpening Axe
 		i(199047),	-- Wind-Blessed Claw
 		i(199040),	-- Wind-Blessed Hammer
 	}),

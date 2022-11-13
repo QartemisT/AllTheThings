@@ -1,7 +1,7 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
-root("ExpansionFeatures", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_DF } }, {
+root("ExpansionFeatures", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = ADDED_DFREL }, {
 	n(QUESTS, {
 		q(65436, {	-- The Dragon Isles Await [A]
 			["maps"] = { STORMWIND_CITY },
@@ -131,9 +131,10 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_
 			["coord"] = { 55.8, 12.7, DUROTAR },
 			["races"] = HORDE_ONLY,
 		}),
-		-- TODO??
-		q(66458),	-- Legacy of Tyr: Secrets of the Past
-		q(66586),	-- Legacy of Tyr: Secrets of the Past
+		-- TODO: I guess this will be added in pre-patch phase 2?
+		q(66458),	-- Legacy of Tyr: Secrets of the Past [A]
+		q(66586),	-- Legacy of Tyr: Secrets of the Past [H]
+		q(71093),	-- Legacy of Tyr: Secrets of the Past [auto-accepted]
 	}),
 })));
 

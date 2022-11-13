@@ -1674,7 +1674,6 @@ root("HiddenQuestTriggers", {
 		-- q(59682),	-- triggered when using "Crown of Honor"
 		q(59684),	-- Using 'Bounding Shroom Seeds' (177233)
 		q(59694),	-- Using 'Night Fae Arsenal' (177244)
-		q(61546),	-- when opening the correct crypt door while on quest 'Crypt Crashers' (58428)
 		q(62502),	-- triggered at the end of Ember Court, before collecting tribute/leaving (week 3)
 		q(59686),	-- triggered when using Tubbins's Lucky Teapot
 		q(60607),	-- triggered when completing #60601, "Darkwing Drills," Anima Conductor Rank 2 WQ (as assassin)	— incremental power/ability boosts each time you complete the WQ
@@ -1778,6 +1777,7 @@ root("HiddenQuestTriggers", {
 		q(25198),	-- Winnoa Pineforest - completed with quest 24807
 		q(25305),	-- Never Look Back- completed with quest 25304
 		q(26379),	-- In Aid of the Refugees - completed with quest 13601
+		q(26398),	-- Walk With The Earth Mother - completed with 26397
 		q(26893),	-- Blackfathom Deeps - completed with quest 26894
 		q(27309),	-- The Grimtotem Plot - completed with quest 27293
 		q(27861),	-- The Crucible of Carnage: The Bloodeye Bruiser! - completed with quest 27863
@@ -1895,8 +1895,9 @@ root("HiddenQuestTriggers", {
 		q(46176),	-- The Archmage Accosted - completed with quest 44924
 		q(49059),	-- The Bones of Xibala - completed with quest 47257
 		q(49563),	-- Warchief's Command: Frostfire Ridge! - completed with quest 49545
+		q(27419),	-- Army of the Black Dragon - completed with quest 1168
 	}),
-	
+
 	-------------------
 	--      MOP      --
 	-------------------

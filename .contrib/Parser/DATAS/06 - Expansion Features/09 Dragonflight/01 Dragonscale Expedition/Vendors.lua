@@ -1,7 +1,7 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
-root("ExpansionFeatures", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_DF } }, {
+root("ExpansionFeatures", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = ADDED_DFREL }, {
 	n(DRAGONSCALE_EXPEDITION, {
 		n(VENDORS, {
 			-- TODO: COSTS
@@ -9,14 +9,14 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_
 				["coord"] = { 46.9, 82.9, THE_WAKING_SHORES },
 				["g"] = {
 						-- RENOWN 5 --
-					i(198719),	-- Plans: Sturdy Expedition Shover (RECIPE!)
+					i(198719),	-- Plans: Sturdy Expedition Shovel (RECIPE!)
 						-- RENOWN 9 --
 					i(198781),	-- Schematic: Gravitational Displacer (RECIPE!)
 					i(198784),	-- Schematic: Primal Deconstruction Charge (RECIPE!)
 					i(194605),	-- Design: Radiant Malygite (RECIPE!)
 					i(194606),	-- Design: Energized Malygite (RECIPE!)
 					i(194613),	-- Design: Sensei's Neltharite (RECIPE!)
-					i(194613),	-- Design: Keen Neltharite (RECIPE!)
+					i(194614),	-- Design: Keen Neltharite (RECIPE!)
 					i(199811),	-- Formula: Enchant Cloak - Graceful Avoidance (RECIPE!)
 					i(199812),	-- Formula: Enchant Boots - Rider's Assurance (RECIPE!)
 						-- RENOWN 13 --

@@ -312,9 +312,15 @@ root("Craftables", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, bubbleDow
 		filter(TOYS, {
 			i(40895),	-- Gnomish X-Ray Specs (TOY!)
 			i(40768),	-- MOLL-E (TOY!)
+			-- #if BEFORE 4.0.1
+			i(40727, {	-- Personal Ejector Seat / Gnomish Gravity Well (TOY!)
+				["description"] = "This later becomes the Gnomish Gravity Well toy.",
+				["timeline"] = { "created 3.3.0", "added 4.0.1" },
+			}),
+			-- #endif
 			i(48933),	-- Wormhole Generator: Northrend (TOY!)
 		}),
-		filter(CONSUMABLES, {
+		category(755, {	-- Scopes
 			i(41146),	-- Sun Scope
 			i(41167),	-- Heartseeker Scope
 		}),
@@ -412,6 +418,11 @@ root("Craftables", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, bubbleDow
 		}),
 	}),
 	prof(JEWELCRAFTING, {
+		category(168, {	-- Materials
+			i(46849, {	-- Titanium Powder
+				["cost"] = {{ "i", 36910, 5 }},	-- Titanium Ore
+			}),
+		}),
 		filter(NECK_F, {
 			i(42339),	-- Blood Sun Necklace
 			i(43245),	-- Crystal Chalcedony Amulet
@@ -468,11 +479,15 @@ root("Craftables", tier(WOTLK_TIER, applyclassicphase(WRATH_PHASE_ONE, bubbleDow
 	}),
 	prof(LEATHERWORKING, {
 		filter(BAGS, {
-			i(38347),			-- Mammoth Mining Bag
-			i(38399),			-- Trapper's Traveling Pack
-			i(44446),			-- Pack of Endless Pockets
-			un(REMOVED_FROM_GAME, i(44447)),	-- Dragonscale Ammo Pouch
-			un(REMOVED_FROM_GAME, i(44448)),	-- Nerubian Reinforced Quiver
+			i(44447, {	-- Dragonscale Ammo Pouch
+				["timeline"] = { "removed 4.0.1" },
+			}),
+			i(38347),	-- Mammoth Mining Bag
+			i(38399),	-- Trapper's Traveling Pack
+			i(44446),	-- Pack of Endless Pockets
+			i(44448, {	-- Nerubian Reinforced Quiver
+				["timeline"] = { "removed 4.0.1" },
+			}),
 		}),
 		filter(CONSUMABLES, {
 			i(38371),	-- Jormungar Leg Armor

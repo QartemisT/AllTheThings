@@ -1992,13 +1992,6 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
 				}),
-				q(1271, {	-- Feast at the Blue Recluse
-					["qg"] = 1141,	-- Angus Stern
-					["sourceQuest"] = 1222,	-- Stinky's Escape
-					["coord"] = { 51.7, 93.6, STORMWIND_CITY },
-					["races"] = ALLIANCE_ONLY,
-					["timeline"] = { "added 1.11.1.10772" },
-				}),
 				q(26177, {	-- Feeling Crabby?
 					["qg"] = 42288,	-- Robby Flay
 					["coord"] = { 50.6, 71.6, STORMWIND_CITY },
@@ -2111,6 +2104,15 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						i(6972, {	-- Fire Hardened Hauberk
 							["timeline"] = { "removed 4.0.3" },
+							-- #if ANYCLASSIC
+							["OnUpdate"] = [[function(t)
+								if _.Level >= 40 then
+									t.f = ]] .. PLATE .. [[;
+								else
+									t.f = ]] .. MAIL .. [[;
+								end
+							end]],
+							-- #endif
 						}),
 					},
 				}),
@@ -2267,6 +2269,15 @@ root("Zones", m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						i(6971, {	-- Fire Hardened Coif
 							["timeline"] = { "removed 4.0.3" },
+							-- #if ANYCLASSIC
+							["OnUpdate"] = [[function(t)
+								if _.Level >= 40 then
+									t.f = ]] .. PLATE .. [[;
+								else
+									t.f = ]] .. MAIL .. [[;
+								end
+							end]],
+							-- #endif
 						}),
 					},
 				}),

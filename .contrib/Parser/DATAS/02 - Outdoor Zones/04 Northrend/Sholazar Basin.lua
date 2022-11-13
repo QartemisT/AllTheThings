@@ -434,12 +434,27 @@ root("Zones", {
 						["isDaily"] = true,
 					}),
 					q(12704, {	-- Appeasing the Great Rain Stone
-						["qg"] = 28027,	-- High-Oracle Soo-say
+						["providers"] = {
+							{ "n", 28027 },	-- High-Oracle Soo-say
+							{ "i", 38622 },	-- Lafoo's Bug Bag
+						},
 						["sourceQuest"] = 12695,	-- Return of the Friendly Dryskin
 						["coord"] = { 54.6, 56.3, SHOLAZAR_BASIN },
 						["maxReputation"] = { 1105, EXALTED },	-- The Oracles, Exalted.
 						["minReputation"] = { 1105, FRIENDLY },	-- The Oracles, Friendly.
 						["isDaily"] = true,
+						["groups"] = {
+							objective(1, {	-- 0/6 Shiny Treasures
+								["providers"] = {
+									{ "i",  38575 },	-- Shiny Treasures
+									{ "o", 190560 },	-- Glinting Armor
+									{ "o", 190561 },	-- Glowing Gem
+									{ "o", 190562 },	-- Polished Platter
+									{ "o", 190558 },	-- Shining Crystal
+									{ "o", 190563 },	-- Sparkling Treasure
+								},
+							}),
+						},
 					}),
 					q(12689, {	-- Hand of the Oracles
 						["qg"] = 28667,	-- Jaloot
@@ -454,6 +469,17 @@ root("Zones", {
 						["maxReputation"] = { 1105, EXALTED },	-- The Oracles, Exalted.
 						["minReputation"] = { 1105, FRIENDLY },	-- The Oracles, Friendly.
 						["isDaily"] = true,
+						["groups"] = {
+							objective(1, {	-- 0/50 Frenzyheart Attacker slain
+								["providers"] = {
+									{ "n",  28078 },	-- Frenzyheart Ravager
+									{ "o", 191209 },	-- Sparktouched Crystal Defenses
+									{ "i",  39689 },	-- Crystal of the Frozen Grip
+									{ "i",  39694 },	-- Crystal of the Violent Storm
+									{ "i",  39693 },	-- Crystal of Unstable Energy
+								},
+							}),
+						},
 					}),
 					q(12762, {	-- Power of the Great Ones
 						["qg"] = 29149,	-- Oracle Soo-dow
@@ -481,6 +507,14 @@ root("Zones", {
 						["maxReputation"] = { 1105, EXALTED },	-- The Oracles, Exalted.
 						["minReputation"] = { 1105, FRIENDLY },	-- The Oracles, Friendly.
 						["isDaily"] = true,
+						["groups"] = {
+							objective(1, {	-- 0/8 Song of Fedundity played
+								["providers"] = {
+									{ "i",  39599 },	-- Horn of Fecundity
+									{ "o", 191136 },	-- Soaked Fertile Dirt
+								},
+							}),
+						},
 					}),
 					q(12736, {	-- Song of Reflection
 						["qg"] = 29006,	-- Oracle Soo-nee

@@ -1,7 +1,7 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
-root("ExpansionFeatures", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_DF } }, {
+root("ExpansionFeatures", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = ADDED_DFREL }, {
 	n(ISKAARA_TUSKARR, {
 		n(VENDORS, {
 			n(186449, {	-- Arvik
@@ -113,6 +113,35 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_
 					i(199533),	-- Green Stocking Cap
 					i(199532),	-- Grey Stocking Cap
 					i(199531),	-- Red Stocking Cap
+				},
+			}),
+			n(194059, {	-- Rokkutuk <Lead Craftsman>
+				["coord"] = { 13.8, 50.0, THE_AZURE_SPAN },
+				["g"] = {
+						-- RENOWN 10 --
+					i(194611),	-- Design: Energized Ysemerald (RECIPE!)
+					i(194726),	-- Design: Kalu'ak Figurine (RECIPE!)
+					i(194610),	-- Design: Keen Ysemerald (RECIPE!)
+					i(194603),	-- Design: Radiant Alexstraszite (RECIPE!)
+					i(194602),	-- Design: Sensei's Alexstraszite (RECIPE!)
+					i(199816),	-- Formula: Enchant Chest - Accelerated Agility (RECIPE!)
+					i(199815),	-- Formula: Enchant Cloak - Regenerative Leech (RECIPE!)
+						-- RENOWN 15 --
+					i(194634),	-- Design: Idol of the Dreamer (RECIPE!)
+					i(194633),	-- Design: Idol of the Spell-Weaver (RECIPE!)
+					i(193875),	-- Pattern: Allied Heartwarming Fur Coat (RECIPE!)
+					i(193876),	-- Pattern: Snowball Makers (RECIPE!)
+						-- RENOWN 18 --
+					i(194660),	-- Design: Fine-Print Trifocals (RECIPE!)
+					i(194663),	-- Design: Resonant Focus (RECIPE!)
+					i(198465),	-- Pattern: Expert Skinner's Cap (RECIPE!)
+					i(198459),	-- Pattern: Lavish Floral Pack (RECIPE!)
+					i(198458),	-- Pattern: Resplendent Cover (RECIPE!)
+					i(198461),	-- Pattern: Shockproof Gloves (RECIPE!)
+					-- Renown 23
+					i(194311),	-- Pattern: Tuskarr Bean Bag (RECIPE!)
+					-- Renown 29 --
+					i(197981),	-- Pattern: Finished Prototype Regal Barding (RECIPE!)
 				},
 			}),
 			n(187680, {	-- Scaps

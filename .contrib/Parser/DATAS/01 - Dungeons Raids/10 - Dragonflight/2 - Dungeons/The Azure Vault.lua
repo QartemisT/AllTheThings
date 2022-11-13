@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
+root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = ADDED_DFREL }, {
 	inst(1203, {	-- The Azure Vault
 		["coord"] = { 38.9, 64.7, THE_AZURE_SPAN },
 		["maps"] = {
@@ -21,6 +21,8 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 			}),
 			n(ZONE_DROPS, {
 				i(194255),	-- Pattern: Amice of the Blue (RECIPE!)
+				i(194491),	-- Plans: Frostfire Legguards of Preparation (RECIPE!)
+				i(194492),	-- Plans: Unstable Frostfire Belt (RECIPE!)
 			}),
 			d(1, {	-- Normal
 				e(2582, {	-- Leymor
@@ -37,7 +39,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 				e(2585, {	-- Azureblade
 					["crs"] = { 186739 },	-- Azureblade
 					["g"] = {
-						i(193629),	-- Cloak of Feathers
+						i(193629),	-- Cloak of Lost Devotion
 						i(193632),	-- Fear Striker Tz'onna
 						i(193631),	-- Horizon Splitter
 						i(193628),	-- Tome of Unstable Power
@@ -86,7 +88,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 				e(2585, {	-- Azureblade
 					["crs"] = { 186739 },	-- Azureblade
 					["g"] = {
-						i(193629),	-- Cloak of Feathers
+						i(193629),	-- Cloak of Lost Devotion
 						i(193632),	-- Fear Striker Tz'onna
 						i(193631),	-- Horizon Splitter
 						i(193628),	-- Tome of Unstable Power
@@ -135,7 +137,7 @@ root("Instances", tier(DF_TIER, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 				e(2585, {	-- Azureblade
 					["crs"] = { 186739 },	-- Azureblade
 					["g"] = {
-						i(193629),	-- Cloak of Feathers
+						i(193629),	-- Cloak of Lost Devotion
 						i(193632),	-- Fear Striker Tz'onna
 						i(193631),	-- Horizon Splitter
 						i(193628),	-- Tome of Unstable Power

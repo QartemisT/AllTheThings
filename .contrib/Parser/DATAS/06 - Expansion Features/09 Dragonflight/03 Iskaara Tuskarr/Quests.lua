@@ -1,9 +1,15 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
-root("ExpansionFeatures", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_DF } }, {
+root("ExpansionFeatures", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = ADDED_DFREL }, {
 	n(ISKAARA_TUSKARR, {
 		n(QUESTS, {
+				-- RENOWN 1 --
+			q(70936, {	-- Stolen Tuskaar Totems
+				["sourceQuests"] = { 65849 },	-- To Iskaara
+				["provider"] = { "n", 186448 },	-- Elder Poa
+				["coord"] = { 12.4, 49.3, THE_AZURE_SPAN },
+			}),
 				-- RENOWN 3 --
 			q(70938, {	-- Community Feasts
 				["description"] = "Requires Renown 3. Spawns Anywhere on Dragon Isles.",

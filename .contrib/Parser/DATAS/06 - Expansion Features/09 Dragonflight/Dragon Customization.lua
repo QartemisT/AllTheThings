@@ -1,7 +1,7 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
-root("ExpansionFeatures", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_DF } }, {
+root("ExpansionFeatures", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = ADDED_DFREL }, {
 	n(DRAGON_CUSTOMIZATION, {
 		--[[
 		-- These might be NYI? Two Versions exists
@@ -18,6 +18,7 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_
 		i(194835),	-- Windborne Velocidrake Manuscript: Spined Crest
 		i(194834),	-- Windborne Velocidrake Manuscript: Windswept
 		--]]
+		pvp(i(201792)),	-- Highland Drake: Embodiment of the Crimson Gladiator
 		-- Obtainable?
 		i(196961),	-- Cliffside Wylderdrake: Armor
 		i(196991),	-- Cliffside Wylderdrake: Black Horns

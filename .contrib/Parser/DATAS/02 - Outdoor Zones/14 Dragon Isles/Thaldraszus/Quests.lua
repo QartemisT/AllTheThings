@@ -1,6 +1,6 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
+root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = ADDED_DFREL }, {
 	m(THALDRASZUS, {
 		n(QUESTS, {
 			n(CAMPAIGN, {
@@ -20,8 +20,10 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 					["provider"] = { "n", 189842 },	-- Captain Drine
 					["coord"] = { 59.3, 34.8, VALDRAKKEN },
 					["g"] = {
-						i(195203),	-- Eavedropper's Cap
-						i(195204),	-- Eavedropper's Coif
+						i(195203),	-- Eavesdropper's Cap
+						i(195204),	-- Eavesdropper's Coif
+						i(195202),	-- Eavesdropper's Cowl
+						i(195205),	-- Eavesdropper's Helm
 					},
 				}),
 				q(66163, {	-- Nowhere to Hide
@@ -102,6 +104,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 					["provider"] = { "n", 190562 },	-- Guardian Velomir
 					["coord"] = { 40.2, 85.1, THALDRASZUS },
 					["g"] = {
+						i(195224),	-- Magmatalon Bracers
+						i(195221),	-- Magmatalon Wraps
 						i(195223),	-- Magmatalon Wrist Scales
 						i(195222),	-- Magmatalon Wristguards
 					},
@@ -147,6 +151,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 					["coord"] = { 55.0, 75.6, THALDRASZUS },
 					["g"] = {
 						i(195207),	-- Junior Timewarder Breeches
+						i(195209),	-- Junior Timewarder Greaves
+						i(195206),	-- Junior Timewarder Leggings
 						i(195208),	-- Junior Timewarder Scales
 					},
 				}),
@@ -184,8 +190,10 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 					["provider"] = { "n", 190929 },	-- Aeonormu
 					["coord"] = { 57.5, 78.9, THALDRASZUS },
 					["g"] = {
-						i(195196),	-- Time Walkers
+						i(195194),	-- Time Walkers
 						i(195195),	-- Time Walkers
+						i(195196),	-- Time Walkers
+						i(195197),	-- Time Walkers
 					},
 				}),
 				q(65935, {	-- Catching Up to Chromie
@@ -228,8 +236,11 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 					["provider"] = { "n", 186711 },	-- Chromie
 					["coord"] = { 59.6, 81.7, THALDRASZUS },
 					["g"] = {
+						i(195201),	-- Chronomental Gauntlets
 						i(195200),	-- Chronomental Gloves
 						i(195199),	-- Chronomental Grips
+						i(195198),	-- Chronomental Halfgloves
+
 					},
 				}),
 				q(65962, {	-- The Never-Final Countdown
@@ -526,7 +537,9 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 						["coord"] = { 57.0, 67.7, THALDRASZUS },
 						["g"] = {
 							i(195187),	-- Artist's Belt
+							i(195186),	-- Artist's Cinch
 							i(195188),	-- Artist's Sash
+							i(195189),	-- Artist's Waistguard
 							crit(2, {	-- Drawing Conclusions
 								["achievementID"] = 16398,	-- Sojourner of Thaldraszus
 							}),
@@ -778,7 +791,10 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 						["provider"] = { "n", 189045 },	-- Mara
 						["coord"] = { 49.6, 58.8, THALDRASZUS },
 						["g"] = {
-							i(195192),	-- Sister's Gift
+							i(195192),	-- Wardkeeper's Hauberk
+							i(195193),	-- Wardkeeper's Heartguard
+							i(195190),	-- Wardkeeper's Robe
+							i(195191),	-- Wardkeeper's Vest
 							crit(5, {	-- Tyrhold Reservoir
 								["achievementID"] = 16398,	-- Sojourner of Thaldraszus
 							}),
@@ -957,6 +973,8 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 				["provider"] = { "n", 192543 },	-- Archivist Arenial
 				["coord"] = { 60.3, 81.9, THALDRASZUS },
 				["g"] = {
+					i(195218),	-- Highfather's Burden
+					i(195215),	-- Highfather's Cover
 					i(195216),	-- Highfather's Guard
 					i(195217),	-- Highfather's Legacy
 				},
@@ -1120,28 +1138,28 @@ root("Zones", m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_DF } }, {
 							ach(15908),	-- Garden Gallivant Advanced: Gold
 						},
 					}),
-					q(69957, {	-- Passage Pathway
+					q(69957, {	-- Tyrhold Trial
 						["sourceQuests"] = { 68795 },	-- Dragonriding
 						["provider"] = { "n", 193651 },	-- Bronze Timekeeper
 						["coord"] = { 57.2, 66.9, THALDRASZUS },
 						["repeatable"] = true,
 						["g"] = {
 							i(191140),	-- Bronze Timepiece
-							ach(15855),	-- Passage Pathway: Bronze
-							ach(15856),	-- Passage Pathway: Silver
-							ach(15857),	-- Passage Pathway: Gold
+							ach(15855),	-- Tyrhold Trial: Bronze
+							ach(15856),	-- Tyrhold Trial: Silver
+							ach(15857),	-- Tyrhold Trial: Gold
 						},
 					}),
-					q(69958, {	-- Passage Pathway - Advanced
+					q(69958, {	-- Tyrhold Trial - Advanced
 						["sourceQuests"] = { 68795 },	-- Dragonriding
 						["provider"] = { "n", 193651 },	-- Bronze Timekeeper
 						["coord"] = { 57.2, 66.9, THALDRASZUS },
 						["repeatable"] = true,
 						["g"] = {
 							i(191140),	-- Bronze Timepiece
-							ach(15858),	-- Passage Pathway Advanced: Bronze
-							ach(15859),	-- Passage Pathway Advanced: Silver
-							ach(15860),	-- Passage Pathway Advanced: Gold
+							ach(15858),	-- Tyrhold Trial Advanced: Bronze
+							ach(15859),	-- Tyrhold Trial Advanced: Silver
+							ach(15860),	-- Tyrhold Trial Advanced: Gold
 						},
 					}),
 				},

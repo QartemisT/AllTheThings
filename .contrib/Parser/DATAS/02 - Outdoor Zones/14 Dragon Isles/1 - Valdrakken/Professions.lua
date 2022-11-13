@@ -2,7 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 
-root("Zones", m(DRAGON_ISLES, bubbleDownSelf({ ["timeline"] = { "added 9.0.2" } }, {
+root("Zones", m(DRAGON_ISLES, bubbleDownSelf({ ["timeline"] = ADDED_DFREL }, {
 	m(VALDRAKKEN, {
 		n(PROFESSIONS, {
 			prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEMY }, {
@@ -22,6 +22,85 @@ root("Zones", m(DRAGON_ISLES, bubbleDownSelf({ ["timeline"] = { "added 9.0.2" } 
 						r(370539),	-- Refreshing Healing Potion
 						r(370711),	-- Transmute: Awakened Air
 						r(370731),	-- Writhefire Oil
+					},
+				}),
+			})),
+			prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = BLACKSMITHING }, {
+				n(185546, {	-- Metalshaper Kuroko <Blacksmithing Trainer>
+					["coord"] = { 37.2, 47.8, VALDRAKKEN },
+					["g"] = {
+						r(365677),	-- Dragon Isles Blacksmithing
+						r(367600),	-- Draconium Axe
+						r(371344),	-- Draconium Blacksmith's Hammer
+						r(371364),	-- Draconium Blacksmith's Toolbox
+						r(393404),	-- Draconium Defender
+						r(367596),	-- Draconium Dirk
+						r(393416),	-- Draconium Great Axe
+						r(367598),	-- Draconium Great Mace
+						r(367595),	-- Draconium Knuckles
+						r(371338),	-- Draconium Leatherworker's Knife
+						r(371360),	-- Draconium Leatherworker's Toolset
+						r(371302),	-- Draconium Needle Set
+						r(371309),	-- Draconium Pickaxe
+						r(371343),	-- Draconium Sickle
+						r(371304),	-- Draconium Skinning Knife
+						r(367597),	-- Draconium Stiletto
+						r(367599),	-- Draconium Sword
+						r(367611),	-- Explorer's Expert Clasp
+						r(395879),	-- Explorer's Expert Gauntlets
+						r(395881),	-- Explorer's Expert Greaves
+						r(395883),	-- Explorer's Expert Helm
+						r(395880),	-- Explorer's Expert Spaulders
+						r(367610),	-- Explorer's Plate Boots
+						r(367609),	-- Explorer's Plate Bracers
+						r(395886),	-- Explorer's Plate Chestguard
+						r(367712),	-- Frostfire Alloy
+						r(365735),	-- Primal Molten Alloy
+						r(371674),	-- Primal Weightstone
+						r(371650),	-- Primal Whetstone
+						r(385304),	-- Recraft Equipment
+						r(371395),	-- Serevite Repair Hammer
+						r(371394),	-- Serevite Skeleton Key
+					},
+				}),
+			})),
+			prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENCHANTING }, {
+				n(193744, {	-- Soragosa <Enchanting Trainer>
+					["coord"] = { 30.8, 61.4, VALDRAKKEN },
+					["g"] = {
+						r(366255),	-- Dragon Isles Enchanting
+						r(392888),	-- Disenchant
+						r(389537),	-- Burning Writ
+						r(389292),	-- Devotion of Critical Strike
+						r(389293),	-- Devotion of Haste
+						r(389294),	-- Devotion of Mastery
+						r(389295),	-- Devotion of Versatility
+						r(389540),	-- Earthen Writ
+						r(391176),	-- Enchanted Writhebark Wand
+						r(389543),	-- Frozen Writ
+						r(391810),	-- Illusory Adornment: Air
+						r(391811),	-- Illusory Adornment: Earth
+						r(390951),	-- Illusory Adornment: Fire
+						r(391809),	-- Illusory Adornment: Frost
+						r(389191),	-- Recraft Equipment
+						r(390823),	-- Runed Draconium Rod
+						r(394189),	-- Runed Serevite Rod
+						r(391806),	-- Scepter of Spectacle: Air
+						r(391807),	-- Scepter of Spectacle: Earth
+						r(391196),	-- Scepter of Spectacle: Fire
+						r(391197),	-- Scepter of Spectacle: Frost
+						r(389542),	-- Sophic Writ
+						r(389546),	-- Wafting Writ
+						r(389297),	-- Writ of Avoidance [Bracers]
+						r(389397),	-- Writ of Avoidance [Cloak]
+						r(388930),	-- Writ of Critical Strike
+						r(389135),	-- Writ of Haste
+						r(389298),	-- Writ of Leech [Bracers]
+						r(389398),	-- Writ of Leech [Cloak]
+						r(389136),	-- Writ of Mastery
+						r(389300),	-- Writ of Speed [Bracers]
+						r(389400),	-- Writ of Speed [Cloak]
+						r(389151),	-- Writ of Versatility
 					},
 				}),
 			})),
@@ -64,6 +143,110 @@ root("Zones", m(DRAGON_ISLES, bubbleDownSelf({ ["timeline"] = { "added 9.0.2" } 
 					},
 				}),
 			})),
+			prof(FISHING, bubbleDownSelf({ ["requireSkill"] = FISHING }, {
+				n(185359, {	-- Toklo <Fishing Trainer>
+					["coord"] = { 44.6, 74.6, VALDRAKKEN },
+					["g"] = {
+						r(366253),	-- Dragon Isles Fishing
+						r(393061),	-- Aileron Seamoth School
+						r(393060),	-- Cerulean Spinefish School
+						r(393064),	-- Islefin Dorado Pool
+						r(393067),	-- Magma Thresher Pool
+						r(393068),	-- Prismatic Leaper School
+						r(393066),	-- Rimefin Tuna Pool
+						r(393063),	-- Scalebelly Mackerel
+						r(393065),	-- Shimmering Treasure Pool
+						r(393062),	-- Temporal Dragonhead School
+						r(393059),	-- Thousandbite Pirahna Swarm
+					},
+				}),
+			})),
+			--[[
+			prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERBALISM }, {
+				n(, {	--
+					["coord"] = { X, Y VALDRAKKEN },
+					["g"] = {
+						r(366252),	-- Herb Gathering
+						r(395275),	-- Dreambloom
+						r(391406),	-- Hochenblume
+						r(396171),	-- Infused Pollen
+					},
+				}),
+			})),
+			--]]
+			prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] = LEATHERWORKING }, {
+				n(185551, {	-- Hideshaper Koruz <Leatherworking Trainer>
+					["coord"] = { 28.8, 61.6, VALDRAKKEN },
+					["g"] = {
+						r(366249),	-- Dragon Isles Leatherworking
+						r(375188),	-- Alchemist's Hat
+						r(375102),	-- Bonewrought Crossbow
+						r(375182),	-- Durable Pack
+						r(375178),	-- Earthshine Scales
+						r(375168),	-- Feral Hide Drums
+						r(375181),	-- Floral Basket
+						r(375179),	-- Frostbite Scales
+						r(375184),	-- Jeweler's Cover
+						r(375174),	-- Mireslush Hide
+						r(375103),	-- Pioneer's Leather Boots
+						r(375104),	-- Pioneer's Leather Wristguards
+						r(375105),	-- Pioneer's Leather Tunic
+						r(395863),	-- Pioneer's Practiced Belt
+						r(395864),	-- Pioneer's Practiced Cowl
+						r(395865),	-- Pioneer's Practiced Gloves
+						r(395867),	-- Pioneer's Practiced Leggings
+						r(395868),	-- Pioneer's Practiced Shoulderpads
+						r(375185),	-- Protective Gloves
+						r(389195),	-- Recraft Equipment
+						r(375164),	-- Reinforced Armor Kit
+						r(375186),	-- Resilient Smock
+						r(375183),	-- Skinner's Cap
+						r(375187),	-- Smithing Apron
+						r(375173),	-- Stonecrust Hide
+						r(375106),	-- Trailblazer's Scale Boots
+						r(375107),	-- Trailblazer's Scale Bracers
+						r(375108),	-- Trailblazer's Scale Vest
+						r(395839),	-- Trailblazer's Toughened Coif
+						r(395844),	-- Trailblazer's Toughened Chainbelt
+						r(395845),	-- Trailblazer's Toughened Grips
+						r(395847),	-- Trailblazer's Toughened Legguards
+						r(395851),	-- Trailblazer's Toughened Spikes
+					},
+				}),
+			})),
+			prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = JEWELCRAFTING }, {
+				n(190094, {	-- Tuluradormi <Jewelcrafting Trainer>
+					["coord"] = { 40.6, 61.2, VALDRAKKEN },
+					["g"] = {
+						r(366250),	-- Dragon Isles Jewelcrafting
+						r(374627),	-- Dragon Isles Prospecting
+						r(395696),	-- Dragon Isles Crushing
+						r(376233),	-- Band of New Beginnings
+						r(374530),	-- Bold-Print Bifocals
+						r(374537),	-- Chromatic Focus
+						r(374437),	-- Crafty Queen's Ruby
+						r(374477),	-- Draconic Vial
+						r(374553),	-- Elemental Harmony
+						r(374439),	-- Energized Vibrant Emerald
+						r(374461),	-- Forceful Nozdorite
+						r(374478),	-- Frameless Lens
+						r(374480),	-- Glossy Stone
+						r(374460),	-- Jagged Nozdorite
+						r(374531),	-- Left-Handed Magnifying Glass
+						r(374494),	-- Pendant of Impending Perils
+						r(374462),	-- Puissant Nozdorite
+						r(389194),	-- Recraft Equipment
+						r(374506),	-- Revitalizing Red Carving
+						r(374440),	-- Sensei's Sundered Onyx
+						r(374475),	-- Shimmering Clasp
+						r(374441),	-- Solid Eternity Amber
+						r(374463),	-- Steady Nozdorite
+						r(374532),	-- Sundered Onyx Loupes
+						r(374550),	-- Timewatcher's Patience
+						r(374438),	-- Zen Mystic Sapphire
+					},
+				}),
+			})),
 			--[[
 			prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING }, {
 				n(, {	--
@@ -75,6 +258,20 @@ root("Zones", m(DRAGON_ISLES, bubbleDownSelf({ ["timeline"] = { "added 9.0.2" } 
 						r(395269),	-- Iridescent Ore
 						r(396162),	-- Khaz'gorite
 						r(384692),	-- Serevite Deposit
+					},
+				}),
+			}),
+			prof(SKINNING, bubbleDownSelf({ ["requireSkill"] = SKINNING }, {
+				n(, {	--
+					["coord"] = { X, Y VALDRAKKEN },
+					["g"] = {
+						r(366259),	-- Skinning
+						r(395282),	-- Curious Hide
+						r(395706),	-- Dense Hide
+						r(392440),	-- Leather Skinning
+						r(395700),	-- Lustrous Scaled Hide
+						r(396173),	-- Saturated Bone
+						r(392445),	-- Scale Skinning
 					},
 				}),
 			}),

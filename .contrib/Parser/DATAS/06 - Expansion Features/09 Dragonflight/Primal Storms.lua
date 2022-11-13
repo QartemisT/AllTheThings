@@ -1,7 +1,7 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
-root("ExpansionFeatures", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_DF } }, {
+root("ExpansionFeatures", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = ADDED_DFREL }, {
 	n(PRIMAL_STORMS, {
 		n(ACHIEVEMENTS, {
 			ach(16492),	-- Into the Storm [meta meta]
@@ -48,6 +48,13 @@ root("ExpansionFeatures", tier(DF_TIER, bubbleDownSelf({ ["timeline"] = { ADDED_
 			n(193653, {	-- Gaelzion
 				["coord"] = { 63.0, 26.2, THE_WAKING_SHORES },
 			}),
+		}),
+		n(REWARDS, {
+			i(194641),	-- Design: Elemental Lariat (RECIPE!)
+			i(200911),	-- Formula: Illusion: Primal Air (RECIPE!)
+			i(200912),	-- Formula: Illusion: Primal Earth (RECIPE!)
+			i(200913),	-- Formula: Illusion: Primal Fire (RECIPE!)
+			i(200914),	-- Formula: Illusion: Primal Frost (RECIPE!)
 		}),
 	}),
 })));

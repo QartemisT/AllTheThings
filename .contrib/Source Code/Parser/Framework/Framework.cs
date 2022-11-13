@@ -80,7 +80,7 @@ namespace ATT
         };
 
         /// <summary>
-        /// The very last patch used by each content expansion.
+        /// The very last patch (or current one for Retail) used by each content expansion.
         /// NOTE: Classic usually follows this build number.
         /// https://wowpedia.fandom.com/wiki/Patch
         /// </summary>
@@ -97,7 +97,7 @@ namespace ATT
             { "LEGION", new int[] { 7, 3, 5, 26365 } },
             { "BFA", new int[] { 8, 3, 7, 35249 } },
             { "SHADOWLANDS", new int[] { 9, 2, 7, 45745 } },
-            { "DF", new int[] { 10, 0, 0, 46293 } },
+            { "DF", new int[] { 10, 0, 0, 46597 } },
         };
 
         public static readonly string CURRENT_RELEASE_PHASE_NAME =
@@ -416,6 +416,10 @@ namespace ATT
                 if (!DataConsolidation(data))
                     return false;
             }
+
+            // If this container has an aqd or hqd, then process those objects as well.
+            if (data.TryGetValue("aqd", out Dictionary<string, object> qd)) Process(qd, modID, minLevel);
+            if (data.TryGetValue("hqd", out qd)) Process(qd, modID, minLevel);
 
             // If this container has groups, then process those groups as well.
             if (data.TryGetValue("g", out List<object> groups))
@@ -974,6 +978,15 @@ namespace ATT
             if (!CheckTimeline(data))
                 return false;
 
+            // certain types with empty groups shouldn't be included
+            if (data.TryGetValue("achievementCategoryID", out _))
+            {
+                if (!data.TryGetValue("g", out List<object> g) || g.Count == 0)
+                {
+                    return false;
+                }
+            }
+
             // since early 2020, the API no longer associates recipe Items with their corresponding Spell... because Blizzard hates us
             // so try to automatically associate the matching recipeID from the requiredSkill profession list to the matching item...
             TryFindRecipeID(data);
@@ -1108,7 +1121,7 @@ namespace ATT
                                         removed = 0;
                                         addedPatch = 0;
                                     }
-                                    else if (removed == 4 || removed == 2)
+                                    else if (removed == 4 || removed == 2 || removed == 1)
                                     {
                                         // Mark the first patch this comes back on.
                                         if (addedPatch == 0) addedPatch = version;
@@ -1665,7 +1678,7 @@ namespace ATT
             Trace.WriteLine("Data Validation...");
             foreach (var container in Objects.AllContainers)
             {
-                ProcessingAchievementCategory = container.Key == "Achievements";
+                ProcessingAchievementCategory = container.Key.Contains("Achievement");
                 Process(container.Value, 0, 1);
             }
 
@@ -1675,7 +1688,7 @@ namespace ATT
             AdditionalProcessing();
             foreach (var container in Objects.AllContainers)
             {
-                ProcessingAchievementCategory = container.Key == "Achievements";
+                ProcessingAchievementCategory = container.Key.Contains("Achievement");
                 Process(container.Value, 0, 1);
             }
 
