@@ -273,7 +273,6 @@ root("Craftables", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDownSelf(
 			i(190533),	-- Obsidian Seared Alloy+
 			i(190534),	-- Obsidian Seared Alloy++
 			i(190535),	-- Obsidian Seared Alloy+++
-			i(190452),	-- Primal Flux
 			i(189541),	-- Primal Molten Alloy+
 			i(189542),	-- Primal Molten Alloy++
 			i(189543),	-- Primal Molten Alloy+++
@@ -326,32 +325,27 @@ root("Craftables", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDownSelf(
 		}),
 	}),
 	prof(COOKING, {
-		-- Maybe World Drop
-		i(197745),	-- Basilisk Eggs
-		i(197746),	-- Bruffalon Flank
-		i(197748),	-- Burly Bear Meat
-		i(197743),	-- Duck Meat
-		i(197744),	-- Hornswog Hunk
-		i(197741),	-- Maybe Meat
-		i(197747),	-- Mighty Mammoth Ribs
-		i(197742),	-- Ribbed Mollusk Meat
-		i(198396),	-- Ribbed Mollusk Meat
-		-- Crafting
-		i(197757),	-- Assorted Exotic Spices
-		i(197756),	-- Pebbled Rock Salts
-		-- Sold --
-		i(197752),	-- Conveniently Packaged Ingredients
-		i(197749),	-- Ohn'ahranan Potato
-		i(197751),	-- Pastry Packets
-		i(197753),	-- Thaldraszian Cocoa Powder
-		i(197750),	-- Three-Cheese Blend
+		n(DISCOVERY, {
+			r(381397),	-- Aromatic Seafood Platter
+			r(381403),	-- Braised Bruffalon Brisket
+			r(381385),	-- Charred Hornswog Steaks
+			r(381396),	-- Feisty Fish Sticks
+			r(381402),	-- Great Cerulean Sea
+			r(381399),	-- Revenge, Served Cold
+			r(381404),	-- Riverside Picnic
+			r(381407),	-- Roast Duck Delight
+			r(381398),	-- Sizzling Seafood Medley
+			r(381400),	-- Thousandbone Tongueslicer
+		}),
 		-- Unknown
+		i(194691),	-- Artisanal Berry Juice
 		i(194690),	-- Horn o' Mead
-		i(194829),	-- Draconic Fortune Card
 		i(194683),	-- Buttermilk
 		--
+		i(197757),	-- Assorted Exotic Spices
 		i(197783),	-- Aromatic Seafood Platter
 		i(197788),	-- Braised Bruffalon Brisket
+		i(197763),	-- Breakfast of Draconic Champions
 		i(197767),	-- Blubbery Muffin
 		i(197768),	-- Celebratory Cake
 		i(197774),	-- Charred Hornswog Steaks
@@ -361,15 +355,14 @@ root("Craftables", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDownSelf(
 		i(197792),	-- Fated Fortune Cookie
 		i(197782),	-- Feisty Fish Sticks
 		i(197779),	-- Filet of Fangs
-		-- i(),	-- Gral's Devotion ??
-		-- i(),	-- Gral's Reverence ??
-		-- i(),	-- Gral's Veneration ??
+		i(197794),	-- Grand Banquet of the Kalu'ak
 		i(197787),	-- Great Cerulean Sea
 		i(197795),	-- Hoard of Draconic Delicacies
 		i(197777),	-- Hopefully Healthy
-		-- i(),	-- Hungry Whelpling Breakfast ??
-		i(197760),	-- Mackeral Snackeral
+		i(197765),	-- Impossibly Sharp Cutting Knife
+		i(197760),	-- Mackerel Snackeral
 		i(194902),	-- Ooey-Gooey Chocolate
+		i(197756),	-- Pebbled Rock Salts
 		i(197761),	-- Probably Protein
 		i(197785),	-- Revenge, Served Cold
 		i(197789),	-- Riverside Picnic
@@ -389,10 +382,6 @@ root("Craftables", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDownSelf(
 		i(197758),	-- Twice-Baked Potato
 		i(197793),	-- Yusa's Hearty Stew
 		i(197770),	-- Zesty Water
-
-
-
-		i(197765),	-- Impossibly Sharp Cutting Knife
 	}),
 	prof(ENCHANTING, {
 		n(DISCOVERY, {
@@ -825,6 +814,17 @@ root("Craftables", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDownSelf(
 			i(199232),	-- Schematic: Bundle of Fireworks (RECIPE!)
 			i(199236),	-- Schematic: D.U.C.K.O.Y. (RECIPE!)
 			i(199228),	-- Schematic: Grease Grenade (RECIPE!)
+			i(198905),	-- Technique: Illusion Parchment: Aqua Torrent (RECIPE!)
+			i(198899),	-- Technique: Renewed Proto-Drake: Predator Pattern (RECIPE!)
+			i(201738),	-- Technique: Renewed Proto-Drake: Steel and Yellow Armor (RECIPE!)
+			i(198903),	-- Technique: Windborne Velocidrake: Spined Head (RECIPE!)
+			i(198896),	-- Technique: Highland Drake: Spined Throat (RECIPE!)
+			i(198891),	-- Technique: Cliffside Wylderdrake: Conical Head (RECIPE!)
+			i(198109),	-- Recipe: Churnbelly Tea (RECIPE!)
+			i(198114),	-- Recipe: Filet of Fangs (RECIPE!)
+			i(198116),	-- Recipe: Salt-Baked Fishcake (RECIPE!)
+			i(198115),	-- Recipe: Seamoth Surprise (RECIPE!)
+			i(198113),	-- Recipe: Timely Demise (RECIPE!)
 		}),
 		i(194967),	-- Aileron Seamoth
 		i(194968),	-- Cerulean Spinefish
@@ -849,6 +849,7 @@ root("Craftables", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDownSelf(
 			i(191460),	-- Hochenblume+
 			i(191461),	-- Hochenblume++
 			i(191462),	-- Hochenblume+++
+			i(197755),	-- Lava Beetle
 			i(191464),	-- Saxifrage+
 			i(191465),	-- Saxifrage++
 			i(191466),	-- Saxifrage+++
@@ -892,11 +893,291 @@ root("Craftables", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDownSelf(
 		}),
 	}),
 	prof(INSCRIPTION, {
-		i(191234),	-- Mixing Rod I (WIP)
-		i(191231),	-- Mixing Rod II (WIP)
-		i(191233),	-- Rolling Pin I (WIP)
-		i(191232),	-- Rolling Pin II (WIP)
-		i(197718),	-- Scroll of Sales
+		spell(382981, {	-- Dragon Isles Milling
+			i(198418),	-- Blazing Pigment+
+			i(198419),	-- Blazing Pigment++
+			i(198420),	-- Blazing Pigment+++
+			i(198415),	-- Flourishing Pigment+
+			i(198416),	-- Flourishing Pigment++
+			i(198417),	-- Flourishing Pigment+++
+			i(198412),	-- Serene Pigment+
+			i(198413),	-- Serene Pigment++
+			i(198414),	-- Serene Pigment+++
+			i(198421),	-- Shimmering Pigment+
+			i(198422),	-- Shimmering Pigment++
+			i(198423),	-- Shimmering Pigment+++
+		}),
+		n(DISCOVERY, {
+			r(383522),	-- Draconic Treatise on Alchemy
+			r(383517),	-- Draconic Treatise on Blacksmithing
+			r(383523),	-- Draconic Treatise on Enchanting
+			r(383844),	-- Draconic Treatise on Engineering
+			r(383515),	-- Draconic Treatise on Herbalism
+			r(383524),	-- Draconic Treatise on Jewelcrafting
+			r(383519),	-- Draconic Treatise on Leatherworking
+			r(383516),	-- Draconic Treatise on Mining
+			r(392944),	-- Draconic Treatise on Skinning
+			r(383520),	-- Draconic Treatise on Tailoring
+		}),
+		n(DRAGON_CUSTOMIZATION, {
+			i(196981),	-- Cliffside Wylderdrake: Conical Head
+			i(196988),	-- Cliffside Wylderdrake: Red Hair
+			i(196963),	-- Cliffside Wylderdrake: Silver and Blue Armor
+			i(196968),	-- Cliffside Wylderdrake: Steel and Yellow Armor
+			i(196980),	-- Cliffside Wylderdrake: Triple Head Horns
+			i(197117),	-- Highland Drake: Black Hair
+			i(197091),	-- Highland Drake: Silver and Blue Armor
+			i(197108),	-- Highland Drake: Spined Crest
+			i(197154),	-- Highland Drake: Spined Neck
+			i(197096),	-- Highland Drake: Steel and Yellow Armor
+			i(197377),	-- Renewed Proto-Drake: Bovine Horns
+			i(197394),	-- Renewed Proto-Drake: Predator Pattern
+			i(197347),	-- Renewed Proto-Drake: Silver and Blue Armor
+			i(197362),	-- Renewed Proto-Drake: Spined Crest
+			i(197352),	-- Renewed Proto-Drake: Steel and Yellow Armor
+			i(194833),	-- Windborne Velocidrake: Black Fur
+			i(197592),	-- Windborne Velocidrake: Spined Head
+			i(197578),	-- Windborne Velocidrake: Silver and Blue Armor
+			i(197579),	-- Windborne Velocidrake: Steel and Orange Armor
+			i(197634),	-- Windborne Velocidrake: Windswept Pattern
+		}),
+		i(194829, {	-- Fated Fortune Card
+			i(198127),	-- Recipe: Fated Fortune Cookie (RECIPE!)
+			i(199114), 	-- Fated Fortune Card
+			i(199116), 	-- Fated Fortune Card
+			i(199117), 	-- Fated Fortune Card
+			i(199118), 	-- Fated Fortune Card
+			i(199119), 	-- Fated Fortune Card
+			i(199120), 	-- Fated Fortune Card
+			i(199121), 	-- Fated Fortune Card
+			i(199123), 	-- Fated Fortune Card
+			i(199124), 	-- Fated Fortune Card
+			i(199125), 	-- Fated Fortune Card
+			i(199126), 	-- Fated Fortune Card
+			i(199127), 	-- Fated Fortune Card
+			i(199129), 	-- Fated Fortune Card
+			i(199130), 	-- Fated Fortune Card
+			i(199131), 	-- Fated Fortune Card
+			i(199132), 	-- Fated Fortune Card
+			i(199133), 	-- Fated Fortune Card
+			i(199134), 	-- Fated Fortune Card
+			i(199135), 	-- Fated Fortune Card
+			i(199136), 	-- Fated Fortune Card
+			i(199137), 	-- Fated Fortune Card
+			i(199138), 	-- Fated Fortune Card
+			i(199139), 	-- Fated Fortune Card
+			i(199140), 	-- Fated Fortune Card
+			i(199141), 	-- Fated Fortune Card
+			i(199142), 	-- Fated Fortune Card
+			i(199143), 	-- Fated Fortune Card
+			i(199144), 	-- Fated Fortune Card
+			i(199145), 	-- Fated Fortune Card
+			i(199146), 	-- Fated Fortune Card
+			i(199147), 	-- Fated Fortune Card
+			i(199148), 	-- Fated Fortune Card
+			i(199149), 	-- Fated Fortune Card
+			i(199150), 	-- Fated Fortune Card
+			i(199151), 	-- Fated Fortune Card
+			i(199152), 	-- Fated Fortune Card
+			i(199153), 	-- Fated Fortune Card
+			i(199154), 	-- Fated Fortune Card
+			i(199155), 	-- Fated Fortune Card
+			i(199156), 	-- Fated Fortune Card
+			i(199157), 	-- Fated Fortune Card
+			i(199158), 	-- Fated Fortune Card
+			i(199159), 	-- Fated Fortune Card
+			i(199160), 	-- Fated Fortune Card
+			i(199161), 	-- Fated Fortune Card
+			i(199162), 	-- Fated Fortune Card
+			i(199163), 	-- Fated Fortune Card
+			i(199164), 	-- Fated Fortune Card
+			i(199165), 	-- Fated Fortune Card
+			i(199166), 	-- Fated Fortune Card
+			i(199167), 	-- Fated Fortune Card
+			i(199168), 	-- Fated Fortune Card
+			i(199169), 	-- Fated Fortune Card
+			i(199170), 	-- Fated Fortune Card
+		}),
+		filter(MISC, {
+			i(194871),	-- Azurescale Sigil+
+			i(199051),	-- Azurescale Sigil++
+			i(199052),	-- Azurescale Sigil+++
+			i(194870),	-- Bronzescale Sigil+
+			i(199053),	-- Bronzescale Sigil++
+			i(199054),	-- Bronzescale Sigil+++
+			i(194821),	-- Buzzing Rune+
+			i(194822),	-- Buzzing Rune++
+			i(194823),	-- Buzzing Rune+++
+			i(194859),	-- Chilled Rune+
+			i(194767),	-- Chilled Rune++
+			i(194768),	-- Chilled Rune+++
+			i(194824),	-- Chirping Rune+
+			i(194825),	-- Chirping Rune++
+			i(194826),	-- Chirping Rune+++
+			i(198503),	-- Contract: Artisan's Consortium+
+			i(198504),	-- Contract: Artisan's Consortium++
+			i(198505),	-- Contract: Artisan's Consortium+++
+			i(198506),	-- Contract: Dragonscale Expedition+
+			i(198507),	-- Contract: Dragonscale Expedition++
+			i(198508),	-- Contract: Dragonscale Expedition+++
+			i(198494),	-- Contract: Iskaara Tuskarr+
+			i(198495),	-- Contract: Iskaara Tuskarr++
+			i(198496),	-- Contract: Iskaara Tuskarr+++
+			i(198500),	-- Contract: Maruuk Centaur+
+			i(198501),	-- Contract: Maruuk Centaur++
+			i(198502),	-- Contract: Maruuk Centaur+++
+			i(198497),	-- Contract: Valdrakken Accord+
+			i(198498),	-- Contract: Valdrakken Accord++
+			i(198499),	-- Contract: Valdrakken Accord+++
+			i(194570),	-- Draconic Missive of the Aurora+
+			i(194571),	-- Draconic Missive of the Aurora++
+			i(194569),	-- Draconic Missive of the Aurora+++
+			i(200571),	-- Draconic Missive of Crafting Speed+
+			i(200572),	-- Draconic Missive of Crafting Speed++
+			i(200573),	-- Draconic Missive of Crafting Speed+++
+			i(200580),	-- Draconic Missive of Deftness+
+			i(200581),	-- Draconic Missive of Deftness++
+			i(200582),	-- Draconic Missive of Deftness+++
+			i(194567),	-- Draconic Missive of the Feverflare+
+			i(194568),	-- Draconic Missive of the Feverflare++
+			i(194566),	-- Draconic Missive of the Feverflare+++
+			i(200574),	-- Draconic Missive of Finesse+
+			i(200575),	-- Draconic Missive of Finesse++
+			i(200576),	-- Draconic Missive of Finesse+++
+			i(192553),	-- Draconic Missive of the Fireflash+
+			i(192554),	-- Draconic Missive of the Fireflash++
+			i(192552),	-- Draconic Missive of the Fireflash+++
+			i(194576),	-- Draconic Missive of the Harmonious+
+			i(194577),	-- Draconic Missive of the Harmonious++
+			i(194575),	-- Draconic Missive of the Harmonious+++
+			i(200568),	-- Draconic Missive of Multicraft+
+			i(200569),	-- Draconic Missive of Multicraft++
+			i(200570),	-- Draconic Missive of Multicraft+++
+			i(194579),	-- Draconic Missive of the Peerless+
+			i(194580),	-- Draconic Missive of the Peerless++
+			i(194578),	-- Draconic Missive of the Peerless+++
+			i(200577),	-- Draconic Missive of Perception+
+			i(200578),	-- Draconic Missive of Perception++
+			i(200579),	-- Draconic Missive of Perception+++
+			i(194573),	-- Draconic Missive of the Quickblade+
+			i(194574),	-- Draconic Missive of the Quickblade++
+			i(194572),	-- Draconic Missive of the Quickblade+++
+			i(200565),	-- Draconic Missive of Resourcefulness+
+			i(200566),	-- Draconic Missive of Resourcefulness++
+			i(200567),	-- Draconic Missive of Resourcefulness+++
+			i(194697),	-- Draconic Treatise on Alchemy
+			i(198454),	-- Draconic Treatise on Blacksmithing
+			i(194702),	-- Draconic Treatise on Enchanting
+			i(198510),	-- Draconic Treatise on Engineering
+			i(194704),	-- Draconic Treatise on Herbalism
+			i(194699),	-- Draconic Treatise on Inscription
+			i(194703),	-- Draconic Treatise on Jewelcrafting
+			i(194700),	-- Draconic Treatise on Leatherworking
+			i(194708),	-- Draconic Treatise on Mining
+			i(201023),	-- Draconic Treatise on Skinning
+			i(194698),	-- Draconic Treatise on Tailoring
+			i(194868),	-- Emberscale Sigil+
+			i(199055),	-- Emberscale Sigil++
+			i(199056),	-- Emberscale Sigil+++
+			i(194817),	-- Howling Rune+
+			i(194819),	-- Howling Rune++
+			i(194820),	-- Howling Rune+++
+			i(194733),	-- Illusion Parchment: Aqua Torrent
+			i(194735),	-- Illusion Parchment: Arcane Burst
+			i(194736),	-- Illusion Parchment: Chilling Wind
+			i(194732),	-- Illusion Parchment: Love Charm
+			i(194731),	-- Illusion Parchment: Magma Missile
+			i(194738),	-- Illusion Parchment: Shadow Orb
+			i(194737),	-- Illusion Parchment: Spell Shield
+			i(194734),	-- Illusion Parchment: Whirling Breeze
+			i(198431),	-- Jetscale Sigil+
+			i(199057),	-- Jetscale Sigil++
+			i(199058),	-- Jetscale Sigil+++
+			i(194869),	-- Sagescale Sigil+
+			i(199059),	-- Sagescale Sigil++
+			i(199060),	-- Sagescale Sigil+++
+			i(197718),	-- Scroll of Sales+
+			i(198616),	-- Scroll of Sales++
+			i(198617),	-- Scroll of Sales+++
+			i(198491),	-- Vantus Rune: Vault of the Incarnates+
+			i(198492),	-- Vantus Rune: Vault of the Incarnates++
+			i(198493),	-- Vantus Rune: Vault of the Incarnates+++
+		}),
+		filter(56, {
+			i(194751),	-- Blazing Ink+
+			i(194752),	-- Blazing Ink++
+			i(194846),	-- Blazing Ink+++
+			i(194760),	-- Burnished Ink+
+			i(194761),	-- Burnished Ink++
+			i(194855),	-- Burnished Ink+++
+			i(194754),	-- Cosmic Ink+
+			i(194755),	-- Cosmic Ink++
+			i(194756),	-- Cosmic Ink+++
+			i(194850),	-- Flourishing Ink+
+			i(194758),	-- Flourishing Ink++
+			i(194852),	-- Flourishing Ink+++
+			i(194862),	-- Runed Writhebark+
+			i(194863),	-- Runed Writhebark++
+			i(194864),	-- Runed Writhebark+++
+			i(194856),	-- Serene Ink+
+			i(194857),	-- Serene Ink++
+			i(194858),	-- Serene Ink+++
+		}),
+		filter(TRINKET_F, {
+			i(198478),	-- Darkmoon Deck Box: Dance
+			i(194872),	-- Darkmoon Deck Box: Inferno
+			i(198477),	-- Darkmoon Deck Box: Rime
+			i(198481),	-- Darkmoon Deck Box: Watcher
+			i(194827),	-- Bundle O' Cards: Dragon Isles
+			i(194785),	-- Ace of Fire
+			i(194786),	-- Two of Fire
+			i(194787),	-- Three of Fire
+			i(194788),	-- Four of Fire
+			i(194789),	-- Five of Fire
+			i(194790),	-- Six of Fire
+			i(194791),	-- Seven of Frost
+			i(194792),	-- Eight of Fire
+			i(194793),	-- Ace of Frost
+			i(194794),	-- Two of Frost
+			i(194795),	-- Three of Frost
+			i(194796),	-- Four of Frost
+			i(194797),	-- Five of Frost
+			i(194798),	-- Six of Frost
+			i(194799),	-- Seven of Fire
+			i(194800),	-- Eight of Frost
+			i(194801),	-- Ace of Air
+			i(194802),	-- Two of Air
+			i(194803),	-- Three of Air
+			i(194804),	-- Four of Air
+			i(194805),	-- Five of Air
+			i(194806),	-- Six of Air
+			i(194807),	-- Seven of Air
+			i(194808),	-- Eight of Air
+			i(194809),	-- Ace of Earth
+			i(194810),	-- Two of Earth
+			i(194811),	-- Three of Earth
+			i(194812),	-- Four of Earth
+			i(194813),	-- Five of Earth
+			i(194814),	-- Six of Earth
+			i(194815),	-- Seven of Earth
+			i(194816),	-- Eight of Earth
+		}),
+		n(WEAPONS, {
+			i(194877),	-- Core Explorer's Compendium
+			i(194879),	-- Crackling Codex of the Isles
+			i(194898),	-- Illuminating Pillar of the Isles
+			i(194897),	-- Kinetic Pillar of the Isles
+			i(194893),	-- Overseer's Writhebark Stave
+			i(194892),	-- Pioneer's Writhebark Stave
+			i(194894),	-- Weathered Explorer's Stave
+			-- Tools
+			i(191234),	-- Alchemist's Sturdy Mixing Rod
+			i(191231),	-- Alchemist's Brilliant Mixing Rod
+			i(191232),	-- Chef's Splendid Rolling Pin
+			i(191233),	-- Chef's Smooth Rolling Pin
+			i(194874),	-- Scribe's Fastened Quill
+			i(194875),	-- Scribe's Resplendent Quill
+		}),
 	}),
 	prof(JEWELCRAFTING, {
 		spell(374627, {	-- Dragon Isles Prospecting
@@ -986,6 +1267,11 @@ root("Craftables", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDownSelf(
 				i(193006),	-- Idol of the Earth Warder
 				i(193003),	-- Idol of the Lifebinder
 				i(193004),	-- Idol of the Spell-Weaver
+			}),
+			filter(56, {
+				i(193368),	-- Silken Gemdust+
+				i(193369),	-- Silken Gemdust++
+				i(193370),	-- Silken Gemdust+++
 			}),
 		}),
 		filter(BATTLE_PETS, {
@@ -1474,13 +1760,11 @@ root("Craftables", tier(DF_TIER, applyclassicphase(DF_PHASE_ONE, bubbleDownSelf(
 root("HiddenQuestTriggers", {
 	tier(DF_TIER, {
 		prof(ALCHEMY, {
-			-- FIRST CRAFT
+			-- Alchemy Essentials
 			q(71251),	-- Advanced Phial Alchemical Experimentation
 			q(71253),	-- Advanced Potion Alchemical Experimentation
 			q(71250),	-- Basic Phial Alchemical Experimentation
 			q(71252),	-- Basic Potion Alchemical Experimentation
-			--q(),	-- Reclaim Concoctions
-			--q(),	-- Recraft Equipment
 			-- Reagents
 			q(71248),	-- Omnium Draconis
 			q(71249),	-- Primal Convergent
@@ -1533,7 +1817,6 @@ root("HiddenQuestTriggers", {
 			-- Finishing Reagents
 			q(71257),	-- Agitating Potion Augmentation
 			q(71255),	-- Brood Salt
-			--q(),	-- Illustrious Insight
 			q(71258),	-- Reactive Phial Embellishment
 			q(71254),	-- Stable Fluidic Draconium
 			q(71256),	-- Writhefire Oil
@@ -1555,10 +1838,8 @@ root("HiddenQuestTriggers", {
 			q(71355),	-- Infurious Alloy
 			q(71354),	-- Obsidian Seared Alloy
 			q(71352),	-- Primal Molten Alloy
-			-- Finishing Reagent
-			--q(),	-- Illustrious Insight
 			-- Optional Reagent
-			--q(),	--  Armor Spikes
+			q(71358),	--  Armor Spikes
 			-- Armor
 			q(71309),	-- Allied Chestplate of Generosity
 			q(71310),	-- Allied Wristguard of Companionship
@@ -1580,7 +1861,7 @@ root("HiddenQuestTriggers", {
 			q(71313),	-- Explorer's Plate Chestguard
 			q(71305),	-- Frostfire Legguards of Preparation
 			q(71308),	-- Infurious Helm of Vegeance
-			--q(),	-- Infurious Warboots of Impunity
+			q(71307),	-- Infurious Warboots of Impunity
 			q(71316),	-- Primal Molten Breastplate
 			q(71318),	-- Primal Molten Gauntlets
 			q(71322),	-- Primal Molten Greatbelt
@@ -1592,7 +1873,7 @@ root("HiddenQuestTriggers", {
 			q(71306),	-- Unstable Frostfire Belt
 			-- Shields
 			q(72183),	-- Draconium Defender
-			--q(),	-- Shield of the Hearth
+			q(71303),	-- Shield of the Hearth
 			q(71304),	-- Primal Molten Defender
 			-- Weapons
 			q(71332),	-- Draconium Axe
@@ -1635,7 +1916,7 @@ root("HiddenQuestTriggers", {
 			q(71364),	-- Khaz'gorite Sickle
 			q(71370),	-- Khaz'gorite Skinning Knife
 			-- Consumable Tools
-			--q(),	-- Master's Hammer
+			q(72262),	-- Master's Hammer
 			q(71357),	-- Serevite Repair Hammer
 			q(71344),	-- Serevite Skeleton Key
 			--q(),	-- Sturdy Expedition Shovel
@@ -1646,97 +1927,90 @@ root("HiddenQuestTriggers", {
 			-- Pets
 			q(71351),	-- Alvin The Anvil
 			-- Dragon Ridning
-			--q(),	-- Prototype Explorer's Barding Framework
-			--q(),	-- Prototype Regal Barding Framework
+			q(71342),	-- Prototype Explorer's Barding Framework
+			q(71343),	-- Prototype Regal Barding Framework
 		}),
 		--[[
 		prof(COOKING, {
 		}),
-		prof(ENCHANTING, {
-			-- Recrafting --
-			q(),	-- Recraft Equipment
-			-- Fishing Reagents --
-			q(),	-- Illustrations Insight
-			-- Cloak Enchantments
-			q(),	-- Graceful Avoidance
-			q(),	-- Homebound Avoidance
-			q(),	-- Renegenerative Leech
-			q(),	-- Writ of Avoidance
-			q(),	-- Writ of Leech
-			q(),	-- Writ of Speed
-			-- Chest Enchantments
-			q(),	-- Accelerated Agility
-			q(),	-- Reserved Intellect
-			q(),	-- Sustained Strength
-			q(),	-- Waking Stats
-			-- Bracer Enchantments
-			q(),	-- Devotion of Avoidance
-			q(),	-- Devotion of Leech
-			q(),	-- Devotion of Speed
-			q(),	-- Writ of Avoidance
-			q(),	-- Writ of Leech
-			q(),	-- Writ of Speed
-			-- Boot Enchantments
-			q(),	-- Plainsrunner's Breeze
-			q(),	-- Rider's Reassurance
-			q(),	-- Watcher's Loam
-			-- Ring Enchantments
-			q(),	-- Devotion of Critical Strike
-			q(),	-- Devotion of Haste
-			q(),	-- Devotion of Mastery
-			q(),	-- Devotion of Versatility
-			q(),	-- Writ of Critical Strike
-			q(),	-- Writ of Haste
-			q(),	-- Writ of Mastery
-			q(),	-- Writ of Versatility
-			-- Weapon Enchantments
-			q(),	-- Burning Devotion
-			q(),	-- Burning Writ
-			q(),	-- Earthen Devotion
-			q(),	-- Earthen Writ
-			q(),	-- Frozen Devotion
-			q(),	-- Frozen Writ
-			q(),	-- Sophic Devotion
-			q(),	-- Sophic Writ
-			q(),	-- Wafting Devotion
-			q(),	-- Wafting Writ
-			-- Profession Tool Enchantments
-			q(),	-- Draconic Detness
-			q(),	-- Draconic Finess
-			q(),	-- Draconic Inspiration
-			q(),	-- Draconic Perception
-			q(),	-- Draconic Resourcefulness
-			-- Rods and Wands
-			q(),	-- Enchanted Writhebark Rod
-			q(),	-- Runed Draconium Rod
-			q(),	-- Runed Khaz'gorite
-			q(),	-- Runed Serevite Rod
-			q(),	-- Torch of Primal Awakening
-			-- Illusory Goods
-			q(),	-- Illusion: Primal Air
-			q(),	-- Illusion: Primal Earth
-			q(),	-- Illusion: Primal Fire
-			q(),	-- Illusion: Primal Frost
-			q(),	-- Illusion: Primal Mastery
-			q(),	-- Illusory Adornment: Air
-			q(),	-- Illusory Adornment: Earth
-			q(),	-- Illusory Adornment: Fire
-			q(),	-- Illusory Adornment: Frost
-			q(),	-- Illusory Adornment: Order
-			q(),	-- Khadgar's Disenchanting Rod
-			q(),	-- Primal Invocation Extract
-			q(),	-- Scepter of Spectacle: Air
-			q(),	-- Scepter of Spectacle: Earth
-			q(),	-- Scepter of Spectacle: Fire
-			q(),	-- Scepter of Spectacle: Frost
-			q(),	-- Scepter of Spectacle: Order
-			-- Shatters --
-			q(),	-- Crystalline Shatter
-			q(),	-- Elemental Shatter
-			-- Magical Merchandise
-			q(),	-- Sophic Amalgamation
-		}),
 		--]]
+		prof(ENCHANTING, {
+			-- Cloak Enchantments
+			q(71403),	-- Graceful Avoidance
+			q(71407),	-- Homebound Avoidance
+			q(71405),	-- Renegenerative Leech
+			q(71402),	-- Writ of Avoidance
+			q(71404),	-- Writ of Leech
+			q(71406),	-- Writ of Speed
+			-- Chest Enchantments
+			q(71398),	-- Accelerated Agility
+			q(71399),	-- Reserved Intellect
+			q(71401),	-- Sustained Strength
+			q(71400),	-- Waking Stats
+			-- Bracer Enchantments
+			q(71393),	-- Devotion of Avoidance
+			q(71395),	-- Devotion of Leech
+			q(71397),	-- Devotion of Speed
+			q(71392),	-- Writ of Avoidance
+			q(71394),	-- Writ of Leech
+			q(71396),	-- Writ of Speed
+			-- Boot Enchantments
+			q(71390),	-- Plainsrunner's Breeze
+			q(71389),	-- Rider's Reassurance
+			q(71391),	-- Watcher's Loam
+			-- Ring Enchantments
+			q(71409),	-- Devotion of Critical Strike
+			q(71411),	-- Devotion of Haste
+			q(71413),	-- Devotion of Mastery
+			q(71415),	-- Devotion of Versatility
+			q(71408),	-- Writ of Critical Strike
+			q(71410),	-- Writ of Haste
+			q(71412),	-- Writ of Mastery
+			q(71414),	-- Writ of Versatility
+			-- Weapon Enchantments
+			q(71426),	-- Burning Devotion
+			q(71425),	-- Burning Writ
+			q(71424),	-- Earthen Devotion
+			q(71423),	-- Earthen Writ
+			q(71428),	-- Frozen Devotion
+			q(71427),	-- Frozen Writ
+			q(71430),	-- Sophic Devotion
+			q(71429),	-- Sophic Writ
+			q(71422),	-- Wafting Devotion
+			q(71421),	-- Wafting Writ
+			-- Profession Tool Enchantments
+			q(71416),	-- Draconic Detness
+			q(71417),	-- Draconic Finess
+			q(71418),	-- Draconic Inspiration
+			q(71419),	-- Draconic Perception
+			q(71420),	-- Draconic Resourcefulness
+			-- Rods and Wands
+			q(71435),	-- Enchanted Writhebark Rod
+			q(71433),	-- Runed Draconium Rod
+			q(71434),	-- Runed Khaz'gorite
+			q(71945),	-- Runed Serevite Rod
+			q(71436),	-- Torch of Primal Awakening
+			-- Illusory Goods
+			q(71875),	-- Illusion: Primal Air
+			q(71874),	-- Illusion: Primal Earth
+			q(71873),	-- Illusion: Primal Fire
+			q(71871),	-- Illusion: Primal Frost
+			q(71870),	-- Illusion: Primal Mastery
+			q(71931),	-- Illusory Adornment: Air
+			q(71932),	-- Illusory Adornment: Earth
+			q(71432),	-- Illusory Adornment: Fire
+			q(71930),	-- Illusory Adornment: Frost
+			q(71933),	-- Illusory Adornment: Order
+			q(71876),	-- Khadgar's Disenchanting Rod
+			--q(),	-- Primal Invocation Extract
+			q(71886),	-- Scepter of Spectacle: Air
+			q(71884),	-- Scepter of Spectacle: Earth
+			q(71883),	-- Scepter of Spectacle: Fire
+			q(71881),	-- Scepter of Spectacle: Frost
+			q(71880),	-- Scepter of Spectacle: Order
+			-- Magical Merchandise
+			q(71878),	-- Sophic Amalgamation
+		}),
 		prof(ENGINEERING, {
 			-- Recrafting --
 			--q(),	-- Recraft Equipment
@@ -1853,6 +2127,126 @@ root("HiddenQuestTriggers", {
 		prof(HERBALISM, {
 		}),
 		prof(INSCRIPTION, {
+			-- Inscription Essentials
+			q(),	-- Dragon Isles Milling
+			q(),	-- Recraft Equipment
+			-- Inks
+			q(),	-- Blazing Ink
+			q(),	-- Burnished Ink
+			q(),	-- Cosmic Ink
+			q(),	-- Flourishing Ink
+			q(),	-- Serene Ink
+			-- Reagents
+			q(),	-- Chilled Rune
+			q(),	-- Illustrious Insight
+			q(),	-- Runed Writhebark
+			-- Missives
+			q(),	-- Draconic Missive of the Aurora
+			q(),	-- Draconic Missive of the Feverflare
+			q(),	-- Draconic Missive of the Fireflash
+			q(),	-- Draconic Missive of the Harmonious
+			q(),	-- Draconic Missive of the Peerless
+			q(),	-- Draconic Missive of the Quickblade
+			-- Crafting Tool Missives
+			q(),	-- Draconic Missive of Crafting Speed
+			q(),	-- Draconic Missive of Inspiration
+			q(),	-- Draconic Missive of Multicraft
+			q(),	-- Draconic Missive of Resourcefulness
+			-- Gathering Tool Missives
+			q(),	-- Draconic Missive of Deftness
+			q(),	-- Draconic Missive of Finesse
+			q(),	-- Draconic Missive of Perception
+			-- Trinkets
+			q(),	-- Darkmoon Deck Box: Dance
+			q(),	-- Darkmoon Deck Box: Inferno
+			q(),	-- Darkmoon Deck Box: Rime
+			q(),	-- Darkmoon Deck Box: Watcher
+			-- Weapons
+			q(),	-- Core Explorer's Compendium
+			q(),	-- Cracking Codex of the Isles
+			q(),	-- Illuminating Pillar of the Isles
+			q(),	-- Kinetic Pillar of the Isles
+			q(),	-- Overseer's Writhebark Stave
+			q(),	-- Pioneer's Writhebark Stave
+			q(),	-- Weathered Explorer's Stave
+			-- Runes and Sigil
+			q(),	-- Azurescale Sigil
+			q(),	-- Bronzescale Sigil
+			q(),	-- Buzzing Rune
+			q(),	-- Chirping Rune
+			q(),	-- Emberscale Sigil
+			q(),	-- Howling Rune
+			q(),	-- Jetscale Sigil
+			q(),	-- Sagescale Sigil
+			q(),	-- Vantus Rune: Vault of the Incarnates
+			-- Profession Equipment
+			q(),	-- Alchemist's Brilliant Mixing Rod
+			q(),	-- Alchemist's Sturdy Mixing Rod
+			q(),	-- Chef's Smooth Rolling Pin
+			q(),	-- Chef's Splendid Rolling Pin
+			q(),	-- Scribe's Fastened Quill
+			q(),	-- Scribe's Resplendent Quill
+			-- Scrolls
+			q(),	-- Illusion Parchment: Aqua Torrent
+			q(),	-- Illusion Parchment: Arcane Burst
+			q(),	-- Illusion Parchment: Chilling Wind
+			q(),	-- Illusion Parchment: Love Charm
+			q(),	-- Illusion Parchment: Magma Missile
+			q(),	-- Illusion Parchment: Shadow Orb
+			q(),	-- Illusion Parchment: Spell Shield
+			q(),	-- Illusion Parchment: Whirling Breeze
+			q(),	-- Scroll of Sales
+			-- Mysteries
+			q(),	-- Blazing Fortune
+			q(),	-- Bundle O' Cards: Dragon Isles
+			q(),	-- Extraction: Awakened Air
+			q(),	-- Extraction: Awakened Earth
+			q(),	-- Extraction: Awakened Fire
+			q(),	-- Extraction: Awakened Frost
+			q(),	-- Flourishing Fortune
+			q(),	-- Setene Fortune
+			-- Contracts
+			q(),	-- Contract: Artisan's Consortium
+			q(),	-- Contract: Dragonscale Expedition
+			q(),	-- Contract: Iskaara Tuskarr
+			q(),	-- Contract: Maruuk Centaur
+			q(),	-- Contract: Valdrakken Accord
+			-- Profession Specialization
+			q(),	-- Draconic Treatise on Alchemy
+			q(),	-- Draconic Treatise on Blacksmithing
+			q(),	-- Draconic Treatise on Enchanting
+			q(),	-- Draconic Treatise on Engineering
+			q(),	-- Draconic Treatise on Herbalism
+			q(),	-- Draconic Treatise on Inscription
+			q(),	-- Draconic Treatise on Jewelcrafting
+			q(),	-- Draconic Treatise on Leatherworking
+			q(),	-- Draconic Treatise on Mining
+			q(),	-- Draconic Treatise on Skinning
+			q(),	-- Draconic Treatise on Tailoring
+			-- Dragonriding - Renewed Proto-Drake
+			q(),	-- Renewed Proto-Drake: Bovine Horns
+			q(),	-- Renewed Proto-Drake: Predator Pattern
+			q(),	-- Renewed Proto-Drake: Silver and Blue Armor
+			q(),	-- Renewed Proto-Drake: Spined Crest
+			q(),	-- Renewed Proto-Drake: Steel and Yellow Armor
+			-- Dragonriding - Windborne Velocidrake
+			q(),	-- Windborne Velocidrake: Black Fur
+			q(),	-- Windborne Velocidrake: Silver and Blue Armor
+			q(),	-- Windborne Velocidrake: Spined Head
+			q(),	-- Windborne Velocidrake: Steel and Orange Armor
+			q(),	-- Windborne Velocidrake: Windswept Pattern
+			-- Dragonriding - Highland Drake
+			q(),	-- Highland Drake: Black Hair
+			q(),	-- Highland Drake: Silver and Blue Armor
+			q(),	-- Highland Drake: Spined Crest
+			q(),	-- Highland Drake: Spined Throat
+			q(),	-- Highland Drake: Steel and Yellow Armor
+			-- Dragonriding - Cliffside Wylderdrake
+			q(),	-- Cliffside Wylderdrake: Conical Head
+			q(),	-- Cliffside Wylderdrake: Red Hair
+			q(),	-- Cliffside Wylderdrake: Silver and Blue Armor
+			q(),	-- Cliffside Wylderdrake: Steel and Yellow Armor
+			q(),	-- Cliffside Wylderdrake: Triple Head Horns
 		}),
 		prof(JEWELCRAFTING, {
 			-- Jewelcrafting Essentials
