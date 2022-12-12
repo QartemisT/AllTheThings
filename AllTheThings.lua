@@ -7172,17 +7172,17 @@ local function RefreshAppearanceSources()
 		-- print("MaxSourceID",maxSourceID)
 	end
 	-- Then evaluate all SourceIDs under the maximum which are known explicitly
-	-- print("Completionist Refresh")
+	app.PrintDebug("Completionist Refresh")
 	for s=1,app.MaxSourceID do
 		-- don't need to check for existing value... everything is cleared beforehand
 		if C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance(s) then
 			rawset(collectedSources, s, 1);
 		end
 	end
-	-- print("Completionist Refresh done")
+	app.PrintDebug("Completionist Refresh done")
 	-- Additionally, for Unique Mode we can grant collection of Appearances which match the Visual of explicitly known SourceIDs if other criteria (Race/Faction/Class) match as well using ATT info
 	if not app.Settings:Get("Completionist") then
-		-- print("Unique Refresh")
+		app.PrintDebug("Unique Refresh")
 		local currentCharacterOnly = app.Settings:Get("MainOnly");
 		for s=1,app.MaxSourceID do
 			-- for each known source
@@ -7201,7 +7201,7 @@ local function RefreshAppearanceSources()
 				end
 			end
 		end
-		-- print("Unique Refresh done")
+		app.PrintDebug("Unique Refresh done")
 	end
 end
 app.RefreshAppearanceSources = RefreshAppearanceSources;
@@ -17378,7 +17378,7 @@ local DynamicCategory_Nested = function(self)
 end
 
 function app:GetDataCache()
-	-- app.PrintDebug("Start app.GetDataCache")
+	app.PrintDebug("Start app.GetDataCache")
 	-- app.PrintMemoryUsage()
 	local dynamicSetting = app.Settings:Get("Dynamic:Style") or 0;
 	local Filler = (dynamicSetting == 2 and DynamicCategory_Nested) or
@@ -17941,9 +17941,9 @@ function app:GetDataCache()
 	-- app.PrintMemoryUsage("Prime Window Data Set")
 	primeWindow:BuildData();
 	-- app.PrintMemoryUsage()
-	-- app.PrintDebug("Begin Cache Prime")
+	app.PrintDebug("Begin Cache",allData.text)
 	CacheFields(allData);
-	-- app.PrintDebugPrior("Ended Cache Prime")
+	app.PrintDebug("Ended Cache",allData.text)
 	-- app.PrintMemoryUsage()
 
 	-- Now build the hidden "Unsorted" Window's Data
@@ -17980,7 +17980,9 @@ function app:GetDataCache()
 		db.description = L["NEVER_IMPLEMENTED_DESC"];
 		tinsert(g, db);
 		--tinsert(db.g, 1, flightPathsCategory_NYI);
+		app.PrintDebug("Begin Cache",db.text)
 		CacheFields(db);
+		app.PrintDebug("End Cache",db.text)
 	end
 	-- Hidden Achievement Triggers
 	if app.Categories.HiddenAchievementTriggers then
@@ -18006,7 +18008,9 @@ function app:GetDataCache()
 		db.description = L["HIDDEN_QUEST_TRIGGERS_DESC"];
 		tinsert(g, db);
 		app.ToggleCacheMaps(true);
+		app.PrintDebug("Begin Cache",db.text)
 		CacheFields(db);
+		app.PrintDebug("End Cache",db.text)
 		app.ToggleCacheMaps();
 	end
 
@@ -18050,7 +18054,9 @@ function app:GetDataCache()
 		db._missing = true;
 		tinsert(g, db);
 		app.ToggleCacheMaps(true);
+		app.PrintDebug("Begin Cache",db.text)
 		CacheFields(db);
+		app.PrintDebug("End Cache",db.text)
 		app.ToggleCacheMaps();
 	end
 	local unsorted = app:GetWindow("Unsorted");
@@ -18293,7 +18299,7 @@ function app:GetDataCache()
 	app.CacheHeirlooms();
 
 	-- StartCoroutine("VerifyRecursionUnsorted", function() app.VerifyCache(); end, 5);
-	-- app.PrintDebug("Finished app.GetDataCache")
+	app.PrintDebug("Finished app.GetDataCache")
 	-- app.PrintMemoryUsage()
 	app.GetDataCache = function()
 		-- app.PrintDebug("Cached GetDataCache")
