@@ -23556,6 +23556,7 @@ app.InitDataCoroutine = function()
 
 	-- Then wait for the player to actually be 'in the game' to do further logic
 	while not app.InWorld do coroutine.yield(); end
+	app.PrintDebug("InWorld")
 
 	local accountWideData = LocalizeGlobal("ATTAccountWideData");
 	local characterData = LocalizeGlobal("ATTCharacterData");
@@ -23563,6 +23564,7 @@ app.InitDataCoroutine = function()
 
 	-- Clean up other matching Characters with identical Name-Realm but differing GUID
 	Callback(function()
+		app.PrintDebug("CheckCleanCharacters")
 		local myGUID = app.GUID;
 		local myName, myRealm = currentCharacter.name, currentCharacter.realm;
 		local myRegex = "%|cff[A-z0-9][A-z0-9][A-z0-9][A-z0-9][A-z0-9][A-z0-9]"..myName.."%-"..myRealm.."%|r";
@@ -23618,6 +23620,7 @@ app.InitDataCoroutine = function()
 				app.FunctionRunner.Run(cleanCharacterFunc, guid);
 			end
 		end
+		app.PrintDebug("CheckCleanCharacters-Done",toClean)
 	end);
 
 	-- Harvest the Spell IDs for Conversion.
@@ -23637,6 +23640,7 @@ app.InitDataCoroutine = function()
 	-- Update character known professions
 	app.RefreshTradeSkillCache();
 
+	app.PrintDebug("Quest Cleanup")
 	-- Current character collections shouldn't use '2' ever... so clear any 'inaccurate' data
 	local currentQuestsCache = currentCharacter.Quests;
 	for questID,completion in pairs(currentQuestsCache) do
@@ -23883,12 +23887,12 @@ app.InitDataCoroutine = function()
 	-- finally can say the app is ready
 	-- even though RefreshData starts a coroutine, this failed to get set one time when called after the coroutine started...
 	app.IsReady = true;
-	-- print("ATT is Ready!");
+	app.PrintDebug("ATT is Ready!")
 
 	app.RefreshSaves();
 
 	-- Let a frame go before hitting the initial refresh to make sure as much time as possible is allowed for the operation
-	-- print("Yield prior to Refresh")
+	app.PrintDebug("Yield prior to Refresh")
 	coroutine.yield();
 
 	if needRefresh then
